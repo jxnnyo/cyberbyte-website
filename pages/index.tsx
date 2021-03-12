@@ -1,6 +1,7 @@
 import Head from 'next/head'
 import Image from 'next/image'
 import styles from '../styles/Home.module.css'
+import {FaGithub, FaPaypal, FaTwitter} from "react-icons/fa";
 
 export default function Home() {
   return (
@@ -8,6 +9,8 @@ export default function Home() {
       <Head>
         <title>Cyberbyte Software</title>
         <link rel="icon" href="/favicon.ico" />
+        <link rel="preconnect" href="https://fonts.gstatic.com"/>
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap" rel="stylesheet"/>
       </Head>
 
       <main className={styles.main}>
@@ -56,14 +59,26 @@ export default function Home() {
       </main>
 
       <footer className={styles.footer}>
-        <a
-          href="https://vercel.com?utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Powered by{' '}
-          <img src="/vercel.svg" alt="Vercel Logo" className={styles.logo} />
-        </a>
+        <div className={styles.contact}>
+            <span>Want to chat?</span>
+            <h2>Drop us a message</h2>
+            <a href="mailto:support@cyberbte.org.uk" className={styles.contactButton}>Contact Us</a>
+        </div>
+          <div>
+              <h4>
+                  Our Projects
+              </h4>
+              <h4>
+                  Say Hello
+              </h4>
+              <ul>
+                  <li><a href="https://github.com/Cyberbyte-Studios" target="_blank" rel="nofollow noopener noreferrer"><FaGithub /></a></li>
+                  <li><a href="https://twitter.com/CyberbyteStudio" target="_blank" rel="nofollow noopener noreferrer"><FaTwitter /></a></li>
+                  <li><a href="https://www.paypal.me/CyberbyteStudios" target="_blank" rel="nofollow noopener noreferrer"><FaPaypal /></a></li>
+                </ul>
+              <div></div>
+              <p>Copyright &copy; 2020 Cyberbyte Software trading as Cyberbyte Studios. Company Number: <a href="https://beta.companieshouse.gov.uk/company/12691680" target="_blank" rel="nofollow noopener noreferrer">12691680</a> Vat Number: 123.</p>
+          </div>
       </footer>
     </div>
   )
