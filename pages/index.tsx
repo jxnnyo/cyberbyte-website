@@ -11,6 +11,11 @@ export default function Home() {
     return (
         <div className="flex flex-col min-h-screen overflow-hidden">
 
+          <Head>
+            <title>Cyberbyte Software</title>
+            <meta name="description" content="Cyberbyte Software is a bespoke web hosting and development company able to deliver your most ambitious projects"/>
+        </Head>
+
       {/*  Site header */}
       {/*<Header />*/}
 

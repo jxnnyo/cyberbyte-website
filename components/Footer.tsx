@@ -17,7 +17,7 @@ function Footer() {
                 {/*Logo */}
                 <Link href="/">
                   <a className="inline-block" aria-label="Cruip">
-                    <Image src="/images/logo.svg" height="80" width="258"/>
+                    <Image src="/images/logo.svg" height="80" width="258" alt="Cyberbyte Software"/>
                   </a>
                 </Link>
               </div>
@@ -114,7 +114,7 @@ function Footer() {
 
             {/* Copyrights note */}
             <div className="text-gray-400 text-sm mr-4">&copy; 2021 Cyberbyte Software Ltd. All rights
-              reserved. Company Number: 12691680. VAT Number: 123
+              reserved. Company Number: 12691680. VAT Number: 364633977
             </div>
 
           </div>
