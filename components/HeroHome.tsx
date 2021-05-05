@@ -5,8 +5,6 @@ export function HeroHome() {
   return (
     <section>
       <div className="max-w-6xl mx-auto px-4 sm:px-6 relative">
-
-        {/* Illustration behind hero content */}
         <div className="absolute left-0 bottom-0 -ml-20 hidden lg:block pointer-events-none" aria-hidden="true">
           <svg className="max-w-full" width="564" height="552" viewBox="0 0 564 552" fill="none" xmlns="http://www.w3.org/2000/svg">
             <defs>
@@ -19,19 +17,14 @@ export function HeroHome() {
           </svg>
         </div>
 
-        {/* Hero content */}
-        <div className="relative pt-32 pb-10 md:pt-40 md:pb-16">
-
-          {/* Section header */}
-          <div className="max-w-3xl mx-auto text-center pb-12 md:pb-16">
+        <div className="relative pt-32 pb-10 md:pt-40 md:pb-32">
+          <div className="max-w-3xl mx-auto text-center">
             <Image src="/images/logo.svg" height="447" width="1440" alt="Cyberbyte Software"/>
-            <div className="max-w-xs mx-auto sm:max-w-none sm:flex sm:justify-center">
-              <a className="bg-primary text-white active:bg-pink-600 px-4 py-2 rounded shadow hover:shadow-md hover:bg-secondary outline-none focus:outline-none lg:mr-1 lg:mb-0 ml-3 mb-3" href="mailto:contact@cyberbyte.org.uk">Contact Us</a>
+            <div className="max-w-xs mx-auto sm:max-w-none sm:flex sm:justify-center mt-12">
+              <a className="bg-primary text-white active:bg-pink-600 px-4 py-2 rounded shadow hover:shadow-md hover:bg-secondary outline-none focus:outline-none lg:mr-1 lg:mb-0 ml-3 mb-3 font-bold text-xl inline-flex items-center justify-center border border-transparent rounded-sm leading-snug transition duration-150 ease-in-out" href="mailto:contact@cyberbyte.org.uk">Contact Us</a>
             </div>
           </div>
-
         </div>
-
       </div>
     </section>
   );
