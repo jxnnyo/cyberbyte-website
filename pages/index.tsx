@@ -77,7 +77,7 @@ export default function Home() {
                   <li><a href="https://www.paypal.me/CyberbyteStudios" target="_blank" rel="nofollow noopener noreferrer"><FaPaypal /></a></li>
                 </ul>
               <div></div>
-              <p>Copyright &copy; 2020 Cyberbyte Software trading as Cyberbyte Studios. Company Number: <a href="https://beta.companieshouse.gov.uk/company/12691680" target="_blank" rel="nofollow noopener noreferrer">12691680</a> Vat Number: 123.</p>
+              <p>Copyright &copy; 2021 Cyberbyte Software Ltd. Company Number: <a href="https://beta.companieshouse.gov.uk/company/12691680" target="_blank" rel="nofollow noopener noreferrer">12691680</a> Vat Number: 123.</p>
           </div>
       </footer>
     </div>
