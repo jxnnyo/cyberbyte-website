@@ -9,7 +9,7 @@ function Footer() {
         <div className="max-w-6xl mx-auto px-4 sm:px-6">
 
           {/* Top area: Blocks */}
-          <div className="grid md:grid-cols-12 gap-8 lg:gap-20 mb-8 md:mb-12">
+          <div className="grid md:grid-cols-12 gap-8 lg:gap-20 mb-8">
 
             {/* 1st block */}
             <div className="md:col-span-4 lg:col-span-5">
@@ -17,7 +17,7 @@ function Footer() {
                 {/*Logo */}
                 <Link href="/">
                   <a className="inline-block" aria-label="Cruip">
-                    <Image src="/images/logo.svg" height="447" width="1440"/>
+                    <Image src="/images/logo.svg" height="80" width="258"/>
                   </a>
                 </Link>
               </div>
