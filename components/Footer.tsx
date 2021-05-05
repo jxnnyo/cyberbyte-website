@@ -24,30 +24,15 @@ function Footer() {
             </div>
 
             {/* 2nd, 3rd and 4th blocks */}
-            <div className="md:col-span-8 lg:col-span-7 grid sm:grid-cols-3 gap-8">
-
-              {/* 2nd block */}
-              <div className="text-sm">
-                <h6 className="text-gray-200 font-medium mb-1">Products</h6>
-                <ul>
-                  <li className="mb-1">
-                    {/*<Link to="#" className="text-gray-400 hover:text-gray-100 transition duration-150 ease-in-out">Web Studio</Link>*/}
-                  </li>
-                  <li className="mb-1">
-                    {/*<Link to="#" className="text-gray-400 hover:text-gray-100 transition duration-150 ease-in-out">DynamicBox Flex</Link>*/}
-                  </li>
-                  <li className="mb-1">
-                    {/*<Link to="#" className="text-gray-400 hover:text-gray-100 transition duration-150 ease-in-out">Programming Forms</Link>*/}
-                  </li>
-                </ul>
-              </div>
+            <div className="md:col-span-8 lg:col-span-7 grid sm:grid-cols-2 gap-8">
 
               {/* 3rd block */}
               <div className="text-sm">
-                <h6 className="text-gray-200 font-medium mb-1">Resources</h6>
+                <h6 className="text-gray-200 font-medium mb-1">Our Projects</h6>
                 <ul>
                   <li className="mb-1">
-                    {/*<Link to="#" className="text-gray-400 hover:text-gray-100 transition duration-150 ease-in-out">Nostrud exercitation</Link>*/}
+                    <a href="https://cyberworks.org.uk/"
+                       className="text-gray-400 hover:text-gray-100 transition duration-150 ease-in-out">Cyberworks</a>
                   </li>
                   <li className="mb-1">
                     {/*<Link to="#" className="text-gray-400 hover:text-gray-100 transition duration-150 ease-in-out">Visual mockups</Link>*/}
@@ -64,12 +49,12 @@ function Footer() {
                 </ul>
               </div>
 
-              {/* 4th block */}
               <div className="text-sm">
-                <h6 className="text-gray-200 font-medium mb-1">Company</h6>
+                <h6 className="text-gray-200 font-medium mb-1">Say Hello</h6>
                 <ul>
                   <li className="mb-1">
-                    {/*<Link to="#" className="text-gray-400 hover:text-gray-100 transition duration-150 ease-in-out">Consectetur adipiscing</Link>*/}
+                    <a href="mailto:contact@cyberbyte.org.uk" target="_blank"
+                       rel="noopener noreferrer nofollow">contact@cyberbyte.org.uk</a>
                   </li>
                   <li className="mb-1">
                     {/*<Link to="#" className="text-gray-400 hover:text-gray-100 transition duration-150 ease-in-out">Labore et dolore</Link>*/}
@@ -85,20 +70,15 @@ function Footer() {
                   </li>
                 </ul>
               </div>
-
             </div>
-
           </div>
 
-          {/* Bottom area */}
           <div className="md:flex md:items-center md:justify-between">
-
-            {/* Social links */}
             <ul className="flex mb-4 md:order-1 md:ml-4 md:mb-0">
               <li>
                 <a href="https://twitter.com/CyberbyteStudio" target="_blank"
                    rel="noopener noreferrer nofollow"
-                   className="flex justify-center items-center text-purple-600 bg-gray-800 hover:text-gray-100 hover:bg-purple-600 rounded-full transition duration-150 ease-in-out"
+                   className="flex justify-center items-center text-primary bg-gray-800 hover:text-gray-100 hover:bg-primary rounded-full transition duration-150 ease-in-out"
                    aria-label="Twitter">
                   <svg className="w-8 h-8 fill-current" viewBox="0 0 32 32"
                        xmlns="http://www.w3.org/2000/svg">
@@ -110,7 +90,7 @@ function Footer() {
               <li className="ml-4">
                 <a href="https://github.com/Cyberbyte-Studios" target="_blank"
                    rel="noopener noreferrer nofollow"
-                   className="flex justify-center items-center text-purple-600 bg-gray-800 hover:text-gray-100 hover:bg-purple-600 rounded-full transition duration-150 ease-in-out"
+                   className="flex justify-center items-center text-primary bg-gray-800 hover:text-gray-100 hover:bg-primary rounded-full transition duration-150 ease-in-out"
                    aria-label="Github">
                   <svg className="w-8 h-8 fill-current" viewBox="0 0 32 32"
                        xmlns="http://www.w3.org/2000/svg">
@@ -121,7 +101,7 @@ function Footer() {
               </li>
               <li className="ml-4">
                 <a href="#" target="_blank" rel="noopener noreferrer nofollow"
-                   className="flex justify-center items-center text-purple-600 bg-gray-800 hover:text-gray-100 hover:bg-purple-600 rounded-full transition duration-150 ease-in-out"
+                   className="flex justify-center items-center text-primary bg-gray-800 hover:text-gray-100 hover:bg-primary rounded-full transition duration-150 ease-in-out"
                    aria-label="Linkedin">
                   <svg className="w-8 h-8 fill-current" viewBox="0 0 32 32"
                        xmlns="http://www.w3.org/2000/svg">

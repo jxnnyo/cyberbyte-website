@@ -28,7 +28,7 @@ export default function NotFound() {
                   </svg>
                 </div>*/}
                 {/* 404 content */}
-                <h1 className="h1 mb-4" data-aos="fade-up" data-aos-delay="200">Sorry somethings gone wrong</h1>
+                <h1 className="mb-4 text-4xl font-extrabold leading-tight tracking-tighter">Sorry somethings gone wrong</h1>
                 <p className="text-lg text-gray-400" data-aos="fade-up" data-aos-delay="400">Head to our <a href="/" className="text-purple-600 hover:text-gray-200 transition duration-150 ease-in-out">homepage</a>.</p>
               </div>
             </div>

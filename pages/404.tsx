@@ -28,8 +28,8 @@ export default function NotFound() {
                   </svg>
                 </div>*/}
                 {/* 404 content */}
-                <h1 className="h1 mb-4" data-aos="fade-up" data-aos-delay="200">Uh oh. That page does not exist.</h1>
-                <p className="text-lg text-gray-400" data-aos="fade-up" data-aos-delay="400">Head to our <Link href="/"><a className="text-purple-600 hover:text-gray-200 transition duration-150 ease-in-out">homepage</a></Link> that does exist, or try double-checking the URL.</p>
+                <h1 className="mb-4 text-4xl font-extrabold leading-tight tracking-tighter">Uh oh. That page does not exist.</h1>
+                <p className="text-lg text-gray-400" data-aos="fade-up" data-aos-delay="400">Head to our <Link href="/"><a className="text-primary hover:text-gray-200 transition duration-150 ease-in-out">homepage</a></Link> that does exist, or try double-checking the URL.</p>
               </div>
             </div>
           </div>
