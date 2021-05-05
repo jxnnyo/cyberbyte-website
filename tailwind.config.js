@@ -6,6 +6,12 @@ module.exports = {
       display: ['Poppins', 'system-ui', 'sans-serif'],
       body: ['Poppins', 'system-ui', 'sans-serif'],
     },
+    extend: {
+      colors: {
+        'primary': '#ee2924',
+        'secondary': '#ed1265',
+      }
+    }
   },
   variants: {
     extend: {},

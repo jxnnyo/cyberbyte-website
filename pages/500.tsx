@@ -7,7 +7,7 @@ export default function NotFound() {
   return (
     <div className="flex flex-col min-h-screen overflow-hidden">
         <Head>
-            <title>Page not found</title>
+            <title>Server Error</title>
         </Head>
 
       {/*  Site header */}
@@ -28,8 +28,8 @@ export default function NotFound() {
                   </svg>
                 </div>*/}
                 {/* 404 content */}
-                <h1 className="h1 mb-4" data-aos="fade-up" data-aos-delay="200">Uh oh. That page does not exist.</h1>
-                <p className="text-lg text-gray-400" data-aos="fade-up" data-aos-delay="400">Head to our <Link href="/"><a className="text-purple-600 hover:text-gray-200 transition duration-150 ease-in-out">homepage</a></Link> that does exist, or try double-checking the URL.</p>
+                <h1 className="h1 mb-4" data-aos="fade-up" data-aos-delay="200">Sorry somethings gone wrong</h1>
+                <p className="text-lg text-gray-400" data-aos="fade-up" data-aos-delay="400">Head to our <a href="/" className="text-purple-600 hover:text-gray-200 transition duration-150 ease-in-out">homepage</a>.</p>
               </div>
             </div>
           </div>
