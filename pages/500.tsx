@@ -1,9 +1,6 @@
-import Head from 'next/head'
-import Image from 'next/image'
-import Link from 'next/link'
 import Footer from "../components/Footer";
 import PageIllustration from "../components/PageIllustration";
-import {NextSeo} from "next-seo";
+import { NextSeo } from "next-seo";
 
 export default function NotFound() {
   return (
@@ -13,7 +10,10 @@ export default function NotFound() {
       {/*<Header />*/}
 
       <main className="flex-grow">
-        <div className="relative max-w-6xl mx-auto h-0 pointer-events-none" aria-hidden="true">
+        <div
+          className="relative max-w-6xl mx-auto h-0 pointer-events-none"
+          aria-hidden="true"
+        >
           <PageIllustration />
         </div>
 
@@ -22,14 +22,22 @@ export default function NotFound() {
             <div className="pt-32 pb-12 md:pt-40 md:pb-20">
               <div className="max-w-3xl mx-auto text-center">
                 <h1 className="mb-4 h1">Sorry somethings gone wrong</h1>
-                <p className="text-lg text-gray-400">Head to our <a href="/" className="text-purple-600 hover:text-gray-200 transition duration-150 ease-in-out">homepage</a>.</p>
+                <p className="text-lg text-gray-400">
+                  Head to our{" "}
+                  <a
+                    href="/"
+                    className="text-purple-600 hover:text-gray-200 transition duration-150 ease-in-out"
+                  >
+                    homepage
+                  </a>
+                  .
+                </p>
               </div>
             </div>
           </div>
         </section>
       </main>
       <Footer />
-
     </div>
-  )
+  );
 }

@@ -1,23 +1,53 @@
-import React from 'react';
+import React from "react";
 
 type CTAProps = {
-  title: string
-  description: string
-  buttonText: string
-  buttonLink: string
-}
+  title: string;
+  description: string;
+  buttonText: string;
+  buttonLink: string;
+};
 
-const Cta: React.FC<CTAProps> = ({title, description, buttonText, buttonLink}) => {
+const Cta: React.FC<CTAProps> = ({
+  title,
+  description,
+  buttonText,
+  buttonLink,
+}) => {
   return (
     <section>
       <div className="max-w-6xl mx-auto px-4 sm:px-6 relative">
         <div className="pt-12 md:pt-20 border-t border-b border-gray-800">
-          <div className="max-w-3xl mx-auto text-center pb-12 md:pb-16" >
-            <h1 className="h2 mb-4" data-aos="fade-up" data-aos-anchor="[data-aos-id-cta]">{title}</h1>
-            <p className="text-xl text-gray-400 mb-8" data-aos="fade-up" data-aos-delay="200" data-aos-anchor="[data-aos-id-cta]">{description}</p>
+          <div className="max-w-3xl mx-auto text-center pb-12 md:pb-16">
+            <h1
+              className="h2 mb-4"
+              data-aos="fade-up"
+              data-aos-anchor="[data-aos-id-cta]"
+            >
+              {title}
+            </h1>
+            <p
+              className="text-xl text-gray-400 mb-8"
+              data-aos="fade-up"
+              data-aos-delay="200"
+              data-aos-anchor="[data-aos-id-cta]"
+            >
+              {description}
+            </p>
 
-            <div className="flex justify-center mb-8" data-aos="fade-up" data-aos-delay="400" data-aos-anchor="[data-aos-id-cta]">
-              <a className="btn btn-primary" href={buttonLink} target="_blank" rel="noopener noreferrer nofollow">{buttonText}</a>
+            <div
+              className="flex justify-center mb-8"
+              data-aos="fade-up"
+              data-aos-delay="400"
+              data-aos-anchor="[data-aos-id-cta]"
+            >
+              <a
+                className="btn btn-primary"
+                href={buttonLink}
+                target="_blank"
+                rel="noopener noreferrer nofollow"
+              >
+                {buttonText}
+              </a>
             </div>
 
             {/* Check list
@@ -41,12 +71,11 @@ const Cta: React.FC<CTAProps> = ({title, description, buttonText, buttonLink}) =
                 <span>Volume discounts</span>
               </li>
             </ul> */}
-
           </div>
         </div>
       </div>
     </section>
   );
-}
+};
 
 export default Cta;
