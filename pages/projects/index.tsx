@@ -61,6 +61,11 @@ function Projects() {
               description: "",
               link: "/projects/handtec",
             },
+            {
+              image: "/images/projects/launcher.png",
+              title: "Arma Launcher",
+              description: "",
+            },
           ]}
         />
       </main>
