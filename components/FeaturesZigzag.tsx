@@ -63,8 +63,8 @@ const FeaturesZigzag: React.FC<FeatureZigzagProps> = ({title, description, featu
           </div>
 
           <div className="grid gap-20">
-            {features.map((feature) => (
-              <FeatureBox feature={feature}/>
+            {features.map((feature, index) => (
+              <FeatureBox feature={feature} key={index}/>
             ))}
           </div>
         </div>

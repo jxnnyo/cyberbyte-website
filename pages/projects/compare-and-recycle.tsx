@@ -18,7 +18,7 @@ function CompareAndRecycle() {
         </div>
 
         <HeroFeatures title="Compare and Recycle" description="Our team has worked on the popular comparison site Compare and Recycle" />
-        <Stats title="" description="" stats={[
+        <Stats title="Remarkable Performance" description="We worked on optimising the application and scaling the hosting to ensure people can place orders at any time of the day as quickly as possible" stats={[
           {
             stat: ">600k",
             description: "Daily Requests"
@@ -32,10 +32,7 @@ function CompareAndRecycle() {
             description: "Uptime"
           }
         ]}  />
-        {/*<FeaturesZigzag />*/}
-        {/*<FeaturesBlocks />*/}
-        {/*<CaseStudies />*/}
-        <Cta title="Need to recycle you mobile?" description="Just head over to there website" buttonText="Visit the site" buttonLink="https://www.compareandrecycle.co.uk/" />
+        <Cta title="Need to recycle you mobile?" description="Just head over to their website" buttonText="Visit the site" buttonLink="https://www.compareandrecycle.co.uk/" />
 
       </main>
       <Footer />

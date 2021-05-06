@@ -44,18 +44,18 @@ function CyberworksThree() {
           features={[{
             title: "Advanced Player Editing",
             description: "Our player editing tool allows server admins to change quickly identify any problems as well as quickly help out players",
-            image: "/images/cyberworks/player.png",
+            image: "/images/projects/cyberworks/player.png",
             items: ["White Listing", "Compensation Requests", "Inventory Editing"]
           }, {
             title: "Useful Dashboard",
             description: "We developer a summary dashboard which allows you to quickly see everything a server admin needs",
-            image: "/images/cyberworks/dashboard.png",
+            image: "/images/projects/cyberworks/dashboard.png",
             items: ["Top Players", "Total Players", "Latest Player"],
             right: true
           }, {
             title: "Powerful Permissions",
             description: "Every community is different so we build our permissions system to be completely customisable",
-            image: "/images/cyberworks/permissions.png",
+            image: "/images/projects/cyberworks/permissions.png",
             items: ["Unlimited Groups", "Dynamic Permissions"]
           }]}/>
         {/*<FeaturesBlocks />*/}

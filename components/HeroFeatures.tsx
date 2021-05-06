@@ -1,11 +1,13 @@
 import React from 'react';
+import Image from "next/image";
 
 type HeroFeaturesProps = {
   title: string
   description: string
+  image?: string
 }
 
-const HeroFeatures: React.FC<HeroFeaturesProps> = ({title, description}) => {
+const HeroFeatures: React.FC<HeroFeaturesProps> = ({title, description, image}) => {
   return (
     <section className="relative">
       <div className="max-w-6xl mx-auto px-4 sm:px-6 relative">
@@ -27,7 +29,11 @@ const HeroFeatures: React.FC<HeroFeaturesProps> = ({title, description}) => {
             <h1 className="h1 mb-4">{title}</h1>
             <p className="text-xl text-gray-400">{description}</p>
           </div>
-          {/* Image */}
+          {image && (
+            <div className="mx-auto">
+            <Image className="mx-auto" src={image} alt={title} width="768" height="432" />
+            </div>
+          )}
           {/*<img className="mx-auto" src={require('../images/hero-image-02.png')} width="768" height="432" alt="Hero" data-aos="fade-up" data-aos-delay="400" />*/}
         </div>
 

@@ -23,7 +23,7 @@ function BidThatHome() {
         </div>
 
         <HeroFeatures title="Bid That Home"
-                      description="This website and iOS "/>
+                      description="This website and iOS app allowed users to place bids on properties not yet on the market"/>
 
       </main>
       <Footer/>
