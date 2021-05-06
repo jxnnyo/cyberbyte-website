@@ -1,6 +1,6 @@
 import React from 'react';
 import Link from 'next/link';
-import Image from 'next/image'
+import Image from 'next/image';
 
 function Footer() {
   return (
@@ -19,13 +19,40 @@ function Footer() {
               </div>
             </div>
 
-            <div className="md:col-span-8 lg:col-span-7 grid sm:grid-cols-2 gap-8">
+            <div className="md:col-span-8 lg:col-span-7 grid sm:grid-cols-3 gap-8">
               <div className="text-sm">
-                <h6 className="text-gray-200 font-medium mb-1">Our Projects</h6>
+                <h6 className="text-gray-200 font-medium mb-1">We have worked on</h6>
                 <ul>
                   <li className="mb-1">
-                    <a href="https://cyberworks.org.uk/"
-                       className="text-gray-400 hover:text-gray-100 transition duration-150 ease-in-out">Cyberworks</a>
+                    <Link href="/projects/cyberworks3">
+                      <a className="text-gray-400 hover:text-gray-100 transition duration-150 ease-in-out">Cyberworks 3</a>
+                    </Link>
+                  </li>
+                  <li className="mb-1">
+                    <Link href="/projects/compare-and-recycle">
+                      <a className="text-gray-400 hover:text-gray-100 transition duration-150 ease-in-out">Compare and Recycle</a>
+                    </Link>
+                  </li>
+                  <li className="mb-1">
+                    <Link href="/projects/bid-that-home">
+                      <a className="text-gray-400 hover:text-gray-100 transition duration-150 ease-in-out">Bid That Home</a>
+                    </Link>
+                  </li>
+                  <li className="mb-1">
+                    <Link href="/projects">
+                      <a className="text-gray-400 hover:text-gray-100 transition duration-150 ease-in-out">And more...</a>
+                    </Link>
+                  </li>
+                </ul>
+              </div>
+
+              <div className="text-sm">
+                <h6 className="text-gray-200 font-medium mb-1">We are working on</h6>
+                <ul>
+                  <li className="mb-1">
+                    <Link href="/projects/living-pillars">
+                      <a className="text-gray-400 hover:text-gray-100 transition duration-150 ease-in-out">Living Pillars</a>
+                    </Link>
                   </li>
                 </ul>
               </div>
@@ -34,8 +61,8 @@ function Footer() {
                 <h6 className="text-gray-200 font-medium mb-1">Say Hello</h6>
                 <ul>
                   <li className="mb-1">
-                    <a href="mailto:contact@cyberbyte.org.uk" target="_blank"
-                       rel="noopener noreferrer nofollow">contact@cyberbyte.org.uk</a>
+                    <a href="mailto:contact@cyberbyte.software" target="_blank"
+                       rel="noopener noreferrer nofollow">contact@cyberbyte.software</a>
                   </li>
                 </ul>
               </div>
@@ -81,7 +108,6 @@ function Footer() {
               </li>
             </ul>
 
-            {/* Copyrights note */}
             <div className="text-gray-400 text-sm mr-4">&copy; 2021 Cyberbyte Software Ltd. All rights
               reserved. Company Number: 12691680. VAT Number: 364633977
             </div>

@@ -1,9 +1,8 @@
 import React from 'react';
 
 type StatItem = {
-  stat: number
+  stat: string
   description: string
-  prefix?: string
 }
 
 type StatBoxProps = {
@@ -18,7 +17,7 @@ type StatsProps = {
 
 const StatBox: React.FC<StatBoxProps> = ({item}) => (
   <div className="py-6 md:py-0 md:px-8">
-    <div className="text-4xl font-bold leading-tight tracking-tighter text-primary mb-2" data-aos="fade-up">{item.prefix}{item.stat}</div>
+    <div className="text-4xl font-bold leading-tight tracking-tighter text-primary mb-2" data-aos="fade-up">{item.stat}</div>
     <div className="text-lg text-gray-400" data-aos="fade-up" data-aos-delay="200">{item.description}</div>
   </div>
 )
