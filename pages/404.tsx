@@ -3,13 +3,12 @@ import Image from 'next/image'
 import Link from 'next/link'
 import Footer from "../components/Footer";
 import PageIllustration from "../components/PageIllustration";
+import {NextSeo} from "next-seo";
 
 export default function NotFound() {
   return (
     <div className="flex flex-col min-h-screen overflow-hidden">
-        <Head>
-            <title>Page not found</title>
-        </Head>
+        <NextSeo noindex={true} title="Page not found" />
 
       {/*<Header />*/}
 

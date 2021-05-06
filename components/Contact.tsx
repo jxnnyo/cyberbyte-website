@@ -18,7 +18,7 @@ function ContactForm() {
 
             <div className="w-full lg:w-1/4 flex justify-center lg:justify-end">
               <Link href="/">
-                <a className="btn text-white bg-primary hover:bg-secondary">Return Home</a>
+                <a className="btn btn-primary">Return Home</a>
               </Link>
             </div>
           </div>
@@ -64,7 +64,7 @@ function ContactForm() {
       </div>
       <div className="flex flex-wrap -mx-3 mt-6">
         <div className="w-full px-3">
-          <button type="submit" className="btn text-white bg-primary hover:bg-secondary w-full">Send</button>
+          <button type="submit" className="btn btn-primary w-full">Send</button>
         </div>
       </div>
     </form>

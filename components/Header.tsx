@@ -10,7 +10,7 @@ function Header() {
             <ul className="flex flex-grow justify-end flex-wrap items-center">
               <li>
                 <Link href="/">
-                  <a className="btn-sm text-white bg-primary hover:bg-secondary ml-3">Return Home</a>
+                  <a className="btn-sm btn-primary ml-3">Return Home</a>
                 </Link>
               </li>
             </ul>

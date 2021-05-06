@@ -21,7 +21,7 @@ const CaseStudy: React.FC<CaseStudyProps> = ({image, title, description, link}) 
       </h3>
       <p className="text-lg text-gray-400 flex-grow">{description}</p>
       {link && <div>
-        <a className="btn text-white bg-primary hover:bg-secondary mt-6" href={link}>
+        <a className="btn btn-primary mt-6" href={link}>
           <span className="text-sm">Learn more</span>
           <svg className="w-3 h-3 fill-current flex-shrink-0 ml-2" viewBox="0 0 12 12"
                xmlns="http://www.w3.org/2000/svg">
@@ -44,7 +44,7 @@ function CaseStudies() {
           </div>
 
           <div className="max-w-sm mx-auto grid gap-8 md:grid-cols-3 md:gap-6 lg:gap-6 items-start md:max-w-none">
-            <CaseStudy image="/images/websites/cyberworks.jpg" title="Cyberworks" description="A popular open source tool which allows you to manage Arma 3 Life servers with ease. Used by hundreds of communities to manage players and aid community support."/>
+            <CaseStudy image="/images/websites/cyberworks.jpg" title="CyberworksLegacy" description="A popular open source tool which allows you to manage Arma 3 Life servers with ease. Used by hundreds of communities to manage players and aid community support."/>
             <CaseStudy image="/images/websites/car.png" title="Compare and Recycle" description="The UK's number 1 recycling comparison site. We helped build out a scalable platform to handle thousands of requests and improve customer satisfaction."/>
             <CaseStudy image="/images/websites/mineathon.jpg" title="Mineathon" description="A charity live streaming website to collect donations. Built in Laravel complete with an admin area to manage the event. We later published the source code on GitHub."/>
           </div>

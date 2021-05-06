@@ -1,0 +1,9 @@
+# *
+User-agent: *
+Allow: /
+
+# Host
+Host: https://cyberbyte.software
+
+# Sitemaps
+Sitemap: https://cyberbyte.software/sitemap.xml
