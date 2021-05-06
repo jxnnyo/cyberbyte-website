@@ -1,28 +1,39 @@
-import React from 'react';
+import React from "react";
 
 type StatItem = {
-  stat: string
-  description: string
-}
+  stat: string;
+  description: string;
+};
 
 type StatBoxProps = {
-  item: StatItem
-}
+  item: StatItem;
+};
 
 type StatsProps = {
-  title: string
-  description: string
-  stats: Array<StatItem>
-}
+  title: string;
+  description: string;
+  stats: Array<StatItem>;
+};
 
-const StatBox: React.FC<StatBoxProps> = ({item}) => (
+const StatBox: React.FC<StatBoxProps> = ({ item }) => (
   <div className="py-6 md:py-0 md:px-8">
-    <div className="text-4xl font-bold leading-tight tracking-tighter text-primary mb-2" data-aos="fade-up">{item.stat}</div>
-    <div className="text-lg text-gray-400" data-aos="fade-up" data-aos-delay="200">{item.description}</div>
+    <div
+      className="text-4xl font-bold leading-tight tracking-tighter text-primary mb-2"
+      data-aos="fade-up"
+    >
+      {item.stat}
+    </div>
+    <div
+      className="text-lg text-gray-400"
+      data-aos="fade-up"
+      data-aos-delay="200"
+    >
+      {item.description}
+    </div>
   </div>
-)
+);
 
-const Stats: React.FC<StatsProps> = ({ title, description, stats}) => {
+const Stats: React.FC<StatsProps> = ({ title, description, stats }) => {
   return (
     <section>
       <div className="max-w-6xl mx-auto px-4 sm:px-6">
@@ -41,6 +52,6 @@ const Stats: React.FC<StatsProps> = ({ title, description, stats}) => {
       </div>
     </section>
   );
-}
+};
 
 export default Stats;

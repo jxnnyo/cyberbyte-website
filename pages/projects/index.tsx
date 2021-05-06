@@ -1,23 +1,26 @@
-import Footer from "../components/Footer";
+import Footer from "../../components/Footer";
 import React from "react";
-import HeroHome from "../components/HeroHome";
-import Features from "../components/Features";
-import CaseStudies from "../components/CaseStudies";
+import CaseStudies from "../../components/CaseStudies";
+import PageIllustration from "../../components/PageIllustration";
 import { NextSeo } from "next-seo";
+import Header from "../../components/Header";
 
-export default function Home() {
+function Projects() {
   return (
     <div className="flex flex-col min-h-screen overflow-hidden">
-      <NextSeo description="Cyberbyte Software is a bespoke web hosting and development company able to deliver your most ambitious projects" />
-
-      {/*<Header />*/}
-
+      <NextSeo title="Our Projects" />
+      <Header />
       <main className="flex-grow">
-        <HeroHome />
-        <Features />
+        <div
+          className="relative max-w-6xl mx-auto h-0 pointer-events-none"
+          aria-hidden="true"
+        >
+          <PageIllustration />
+        </div>
+
         <CaseStudies
-          title="What we have worked on"
-          description="We have worked with a wide range of clients on a number of different projects. Below is a small sample of our projects:"
+          title="Our Projects"
+          description="We have worked on a number of challenging projects. Below are just a few:"
           cases={[
             {
               image: "/images/projects/cyberworks/original.jpg",
@@ -40,6 +43,24 @@ export default function Home() {
                 "A charity live streaming website to collect donations. Built in Laravel complete with an admin area to manage the event. We later published the source code on GitHub.",
               link: "/projects/mineathon",
             },
+            {
+              image: "/images/projects/pillar.jpg",
+              title: "Living Pillars",
+              description: "",
+              link: "/projects/living-pillars",
+            },
+            {
+              image: "/images/projects/bth.png",
+              title: "Bid That Home",
+              description: "",
+              link: "/projects/bid-that-home",
+            },
+            {
+              image: "/images/projects/handtec.png",
+              title: "Handtec",
+              description: "",
+              link: "/projects/handtec",
+            },
           ]}
         />
       </main>
@@ -47,3 +68,5 @@ export default function Home() {
     </div>
   );
 }
+
+export default Projects;

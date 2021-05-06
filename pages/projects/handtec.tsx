@@ -1,14 +1,14 @@
-import Footer from "../../components/Footer";
 import React from "react";
+import { NextSeo } from "next-seo";
+import Footer from "../../components/Footer";
 import PageIllustration from "../../components/PageIllustration";
 import HeroFeatures from "../../components/HeroFeatures";
-import { NextSeo } from "next-seo";
 import Header from "../../components/Header";
 
-function BidThatHome() {
+function Handtec() {
   return (
     <div className="flex flex-col min-h-screen overflow-hidden">
-      <NextSeo title="Bid That Home" />
+      <NextSeo title="Handtec" />
       <Header />
       <main className="flex-grow">
         <div
@@ -19,8 +19,8 @@ function BidThatHome() {
         </div>
 
         <HeroFeatures
-          title="Bid That Home"
-          description="This website and iOS app allowed users to place bids on properties not yet on the market"
+          title="Handtec Recycling System"
+          description="Transforming a legacy application into a fully featured platform"
         />
       </main>
       <Footer />
@@ -28,4 +28,4 @@ function BidThatHome() {
   );
 }
 
-export default BidThatHome;
+export default Handtec;
