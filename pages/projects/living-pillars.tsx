@@ -7,7 +7,7 @@ import CaseStudies from "../../components/CaseStudies";
 import PageIllustration from "../../components/PageIllustration";
 import HeroFeatures from "../../components/HeroFeatures";
 
-function CyberworksLegacy() {
+function LivingPillars() {
   return (
     <div className="flex flex-col min-h-screen overflow-hidden">
       {/*<Header />*/}
@@ -17,7 +17,7 @@ function CyberworksLegacy() {
         </div>
 
         {/*  Page sections */}
-        <HeroFeatures />
+        {/*<HeroFeatures />*/}
         {/*<Stats />*/}
         {/*<FeaturesZigzag />*/}
         {/*<FeaturesBlocks />*/}
@@ -30,4 +30,4 @@ function CyberworksLegacy() {
   )
 }
 
-export default CyberworksLegacy;
+export default LivingPillars;
