@@ -16,12 +16,12 @@ const CaseStudy: React.FC<CaseStudyProps> = ({image, title, description, link}) 
       </figure>
     </div>
     <div className="flex-grow flex flex-col h-full p-6 bg-gray-800">
-      <h3 className="mb-2 text-3xl font-bold leading-tight">
+      <h3 className="mb-2 h3">
         {title}
       </h3>
       <p className="text-lg text-gray-400 flex-grow">{description}</p>
       {link && <div>
-        <a className="px-4 py-2 font-medium inline-flex items-center justify-center border border-transparent rounded-sm leading-snug transition duration-150 ease-in-out text-white bg-primary hover:bg-secondary mt-6" href={link}>
+        <a className="btn text-white bg-primary hover:bg-secondary mt-6" href={link}>
           <span className="text-sm">Learn more</span>
           <svg className="w-3 h-3 fill-current flex-shrink-0 ml-2" viewBox="0 0 12 12"
                xmlns="http://www.w3.org/2000/svg">
@@ -39,7 +39,7 @@ function CaseStudies() {
       <div className="max-w-6xl mx-auto px-4 sm:px-6">
         <div className="py-12 md:py-20 border-t border-gray-800">
           <div className="max-w-3xl mx-auto text-center pb-12 md:pb-20">
-            <h2 className="text-3xl font-extrabold leading-tight tracking-tighter mb-4">What we have worked on</h2>
+            <h2 className="mb-4 h2">What we have worked on</h2>
             <p className="text-xl text-gray-400">We have worked with a wide range of clients on a number of different projects. Below is a small sample of our projects:</p>
           </div>
 

@@ -8,7 +8,7 @@ type FeatureProps = {
 const Feature: React.FC<FeatureProps> = ({title, description, children}) => (
   <div className="relative flex flex-col items-center">
     {children}
-    <h4 className="text-2xl font-bold leading-snug tracking-tight mb-2">{title}</h4>
+    <h4 className="mb-2 h4">{title}</h4>
     <p className="text-lg text-gray-400 text-center">{description}</p>
   </div>
 )
