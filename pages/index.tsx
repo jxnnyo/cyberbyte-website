@@ -30,7 +30,7 @@ export default function Home() {
               image: "/images/projects/pillar.jpg",
               title: "Living Pillars",
               description:
-                "The UK's number 1 recycling comparison site. We helped build a scalable platform to handle thousands of requests and improve customer satisfaction.",
+                "Helping improve urban environments with sensors to monitor plants placed around London.",
               link: "/projects/living-pillars",
             },
             // {
