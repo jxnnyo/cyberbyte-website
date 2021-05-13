@@ -35,14 +35,14 @@ class MyDocument extends Document {
         <body className="font-inter antialiased bg-gray-900 text-gray-200 tracking-tight">
           <Main />
           <NextScript />
-          <script async src="https://www.googletagmanager.com/gtag/js?id=G-K8GX3SWWDX"></script>
+          <script async src="https://www.googletagmanager.com/gtag/js?id=UA-196970515-1"></script>
         <script
           dangerouslySetInnerHTML={{
             __html: `
                   window.dataLayer = window.dataLayer || [];
                   function gtag(){dataLayer.push(arguments);}
                   gtag('js', new Date());
-                  gtag('config', 'G-K8GX3SWWDX');
+                  gtag('config', 'UA-196970515-1');
               `,
           }}
         />
