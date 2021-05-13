@@ -29,13 +29,13 @@ function Projects() {
                 "A popular open source tool which allows you to manage Arma 3 Life servers with ease. Used by hundreds of communities to manage players and aid community support.",
               link: "/projects/cyberworks3",
             },
-            {
-              image: "/images/projects/car.png",
-              title: "Compare and Recycle",
-              description:
-                "The UK's number 1 recycling comparison site. We helped build a scalable platform to handle thousands of requests and improve customer satisfaction.",
-              link: "/projects/compare-and-recycle",
-            },
+            // {
+            //   image: "/images/projects/car.png",
+            //   title: "Compare and Recycle",
+            //   description:
+            //     "The UK's number 1 recycling comparison site. We helped build a scalable platform to handle thousands of requests and improve customer satisfaction.",
+            //   link: "/projects/compare-and-recycle",
+            // },
             {
               image: "/images/projects/mineathon.jpg",
               title: "Mineathon",
@@ -55,12 +55,12 @@ function Projects() {
               description: "",
               link: "/projects/bid-that-home",
             },
-            {
+/*            {
               image: "/images/projects/handtec.png",
               title: "Handtec",
               description: "",
               link: "/projects/handtec",
-            },
+            },*/
             {
               image: "/images/projects/launcher.png",
               title: "Arma Launcher",

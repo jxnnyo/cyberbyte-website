@@ -36,13 +36,13 @@ function Footer() {
                       </a>
                     </Link>
                   </li>
-                  <li className="mb-1">
+                  {/*<li className="mb-1">
                     <Link href="/projects/compare-and-recycle">
                       <a className="text-gray-400 hover:text-gray-100 transition duration-150 ease-in-out">
                         Compare and Recycle
                       </a>
                     </Link>
-                  </li>
+                  </li>*/}
                   <li className="mb-1">
                     <Link href="/projects/bid-that-home">
                       <a className="text-gray-400 hover:text-gray-100 transition duration-150 ease-in-out">
@@ -72,13 +72,13 @@ function Footer() {
                       </a>
                     </Link>
                   </li>
-                  <li className="mb-1">
+                  {/*<li className="mb-1">
                     <Link href="/projects/handtec">
                       <a className="text-gray-400 hover:text-gray-100 transition duration-150 ease-in-out">
                         Handtec
                       </a>
                     </Link>
-                  </li>
+                  </li>*/}
                 </ul>
               </div>
 
@@ -93,6 +93,13 @@ function Footer() {
                     >
                       contact@cyberbyte.software
                     </a>
+                  </li>
+                  <li className="mb-1">
+                    <Link href="/contact">
+                      <a>
+                        Contact Us
+                      </a>
+                    </Link>
                   </li>
                 </ul>
               </div>

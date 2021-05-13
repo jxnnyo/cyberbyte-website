@@ -68,8 +68,8 @@ const CaseStudies: React.FC<CaseStudiesProps> = ({
           </div>
 
           <div className="max-w-sm mx-auto grid gap-8 md:grid-cols-3 md:gap-6 lg:gap-6 items-start md:max-w-none">
-            {cases.map((item) => (
-              <CaseStudyItem study={item} />
+            {cases.map((item, index) => (
+              <CaseStudyItem study={item} key={index} />
             ))}
           </div>
         </div>

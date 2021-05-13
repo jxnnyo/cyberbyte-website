@@ -27,12 +27,19 @@ export default function Home() {
               link: "/projects/cyberworks3",
             },
             {
-              image: "/images/projects/car.png",
-              title: "Compare and Recycle",
+              image: "/images/projects/pillar.jpg",
+              title: "Living Pillars",
               description:
                 "The UK's number 1 recycling comparison site. We helped build a scalable platform to handle thousands of requests and improve customer satisfaction.",
-              link: "/projects/compare-and-recycle",
+              link: "/projects/living-pillars",
             },
+            // {
+            //   image: "/images/projects/car.png",
+            //   title: "Compare and Recycle",
+            //   description:
+            //     "The UK's number 1 recycling comparison site. We helped build a scalable platform to handle thousands of requests and improve customer satisfaction.",
+            //   link: "/projects/compare-and-recycle",
+            // },
             {
               image: "/images/projects/mineathon.jpg",
               title: "Mineathon",

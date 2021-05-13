@@ -19,28 +19,7 @@ function Mineathon() {
           <PageIllustration />
         </div>
 
-        <HeroFeatures title="Mineathon" description="" />
-        <Stats
-          title=""
-          description=""
-          stats={[
-            {
-              stat: "~100",
-              description: "Commits",
-            },
-            {
-              stat: "6",
-              description: "Contributors",
-            },
-            {
-              stat: ">300",
-              description: "Downloads",
-            },
-          ]}
-        />
-        {/*<FeaturesZigzag />*/}
-        {/*<FeaturesBlocks />*/}
-        {/*<CaseStudies />*/}
+        <HeroFeatures title="Mineathon" description="More details coming soon" />
       </main>
       <Footer />
     </div>
