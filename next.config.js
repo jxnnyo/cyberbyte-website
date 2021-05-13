@@ -19,7 +19,7 @@ module.exports = withBundleAnalyzer({
             value: 'SAMEORIGIN'
           }, {
             key: 'Content-Security-Policy',
-            value: "default-src 'self' 'unsafe-inline' fonts.googleapis.com fonts.gstatic.com data: www.google-analytics.com www.googletagmanager.com; connect-src 'self' formspree.io; form-action formspree.io;"
+            value: "default-src 'self' 'unsafe-inline' fonts.googleapis.com fonts.gstatic.com data: www.google-analytics.com www.googletagmanager.com formspree.io;"
           },
         ]
       }
