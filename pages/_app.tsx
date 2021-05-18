@@ -14,6 +14,7 @@ function MyApp({ Component, pageProps }: AppProps) {
           locale: "en_GB",
           url: "https://cyberbyte.software/",
           site_name: "Cyberbyte Software",
+
         }}
         twitter={{
           handle: "@CyberbyteSoft",

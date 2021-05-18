@@ -1,15 +1,17 @@
-import React from "react";
 import Footer from "../../components/Footer";
+import React from "react";
 import PageIllustration from "../../components/PageIllustration";
 import HeroFeatures from "../../components/HeroFeatures";
 import Stats from "../../components/Stats";
+import Cta from "../../components/Cta";
 import { NextSeo } from "next-seo";
 import Header from "../../components/Header";
+import FeaturesZigzag from "../../components/FeaturesZigzag";
 
-function Mineathon() {
+function Scotscape() {
   return (
     <div className="flex flex-col min-h-screen overflow-hidden">
-      <NextSeo title="Mineathon" />
+      <NextSeo title="Working with Scotscape" />
       <Header />
       <main className="flex-grow">
         <div
@@ -19,11 +21,20 @@ function Mineathon() {
           <PageIllustration />
         </div>
 
-        <HeroFeatures title="Mineathon" description="A successful charity event raising money for charities backed by an innovative donation platform" />
+        <HeroFeatures
+          title="Scotscape"
+          description="We work closely with Scotscape to help innovate Urban Greening"
+        />
+        <Cta
+          title="Learn more"
+          description="Head over to their website to lean more about transforming urban greening"
+          buttonText="Scotscape"
+          buttonLink="https://www.scotscape.co.uk/"
+        />
       </main>
       <Footer />
     </div>
   );
 }
 
-export default Mineathon;
+export default Scotscape;

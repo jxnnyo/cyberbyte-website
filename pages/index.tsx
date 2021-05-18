@@ -3,12 +3,13 @@ import React from "react";
 import HeroHome from "../components/HeroHome";
 import Features from "../components/Features";
 import CaseStudies from "../components/CaseStudies";
-import { NextSeo } from "next-seo";
+import {LocalBusinessJsonLd, LogoJsonLd, NextSeo} from "next-seo";
 
 export default function Home() {
   return (
     <div className="flex flex-col min-h-screen overflow-hidden">
       <NextSeo description="Cyberbyte Software is a bespoke web hosting and development company able to deliver your most ambitious projects" />
+      <LogoJsonLd logo="https://cyberbyte.software/images/logo-square.png" url="https://cyberbyte.software"/>
 
       {/*<Header />*/}
 

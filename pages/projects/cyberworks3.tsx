@@ -11,7 +11,7 @@ import FeaturesZigzag from "../../components/FeaturesZigzag";
 function CyberworksThree() {
   return (
     <div className="flex flex-col min-h-screen overflow-hidden">
-      <NextSeo title="Cyberworks 3" />
+      <NextSeo title="Cyberworks 3" description="Cyberworks 3 is the best way to manage your Arma 3 Life Server" />
       <Header />
       <main className="flex-grow">
         <div
@@ -23,7 +23,7 @@ function CyberworksThree() {
 
         <HeroFeatures
           title="Cyberworks 3"
-          description="Our longest project which allowed server admins to view and edit players on the Arma 3 Life server. "
+          description="Our most popular project which allowed server admins to view and edit players on the Arma 3 Life server."
         />
         <Stats
           title="Used by hundreds of communities"

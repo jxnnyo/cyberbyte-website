@@ -1,10 +1,12 @@
 import React from "react";
+import Link from "next/link";
 
 type CTAProps = {
   title: string;
   description: string;
   buttonText: string;
   buttonLink: string;
+  buttonInternal?: boolean;
 };
 
 const Cta: React.FC<CTAProps> = ({
@@ -12,6 +14,7 @@ const Cta: React.FC<CTAProps> = ({
   description,
   buttonText,
   buttonLink,
+  buttonInternal = false,
 }) => {
   return (
     <section>
@@ -40,14 +43,23 @@ const Cta: React.FC<CTAProps> = ({
               data-aos-delay="400"
               data-aos-anchor="[data-aos-id-cta]"
             >
-              <a
-                className="btn btn-primary"
-                href={buttonLink}
-                target="_blank"
-                rel="noopener noreferrer nofollow"
-              >
-                {buttonText}
-              </a>
+              {buttonInternal ? (
+                <Link href={buttonLink}>
+                  <a className="btn btn-primary">
+                    {buttonText}
+                  </a>
+                </Link>
+              ) : (
+                <a
+                  className="btn btn-primary"
+                  href={buttonLink}
+                  target="_blank"
+                  rel="noopener noreferrer nofollow"
+                >
+                  {buttonText}
+                </a>
+              )}
+
             </div>
 
             {/* Check list

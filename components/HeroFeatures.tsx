@@ -18,8 +18,6 @@ const HeroFeatures: React.FC<HeroFeaturesProps> = ({
         <div
           className="absolute left-0 bottom-0 -ml-64 hidden lg:block pointer-events-none"
           aria-hidden="true"
-          data-aos="fade-up"
-          data-aos-delay="600"
         >
           <svg
             className="max-w-full"

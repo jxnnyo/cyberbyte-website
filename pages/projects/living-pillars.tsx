@@ -5,6 +5,7 @@ import HeroFeatures from "../../components/HeroFeatures";
 import { NextSeo } from "next-seo";
 import Header from "../../components/Header";
 import Cta from "../../components/Cta";
+import FeaturesZigzag from "../../components/FeaturesZigzag";
 
 function LivingPillars() {
   return (
@@ -22,12 +23,22 @@ function LivingPillars() {
         <HeroFeatures
           title="Scotscape Living Pillars"
           image="/images/projects/pillar.jpg"
-          description="We have worked with Scotscape to design and manufacturer sensors to help monitor plant growth. Our sensors help keep plants watered in all conditions"
+          description="We have worked with Scotscape to design and manufacturer sensors to help monitor plant growth. Our sensors help keep plants watered in all conditions and informs maintenance teams of any issues reducing the need for onsite visits."
         />
-        {/*<Stats />*/}
-        {/*<FeaturesZigzag />*/}
-        {/*<FeaturesBlocks />*/}
-        {/*<CaseStudies />*/}
+        <FeaturesZigzag
+          title="Transforming Urban Greening"
+          description="By using technology we can not only help reduce pollution and add colour to our streets but we can monitor the success and keep London looking greener"
+          features={[
+            {
+              title: "Complete Control",
+              description:
+                "Our web interface allows technicians to control and monitor sensors each sensors",
+              image: "/images/projects/scotscape/dashboard.png",
+              items: ["Water Monitoring", "Temperature Monitoring", "Latest Player"],
+
+            }
+          ]}
+        />
         <Cta
           title="Interested in Living Pillars?"
           description="Reach out to Scotscape for more details on urban greening and why it's so important"

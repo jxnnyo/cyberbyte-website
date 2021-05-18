@@ -23,7 +23,7 @@ function Projects() {
           description="We have worked on a number of challenging projects. Below are just a few:"
           cases={[
             {
-              image: "/images/projects/cyberworks/original.jpg",
+              image: "/images/projects/cyberworks/dashboard.png",
               title: "Cyberworks",
               description:
                 "A popular open source tool which allows you to manage Arma 3 Life servers with ease. Used by hundreds of communities to manage players and aid community support.",
@@ -61,6 +61,12 @@ function Projects() {
               description: "",
               link: "/projects/handtec",
             },*/
+            {
+              image: "/images/projects/cyberworks/original.jpg",
+              title: "Life Control",
+              description: "",
+              link: "/projects/life-control"
+            },
             {
               image: "/images/projects/launcher.png",
               title: "Arma Launcher",

@@ -4,6 +4,7 @@ import PageIllustration from "../../components/PageIllustration";
 import HeroFeatures from "../../components/HeroFeatures";
 import { NextSeo } from "next-seo";
 import Header from "../../components/Header";
+import FeaturesZigzag from "../../components/FeaturesZigzag";
 
 function BidThatHome() {
   return (
@@ -21,6 +22,23 @@ function BidThatHome() {
         <HeroFeatures
           title="Bid That Home"
           description="This website and iOS app allowed users to place bids on properties not yet on the market"
+        />
+        <FeaturesZigzag
+          title="Transforming property bidding"
+          description="Bid That Home was a unique solution targeting property owners"
+          features={[
+            {
+              title: "Bidding on all Addresses",
+              description:
+                "The application allowed users to pick any property even if it was not on the market ",
+              image: "/images/projects/bth.png",
+              items: [
+                "Advanced Admin Area",
+                "Letter Tracking",
+                "Google Maps Integration",
+              ],
+            }
+          ]}
         />
       </main>
       <Footer />
