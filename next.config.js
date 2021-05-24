@@ -19,7 +19,7 @@ module.exports = withBundleAnalyzer({
             value: 'SAMEORIGIN'
           }, {
             key: 'Content-Security-Policy',
-            value: "default-src 'self' 'unsafe-inline' fonts.googleapis.com fonts.gstatic.com data: www.google-analytics.com www.googletagmanager.com formspree.io *.hs-scripts.com *.hscollectedforms.net *.hs-analytics.net *.hs-banner.com *.hsadspixel.net;"
+            value: "default-src 'self' 'unsafe-inline' fonts.googleapis.com fonts.gstatic.com data: www.google-analytics.com www.googletagmanager.com formspree.io *.hs-scripts.com *.hscollectedforms.net *.hs-analytics.net *.hs-banner.com *.hsadspixel.net *.hubspot.com *.hubapi.com;"
           },
         ]
       }
