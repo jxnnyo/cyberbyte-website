@@ -36,7 +36,6 @@ class MyDocument extends Document {
           <Main />
           <NextScript />
           <script async src="https://www.googletagmanager.com/gtag/js?id=G-K8GX3SWWDX"/>
-          <script id="hs-script-loader" async defer src="https://js-na1.hs-scripts.com/20098073.js"/>
         <script
           dangerouslySetInnerHTML={{
             __html: `window.dataLayer = window.dataLayer || [];function gtag(){dataLayer.push(arguments);}gtag('js', new Date());gtag('config', 'G-K8GX3SWWDX');`,
