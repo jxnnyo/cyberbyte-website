@@ -7,6 +7,9 @@ import Cta from "../../components/Cta";
 import { NextSeo } from "next-seo";
 import Header from "../../components/Header";
 import FeaturesZigzag from "../../components/FeaturesZigzag";
+import player from "../../images/projects/cyberworks/player.png"
+import dashboard from "../../images/projects/cyberworks/dashboard.png"
+import permissions from "../../images/projects/cyberworks/permissions.png"
 
 function CyberworksThree() {
   return (
@@ -51,7 +54,7 @@ function CyberworksThree() {
               title: "Advanced Player Editing",
               description:
                 "Our player editing tool allows server admins to change quickly identify any problems as well as quickly help out players",
-              image: "/images/projects/cyberworks/player.png",
+              image: player,
               items: [
                 "White Listing",
                 "Compensation Requests",
@@ -62,7 +65,7 @@ function CyberworksThree() {
               title: "Useful Dashboard",
               description:
                 "We developer a summary dashboard which allows you to quickly see everything a server admin needs",
-              image: "/images/projects/cyberworks/dashboard.png",
+              image: dashboard,
               items: ["Top Players", "Total Players", "Latest Player"],
               right: true,
             },
@@ -70,7 +73,7 @@ function CyberworksThree() {
               title: "Powerful Permissions",
               description:
                 "Every community is different so we build our permissions system to be completely customisable",
-              image: "/images/projects/cyberworks/permissions.png",
+              image: permissions,
               items: ["Unlimited Groups", "Dynamic Permissions"],
             },
           ]}

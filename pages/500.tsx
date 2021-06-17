@@ -24,6 +24,7 @@ export default function NotFound() {
                 <h1 className="mb-4 h1">Sorry somethings gone wrong</h1>
                 <p className="text-lg text-gray-400">
                   Head to our{" "}
+                  {/* eslint-disable-next-line @next/next/no-html-link-for-pages */}
                   <a
                     href="/"
                     className="text-purple-600 hover:text-gray-200 transition duration-150 ease-in-out"

@@ -4,6 +4,9 @@ import HeroHome from "../components/HeroHome";
 import Features from "../components/Features";
 import CaseStudies from "../components/CaseStudies";
 import {LocalBusinessJsonLd, LogoJsonLd, NextSeo} from "next-seo";
+import cyberworks from "../images/projects/cyberworks/original.jpg";
+import pillar from "../images/projects/pillar.jpg";
+import mineathon from "../images/projects/mineathon.jpg";
 
 export default function Home() {
   return (
@@ -15,20 +18,111 @@ export default function Home() {
 
       <main className="flex-grow">
         <HeroHome />
-        <Features />
+        <Features features={[
+          {
+            title: "Software Consulting",
+            description: "Staring a new project or need help in the middle of an existing one? Reach out and we can share our experience.",
+            icon: (<svg
+                className="w-16 h-16 mb-4"
+                viewBox="0 0 64 64"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <rect
+                  className="fill-current text-primary"
+                  width="64"
+                  height="64"
+                  rx="32"
+                />
+                <path
+                  className="stroke-current text-purple-300"
+                  strokeWidth="2"
+                  strokeLinecap="square"
+                  d="M21 23h22v18H21z"
+                  fill="none"
+                  fillRule="evenodd"
+                />
+                <path
+                  className="stroke-current text-purple-100"
+                  d="M26 28h12M26 32h12M26 36h5"
+                  strokeWidth="2"
+                  strokeLinecap="square"
+                />
+              </svg>)
+          },
+          {
+            title: "Website Development",
+            description: "From custom database structures and admin areas to single page applications we have got it covered.",
+            icon: (<svg
+                className="w-16 h-16 mb-4"
+                viewBox="0 0 64 64"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <rect
+                  className="fill-current text-primary"
+                  width="64"
+                  height="64"
+                  rx="32"
+                />
+                <g fill="none" fillRule="evenodd">
+                  <path
+                    className="stroke-current text-purple-300"
+                    d="M40 22a2 2 0 012 2v16a2 2 0 01-2 2H24a2 2 0 01-2-2V24a2 2 0 012-2"
+                    strokeWidth="2"
+                    strokeLinecap="square"
+                  />
+                  <path
+                    className="stroke-current text-purple-100"
+                    strokeWidth="2"
+                    strokeLinecap="square"
+                    d="M36 32l-4-3-4 3V22h8z"
+                  />
+                </g>
+              </svg>)
+          },
+          {
+            title: "Bespoke Hosting",
+            description: "We use Kubernetes clusters to ensure our clients apps are fault tolerant and able to handle any traffic spikes.",
+            icon: (<svg
+                className="w-16 h-16 mb-4"
+                viewBox="0 0 64 64"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <rect
+                  className="fill-current text-primary"
+                  width="64"
+                  height="64"
+                  rx="32"
+                />
+                <path
+                  className="stroke-current text-purple-300"
+                  strokeWidth="2"
+                  strokeLinecap="square"
+                  d="M21 35l4 4 12-15"
+                  fill="none"
+                  fillRule="evenodd"
+                />
+                <path
+                  className="stroke-current text-purple-100"
+                  d="M42 29h-3M42 34h-7M42 39H31"
+                  strokeWidth="2"
+                  strokeLinecap="square"
+                />
+              </svg>)
+          }
+        ]} />
         <CaseStudies
           title="What we have worked on"
           description="We have worked with a wide range of clients on a number of different projects. Below is a small sample of our projects:"
           cases={[
             {
-              image: "/images/projects/cyberworks/original.jpg",
+              image: cyberworks,
               title: "Cyberworks",
               description:
                 "A popular open source tool which allows you to manage Arma 3 Life servers with ease. Used by hundreds of communities to manage players and aid community support.",
               link: "/projects/cyberworks3",
             },
             {
-              image: "/images/projects/pillar.jpg",
+              image: pillar,
               title: "Living Pillars",
               description:
                 "Helping improve urban environments with sensors to monitor plants placed around London.",
@@ -42,7 +136,7 @@ export default function Home() {
             //   link: "/projects/compare-and-recycle",
             // },
             {
-              image: "/images/projects/mineathon.jpg",
+              image: mineathon,
               title: "Mineathon",
               description:
                 "A charity live streaming website to collect donations. Built in Laravel complete with an admin area to manage the event. We later published the source code on GitHub.",

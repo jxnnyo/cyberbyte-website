@@ -1,6 +1,7 @@
 import React from "react";
 import Link from "next/link";
 import Image from "next/image";
+import logo from "../images/logo.svg"
 
 function Footer() {
   return (
@@ -13,7 +14,7 @@ function Footer() {
                 <Link href="/">
                   <a className="inline-block" aria-label="Cruip">
                     <Image
-                      src="/images/logo.svg"
+                      src={logo}
                       height="80"
                       width="258"
                       alt="Cyberbyte Software"

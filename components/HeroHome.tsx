@@ -1,6 +1,7 @@
 import React from "react";
 import Image from "next/image";
 import Link from "next/link";
+import logo from "../images/logo.svg"
 
 export function HeroHome() {
   return (
@@ -43,7 +44,7 @@ export function HeroHome() {
         <div className="relative pt-32 pb-10 md:pt-40 md:pb-32">
           <div className="max-w-3xl mx-auto text-center">
             <Image
-              src="/images/logo.svg"
+              src={logo}
               height="447"
               width="1440"
               alt="Cyberbyte Software"

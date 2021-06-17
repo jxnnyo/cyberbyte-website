@@ -3,7 +3,7 @@ import Image from "next/image";
 import Link from "next/link";
 
 type CaseStudy = {
-  image: string;
+  image: StaticImageData;
   title: string;
   description: string;
   link?: string;
@@ -23,6 +23,7 @@ export const CaseStudyItem: React.FC<CaseStudyProps> = ({ study }) => (
           height="198"
           alt={study.title}
           className="absolute inset-0 w-full h-full object-cover transform hover:scale-105 transition duration-700 ease-out"
+          placeholder="blur"
         />
       </figure>
     </div>

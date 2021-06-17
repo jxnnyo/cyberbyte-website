@@ -5,6 +5,7 @@ import HeroFeatures from "../../components/HeroFeatures";
 import { NextSeo } from "next-seo";
 import Header from "../../components/Header";
 import FeaturesZigzag from "../../components/FeaturesZigzag";
+import bth from "../../images/projects/bth.png"
 
 function BidThatHome() {
   return (
@@ -31,7 +32,7 @@ function BidThatHome() {
               title: "Bidding on all Addresses",
               description:
                 "The application allowed users to pick any property even if it was not on the market ",
-              image: "/images/projects/bth.png",
+              image: bth,
               items: [
                 "Advanced Admin Area",
                 "Letter Tracking",

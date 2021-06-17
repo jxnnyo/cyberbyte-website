@@ -4,6 +4,12 @@ import CaseStudies from "../../components/CaseStudies";
 import PageIllustration from "../../components/PageIllustration";
 import { NextSeo } from "next-seo";
 import Header from "../../components/Header";
+import cyberworks from "../../images/projects/cyberworks/dashboard.png";
+import cyberworksOriginal from "../../images/projects/cyberworks/original.jpg";
+import pillar from "../../images/projects/pillar.jpg";
+import mineathon from "../../images/projects/mineathon.jpg";
+import launcher from "../../images/projects/launcher.png";
+import bth from "../../images/projects/bth.png";
 
 function Projects() {
   return (
@@ -23,7 +29,7 @@ function Projects() {
           description="We have worked on a number of challenging projects. Below are just a few:"
           cases={[
             {
-              image: "/images/projects/cyberworks/dashboard.png",
+              image: cyberworks,
               title: "Cyberworks",
               description:
                 "A popular open source tool which allows you to manage Arma 3 Life servers with ease. Used by hundreds of communities to manage players and aid community support.",
@@ -37,20 +43,20 @@ function Projects() {
             //   link: "/projects/compare-and-recycle",
             // },
             {
-              image: "/images/projects/mineathon.jpg",
+              image: mineathon,
               title: "Mineathon",
               description:
                 "A charity live streaming website to collect donations. Built in Laravel complete with an admin area to manage the event. We later published the source code on GitHub.",
               link: "/projects/mineathon",
             },
             {
-              image: "/images/projects/pillar.jpg",
+              image: pillar,
               title: "Living Pillars",
               description: "",
               link: "/projects/living-pillars",
             },
             {
-              image: "/images/projects/bth.png",
+              image: bth,
               title: "Bid That Home",
               description: "",
               link: "/projects/bid-that-home",
@@ -62,13 +68,13 @@ function Projects() {
               link: "/projects/handtec",
             },*/
             {
-              image: "/images/projects/cyberworks/original.jpg",
+              image: cyberworksOriginal,
               title: "Life Control",
               description: "",
               link: "/projects/life-control"
             },
             {
-              image: "/images/projects/launcher.png",
+              image: launcher,
               title: "Arma Launcher",
               description: "",
             },

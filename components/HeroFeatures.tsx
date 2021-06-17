@@ -4,7 +4,7 @@ import Image from "next/image";
 type HeroFeaturesProps = {
   title: string;
   description: string;
-  image?: string;
+  image?: StaticImageData;
 };
 
 const HeroFeatures: React.FC<HeroFeaturesProps> = ({
@@ -62,6 +62,7 @@ const HeroFeatures: React.FC<HeroFeaturesProps> = ({
                 alt={title}
                 width="768"
                 height="432"
+                placeholder="blur"
               />
             </div>
           )}

@@ -4,7 +4,7 @@ import Image from "next/image";
 type Feature = {
   title: string;
   description: string;
-  image: string;
+  image: StaticImageData;
   items: Array<string>;
   right?: boolean;
 };
@@ -35,6 +35,7 @@ const FeatureBox: React.FC<FeatureProps> = ({ feature }) => {
           alt={feature.title}
           width="1920"
           height="974"
+          placeholder="blur"
         />
       </div>
       <div

@@ -2,11 +2,10 @@ import Footer from "../../components/Footer";
 import React from "react";
 import PageIllustration from "../../components/PageIllustration";
 import HeroFeatures from "../../components/HeroFeatures";
-import Stats from "../../components/Stats";
 import Cta from "../../components/Cta";
 import { NextSeo } from "next-seo";
 import Header from "../../components/Header";
-import FeaturesZigzag from "../../components/FeaturesZigzag";
+import cyberworks from "../../images/projects/cyberworks/original.jpg"
 
 function LifeControl() {
   return (
@@ -24,7 +23,7 @@ function LifeControl() {
         <HeroFeatures
           title="Life Control"
           description="The original database administration panel for Arma 3 Life Servers"
-          image="/images/projects/cyberworks/original.jpg"
+          image={cyberworks}
         />
         <Cta
           title="Take a look at our new version"
