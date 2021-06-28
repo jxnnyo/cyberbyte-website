@@ -21,7 +21,7 @@ export default function Home() {
         <Features features={[
           {
             title: "Software Consulting",
-            description: "Staring a new project or need help in the middle of an existing one? Reach out and we can share our experience.",
+            description: "Starting a new project, or need help in the middle of an existing one? Contact us! We would love to share our experience.",
             icon: (<svg
                 className="w-16 h-16 mb-4"
                 viewBox="0 0 64 64"
@@ -51,7 +51,7 @@ export default function Home() {
           },
           {
             title: "Website Development",
-            description: "From custom database structures and admin areas to single page applications we have got it covered.",
+            description: "Anything from custom database structures and admin areas, to single page applications we have got it covered.",
             icon: (<svg
                 className="w-16 h-16 mb-4"
                 viewBox="0 0 64 64"
@@ -81,7 +81,7 @@ export default function Home() {
           },
           {
             title: "Bespoke Hosting",
-            description: "We use Kubernetes clusters to ensure our clients apps are fault tolerant and able to handle any traffic spikes.",
+            description: "We use Kubernetes clusters to ensure our clients apps are fault tolerant and can handle any traffic spikes without an issue.",
             icon: (<svg
                 className="w-16 h-16 mb-4"
                 viewBox="0 0 64 64"
@@ -112,20 +112,20 @@ export default function Home() {
         ]} />
         <CaseStudies
           title="What we have worked on"
-          description="We have worked with a wide range of clients on a number of different projects. Below is a small sample of our projects:"
+          description="We have worked with a wide range of clients, on a number of different project types. Below is a small sample of our projects:"
           cases={[
             {
               image: cyberworks,
               title: "Cyberworks",
               description:
-                "A popular open source tool which allows you to manage Arma 3 Life servers with ease. Used by hundreds of communities to manage players and aid community support.",
+                "A popular open source tool which allows the management of Arma 3 Life servers with ease. It is used by hundreds of communities to manage players and aid community support.",
               link: "/projects/cyberworks3",
             },
             {
               image: pillar,
               title: "Living Pillars",
               description:
-                "Helping improve urban environments with sensors to monitor plants placed around London.",
+                " We are helping to improve our urban environments with sensors that monitor and maintain plants in living pillars. We already have them around London and Liverpool.",
               link: "/projects/living-pillars",
             },
             // {
