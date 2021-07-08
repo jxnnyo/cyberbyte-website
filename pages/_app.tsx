@@ -2,10 +2,11 @@ import "../styles/globals.scss";
 
 import type { AppProps } from "next/app";
 import { DefaultSeo } from "next-seo";
+import { IntercomProvider } from 'react-use-intercom';
 
 function MyApp({ Component, pageProps }: AppProps) {
   return (
-    <>
+    <IntercomProvider appId="jsfuplo3" autoBoot>
       <DefaultSeo
         defaultTitle="Cyberbyte Software"
         titleTemplate="%s | Cyberbyte Software"
@@ -23,7 +24,7 @@ function MyApp({ Component, pageProps }: AppProps) {
         }}
       />
       <Component {...pageProps} />
-    </>
+    </IntercomProvider>
   );
 }
 
