@@ -2,8 +2,11 @@ import React from "react";
 import Image from "next/image";
 import Link from "next/link";
 import logo from "../images/logo.svg"
+import {useIntercom} from "react-use-intercom";
 
 export function HeroHome() {
+  const { show } = useIntercom();
+
   return (
     <section>
       <div className="max-w-6xl mx-auto px-4 sm:px-6 relative">
@@ -50,11 +53,9 @@ export function HeroHome() {
               alt="Cyberbyte Software"
             />
             <div className="max-w-xs mx-auto sm:max-w-none sm:flex sm:justify-center mt-12">
-              <Link href="/contact">
-                <a className="bg-primary text-white active:bg-pink-600 px-4 py-2 rounded shadow hover:shadow-md hover:bg-secondary outline-none focus:outline-none lg:mr-1 lg:mb-0 ml-3 mb-3 font-bold text-xl inline-flex items-center justify-center border border-transparent rounded-sm leading-snug transition duration-150 ease-in-out">
+                <button onClick={show} className="bg-primary text-white active:bg-pink-600 px-4 py-2 rounded shadow hover:shadow-md hover:bg-secondary outline-none focus:outline-none lg:mr-1 lg:mb-0 ml-3 mb-3 font-bold text-xl inline-flex items-center justify-center border border-transparent rounded-sm leading-snug transition duration-150 ease-in-out">
                   Get In Touch
-                </a>
-              </Link>
+                </button>
             </div>
           </div>
         </div>
