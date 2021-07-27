@@ -5,6 +5,8 @@ import Features from "../components/Features";
 import CaseStudies from "../components/CaseStudies";
 import {LocalBusinessJsonLd, LogoJsonLd, NextSeo} from "next-seo";
 import cyberworks from "../images/projects/cyberworks/original.jpg";
+import s20adminarea from "../images/projects/merchant-recycling/s20-admin-area.jpg";
+import enveriline from "../images/projects/landing-pages/enveriline.jpg";
 import pillar from "../images/projects/pillar.jpg";
 import mineathon from "../images/projects/mineathon.jpg";
 
@@ -115,19 +117,33 @@ export default function Home() {
           description="We have worked with a wide range of clients, on a number of different project types. Below is a small sample of our projects:"
           cases={[
             {
+              image: s20adminarea,
+              title: "Recycling Merchant Websites",
+              description:
+                "Are you a recycling merchant in need of a website? Let us know! We are using our industry experience to produce cutting edge websites for recycling merchants.",
+              link: "/projects/merchant-recycling",
+            },
+            {
+              image: enveriline,
+              title: "Landing Pages",
+              description:
+                "Need a landing page for your company? We create landing pages of various designs to fit any specification.",
+              link: "/projects/landing-pages",
+            },
+            {
               image: cyberworks,
               title: "Cyberworks",
               description:
                 "A popular open source tool which allows the management of Arma 3 Life servers with ease. It is used by hundreds of communities to manage players and aid community support.",
               link: "/projects/cyberworks3",
             },
-            {
-              image: pillar,
-              title: "Living Pillars",
-              description:
-                " We are helping to improve our urban environments with sensors that monitor and maintain plants in living pillars. We already have them around London and Liverpool.",
-              link: "/projects/living-pillars",
-            },
+            // {
+            //  image: pillar,
+            //  title: "Living Pillars",
+            //  description:
+            //    "We are helping to improve our urban environments with sensors that monitor and maintain plants in living pillars. We already have them around London and Liverpool.",
+            //  link: "/projects/living-pillars",
+            // },
             // {
             //   image: "/images/projects/car.png",
             //   title: "Compare and Recycle",
@@ -135,13 +151,13 @@ export default function Home() {
             //     "The UK's number 1 recycling comparison site. We helped build a scalable platform to handle thousands of requests and improve customer satisfaction.",
             //   link: "/projects/compare-and-recycle",
             // },
-            {
-              image: mineathon,
-              title: "Mineathon",
-              description:
-                "A charity live streaming website to collect donations. Built in Laravel complete with an admin area to manage the event. We later published the source code on GitHub.",
-              link: "/projects/mineathon",
-            },
+            // {
+            //  image: mineathon,
+            //  title: "Mineathon",
+            //  description:
+            //    "A charity live streaming website designed to collect donations. Built in Laravel, complete with an admin area to manage the event. We have published the source code on GitHub. Check it out!",
+            //  link: "/projects/mineathon",
+            // },
           ]}
         />
       </main>
