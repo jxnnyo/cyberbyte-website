@@ -35,7 +35,7 @@ function LivingPillars() {
               title: "Complete Control",
               description:
                 "Our web interface allows technicians to control and monitor sensors each sensors",
-              image: dashboard,
+              images: [{url: dashboard, alt: "Dashboard"}],
               items: ["Water Monitoring", "Temperature Monitoring", "Latest Player"],
 
             }

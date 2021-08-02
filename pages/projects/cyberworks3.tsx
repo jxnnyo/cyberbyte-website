@@ -54,7 +54,7 @@ function CyberworksThree() {
               title: "Advanced Player Editing",
               description:
                 "Our player editing tool allows server admins to change quickly identify any problems as well as quickly help out players",
-              image: player,
+              images: [{url: player, alt: "Player Editing"}],
               items: [
                 "White Listing",
                 "Compensation Requests",
@@ -65,7 +65,7 @@ function CyberworksThree() {
               title: "Useful Dashboard",
               description:
                 "We developer a summary dashboard which allows you to quickly see everything a server admin needs",
-              image: dashboard,
+              images: [{url: dashboard, alt: "Dashboard"}],
               items: ["Top Players", "Total Players", "Latest Player"],
               right: true,
             },
@@ -73,7 +73,7 @@ function CyberworksThree() {
               title: "Powerful Permissions",
               description:
                 "Every community is different so we build our permissions system to be completely customisable",
-              image: permissions,
+              images: [{url: permissions, alt: "Permission Editor"}],
               items: ["Unlimited Groups", "Dynamic Permissions"],
             },
           ]}
