@@ -123,9 +123,9 @@ export default function Home() {
             },
             {
               image: enveriline,
-              title: "Landing Pages",
+              title: "Static Websites and Landing Pages",
               description:
-                "Need a landing page for your company? We create landing pages of various designs to fit any specification.",
+                "Need a static website or landing page for your company? We make websites of various designs to fit any specification.",
               link: "/projects/landing-pages",
             },
             {

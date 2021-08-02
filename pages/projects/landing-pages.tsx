@@ -7,7 +7,6 @@ import Header from "../../components/Header";
 import Cta from "../../components/Cta";
 import FeaturesZigzag from "../../components/FeaturesZigzag";
 import enveriline from "../../images/projects/landing-pages/enveriline-full.jpg";
-import dashboard from "../../images/projects/scotscape/dashboard.png"
 
 function MerchantPlatform() {
   return (
@@ -32,6 +31,7 @@ function MerchantPlatform() {
           description="Feel free to contact us if you are interested or want to know more!"
           buttonText="Contact Us"
           buttonLink="/contact"
+          buttonInternal={true}
         />
       </main>
       <Footer />
