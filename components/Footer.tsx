@@ -66,6 +66,13 @@ function Footer() {
                   We are working on
                 </h6>
                 <ul>
+                <li className="mb-1">
+                    <Link href="/projects/merchant-recycling">
+                      <a className="text-gray-400 hover:text-gray-100 transition duration-150 ease-in-out">
+                        Recycling Merchant Websites
+                      </a>
+                    </Link>
+                  </li>
                   <li className="mb-1">
                     <Link href="/projects/living-pillars">
                       <a className="text-gray-400 hover:text-gray-100 transition duration-150 ease-in-out">

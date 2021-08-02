@@ -7,6 +7,8 @@ import Header from "../../components/Header";
 import Cta from "../../components/Cta";
 import FeaturesZigzag from "../../components/FeaturesZigzag";
 import s20adminarea from "../../images/projects/merchant-recycling/s20-admin-area.jpg";
+import s21website from "../../images/projects/merchant-recycling/s21-website.jpg";
+import conditionsadminarea from "../../images/projects/merchant-recycling/conditions-admin-area.jpg";
 
 function MerchantPlatform() {
   return (
@@ -34,13 +36,13 @@ function MerchantPlatform() {
               title: "Built for the customer",
               description:
                 "Using our industry experience we have built features designed to make it as easy as possible for the customers to place orders and keep track of the status.",
-              images: [{url: s20adminarea, alt: ""}],
+              images: [{url: s21website, alt: ""}],
               items: ["Real time text and email updates", "Fast and responsive experience", "Streamlined checkout process"],
             },
             {
               title: "Built for the merchants",
               description:
-                "Although we want the best possible customer experience, it's important to also focus on making the admin area as easy to use as possible. Based on years of feedback we try and add in everything you would need.",
+                "Not only do we want the customers to have the best possible experience, but the merchant aswell, so we focused on making the admin area as easy to use as possible based on years of feedback.",
               images: [{url: s20adminarea, alt: ""}],
               items: ["Full audit logs", "Order note system", "Live chat support"],
               right: true,
@@ -49,7 +51,7 @@ function MerchantPlatform() {
               title: "Fully Customisable",
               description:
                 "Our unique system allows merchants to change their websites without needing to reach out to our team every time.",
-              images: [{url: s20adminarea, alt: ""}, {url: bth, alt: ""}],
+              images: [{url: s20adminarea, alt: ""}, {url: conditionsadminarea, alt: ""}],
               items: ["Dynamic Text Messages", "Dynamic Email Templates", "CMS System for editing content"],
             },
           ]}
