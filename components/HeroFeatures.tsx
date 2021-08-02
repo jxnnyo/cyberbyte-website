@@ -60,8 +60,6 @@ const HeroFeatures: React.FC<HeroFeaturesProps> = ({
                 className="mx-auto"
                 src={image}
                 alt={title}
-                width="768"
-                height="432"
                 placeholder="blur"
               />
             </div>

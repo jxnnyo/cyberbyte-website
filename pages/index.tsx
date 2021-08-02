@@ -5,6 +5,8 @@ import Features from "../components/Features";
 import CaseStudies from "../components/CaseStudies";
 import {LogoJsonLd, NextSeo} from "next-seo";
 import cyberworks from "../images/projects/cyberworks/original.jpg";
+import s20adminarea from "../images/projects/merchant-recycling/s20-admin-area.jpg";
+import enveriline from "../images/projects/landing-pages/enveriline.jpg";
 import pillar from "../images/projects/pillar.jpg";
 import mineathon from "../images/projects/mineathon.jpg";
 
@@ -21,7 +23,7 @@ export default function Home() {
         <Features features={[
           {
             title: "Software Consulting",
-            description: "Staring a new project or need help in the middle of an existing one? Reach out and we can share our experience.",
+            description: "Starting a new project, or need help in the middle of an existing one? Contact us! We would love to share our experience.",
             icon: (<svg
                 className="w-16 h-16 mb-4"
                 viewBox="0 0 64 64"
@@ -51,7 +53,7 @@ export default function Home() {
           },
           {
             title: "Website Development",
-            description: "From custom database structures and admin areas to single page applications we have got it covered.",
+            description: "Anything from custom database structures and admin areas, to single page applications we have got it covered.",
             icon: (<svg
                 className="w-16 h-16 mb-4"
                 viewBox="0 0 64 64"
@@ -81,7 +83,7 @@ export default function Home() {
           },
           {
             title: "Bespoke Hosting",
-            description: "We use Kubernetes clusters to ensure our clients apps are fault tolerant and able to handle any traffic spikes.",
+            description: "We use Kubernetes clusters to ensure our clients apps are fault tolerant and can handle any traffic spikes without an issue.",
             icon: (<svg
                 className="w-16 h-16 mb-4"
                 viewBox="0 0 64 64"
@@ -112,22 +114,36 @@ export default function Home() {
         ]} />
         <CaseStudies
           title="What we have worked on"
-          description="We have worked with a wide range of clients on a number of different projects. Below is a small sample of our projects:"
+          description="We have worked with a wide range of clients, on a number of different project types. Below is a small sample of our projects:"
           cases={[
+            {
+              image: s20adminarea,
+              title: "Recycling Merchant Websites",
+              description:
+                "Are you a recycling merchant in need of a website? Let us know! We are using our industry experience to produce cutting edge websites for recycling merchants.",
+              link: "/projects/merchant-recycling",
+            },
+            {
+              image: enveriline,
+              title: "Landing Pages",
+              description:
+                "Need a landing page for your company? We create landing pages of various designs to fit any specification.",
+              link: "/projects/landing-pages",
+            },
             {
               image: cyberworks,
               title: "Cyberworks",
               description:
-                "A popular open source tool which allows you to manage Arma 3 Life servers with ease. Used by hundreds of communities to manage players and aid community support.",
+                "A popular open source tool which allows the management of Arma 3 Life servers with ease. It is used by hundreds of communities to manage players and aid community support.",
               link: "/projects/cyberworks3",
             },
-            {
-              image: pillar,
-              title: "Living Pillars",
-              description:
-                "Helping improve urban environments with sensors to monitor plants placed around London.",
-              link: "/projects/living-pillars",
-            },
+            // {
+            //  image: pillar,
+            //  title: "Living Pillars",
+            //  description:
+            //    "We are helping to improve our urban environments with sensors that monitor and maintain plants in living pillars. We already have them around London and Liverpool.",
+            //  link: "/projects/living-pillars",
+            // },
             // {
             //   image: "/images/projects/car.png",
             //   title: "Compare and Recycle",
@@ -135,13 +151,13 @@ export default function Home() {
             //     "The UK's number 1 recycling comparison site. We helped build a scalable platform to handle thousands of requests and improve customer satisfaction.",
             //   link: "/projects/compare-and-recycle",
             // },
-            {
-              image: mineathon,
-              title: "Mineathon",
-              description:
-                "A charity live streaming website to collect donations. Built in Laravel complete with an admin area to manage the event. We later published the source code on GitHub.",
-              link: "/projects/mineathon",
-            },
+            // {
+            //  image: mineathon,
+            //  title: "Mineathon",
+            //  description:
+            //    "A charity live streaming website designed to collect donations. Built in Laravel, complete with an admin area to manage the event. We have published the source code on GitHub. Check it out!",
+            //  link: "/projects/mineathon",
+            // },
           ]}
         />
       </main>
