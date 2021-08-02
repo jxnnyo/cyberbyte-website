@@ -3,7 +3,7 @@ import React from "react";
 import HeroHome from "../components/HeroHome";
 import Features from "../components/Features";
 import CaseStudies from "../components/CaseStudies";
-import {LocalBusinessJsonLd, LogoJsonLd, NextSeo} from "next-seo";
+import {LogoJsonLd, NextSeo} from "next-seo";
 import cyberworks from "../images/projects/cyberworks/original.jpg";
 import s20adminarea from "../images/projects/merchant-recycling/s20-admin-area.jpg";
 import enveriline from "../images/projects/landing-pages/enveriline.jpg";
