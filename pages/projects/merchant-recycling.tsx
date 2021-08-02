@@ -9,6 +9,7 @@ import FeaturesZigzag from "../../components/FeaturesZigzag";
 import s20adminarea from "../../images/projects/merchant-recycling/s20-admin-area.jpg";
 import s21website from "../../images/projects/merchant-recycling/s21-website.jpg";
 import conditionsadminarea from "../../images/projects/merchant-recycling/conditions-admin-area.jpg";
+import camoradahomepage from "../../images/projects/merchant-recycling/camorada-homepage.jpg";
 
 function MerchantPlatform() {
   return (
@@ -25,7 +26,7 @@ function MerchantPlatform() {
 
         <HeroFeatures
           title="Recycling Merchant Websites"
-          image={s20adminarea}
+          image={camoradahomepage}
           description="We are working with recycling merchants as well as using our industry experience to produce cutting edge websites for recycling merchants."
         />
         <FeaturesZigzag
@@ -51,7 +52,7 @@ function MerchantPlatform() {
               title: "Fully Customisable",
               description:
                 "Our unique system allows merchants to change their websites without needing to reach out to our team every time.",
-              images: [{url: s20adminarea, alt: ""}, {url: conditionsadminarea, alt: ""}],
+              images: [{url: conditionsadminarea, alt: ""}],
               items: ["Dynamic Text Messages", "Dynamic Email Templates", "CMS System for editing content"],
             },
           ]}
