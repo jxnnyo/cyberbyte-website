@@ -6,8 +6,8 @@ import { NextSeo } from "next-seo";
 import Header from "../../components/Header";
 import Cta from "../../components/Cta";
 import FeaturesZigzag from "../../components/FeaturesZigzag";
-import s20adminarea from "../../images/projects/merchant-recycling/s20-admin-area.jpg";
-import s21website from "../../images/projects/merchant-recycling/s21-website.jpg";
+import merchantProduct from "../../images/projects/merchant-recycling/website-product.jpg";
+import adminProduct from "../../images/projects/merchant-recycling/admin-product.jpg";
 import conditionsadminarea from "../../images/projects/merchant-recycling/conditions-admin-area.jpg";
 import camoradahomepage from "../../images/projects/merchant-recycling/camorada-homepage.jpg";
 
@@ -37,14 +37,14 @@ function MerchantPlatform() {
               title: "Built for the customer",
               description:
                 "Using our industry experience we have built features designed to make it as easy as possible for the customers to place orders and keep track of the status.",
-              images: [{url: s21website, alt: ""}],
+              images: [{url: merchantProduct, alt: ""}],
               items: ["Real time text and email updates", "Fast and responsive experience", "Streamlined checkout process"],
             },
             {
               title: "Built for the merchants",
               description:
                 "Not only do we want the customers to have the best possible experience, but the merchant aswell, so we focused on making the admin area as easy to use as possible based on years of feedback.",
-              images: [{url: s20adminarea, alt: ""}],
+              images: [{url: adminProduct, alt: ""}],
               items: ["Full audit logs", "Order note system", "Live chat support"],
               right: true,
             },

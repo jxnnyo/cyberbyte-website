@@ -5,10 +5,8 @@ import Features from "../components/Features";
 import CaseStudies from "../components/CaseStudies";
 import {LogoJsonLd, NextSeo} from "next-seo";
 import cyberworks from "../images/projects/cyberworks/original.jpg";
-import s20adminarea from "../images/projects/merchant-recycling/s20-admin-area.jpg";
+import camoradaHomepage from "../images/projects/merchant-recycling/camorada-homepage.jpg";
 import enveriline from "../images/projects/landing-pages/enveriline.jpg";
-import pillar from "../images/projects/pillar.jpg";
-import mineathon from "../images/projects/mineathon.jpg";
 
 export default function Home() {
   return (
@@ -117,7 +115,7 @@ export default function Home() {
           description="We have worked with a wide range of clients, on a number of different project types. Below is a small sample of our projects:"
           cases={[
             {
-              image: s20adminarea,
+              image: camoradaHomepage,
               title: "Recycling Merchant Websites",
               description:
                 "Are you a recycling merchant in need of a website? Let us know! We are using our industry experience to produce cutting edge websites for recycling merchants.",
