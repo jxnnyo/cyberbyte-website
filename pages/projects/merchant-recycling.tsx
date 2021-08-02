@@ -6,7 +6,8 @@ import { NextSeo } from "next-seo";
 import Header from "../../components/Header";
 import Cta from "../../components/Cta";
 import FeaturesZigzag from "../../components/FeaturesZigzag";
-import s20adminarea from "../../images/projects/merchant-recycling/s20-admin-area.jpg";
+import bth from "../../images/projects/bth.png"
+// import s20adminarea from "../../images/projects/merchant-recycling/s20-admin-area.jpg";
 
 function MerchantPlatform() {
   return (
@@ -23,7 +24,7 @@ function MerchantPlatform() {
 
         <HeroFeatures
           title="Recycling Merchant Websites"
-          image={s20adminarea}
+          image={bth}
           description="We are working with recycling merchants as well as using our industry experience to produce cutting edge websites for recycling merchants."
         />
         <FeaturesZigzag
@@ -34,14 +35,14 @@ function MerchantPlatform() {
               title: "Built for the customer",
               description:
                 "Using our industry experience we have built features designed to make it as easy as possible for the customers to place orders and keep track of the status.",
-              image: s20adminarea,
+              images: [{url: bth, alt: ""}],
               items: ["Real time text and email updates", "Fast and responsive experience", "Streamlined checkout process"],
             },
             {
               title: "Built for the merchants",
               description:
                 "Although we want the best possible customer experience, it's important to also focus on making the admin area as easy to use as possible. Based on years of feedback we try and add in everything you would need.",
-              image: s20adminarea,
+              images: [{url: bth, alt: ""}],
               items: ["Full audit logs", "Order note system", "Live chat support"],
               right: true,
             },
@@ -49,7 +50,7 @@ function MerchantPlatform() {
               title: "Fully Customisable",
               description:
                 "Our unique system allows merchants to change their websites without needing to reach out to our team every time.",
-              image: s20adminarea,
+              images: [{url: bth, alt: ""}, {url: bth, alt: ""}],
               items: ["Dynamic Text Messages", "Dynamic Email Templates", "CMS System for editing content"],
             },
           ]}
