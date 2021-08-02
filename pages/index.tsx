@@ -5,7 +5,7 @@ import Features from "../components/Features";
 import CaseStudies from "../components/CaseStudies";
 import {LogoJsonLd, NextSeo} from "next-seo";
 import cyberworks from "../images/projects/cyberworks/original.jpg";
-import camoradaHomepage from "../images/projects/merchant-recycling/camorada-homepage.jpg";
+import camoradaHomepage from "../images/projects/merchant-recycling/camorada-home.jpg";
 import enveriline from "../images/projects/landing-pages/enveriline.jpg";
 
 export default function Home() {

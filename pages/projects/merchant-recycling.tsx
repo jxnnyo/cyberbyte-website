@@ -9,7 +9,7 @@ import FeaturesZigzag from "../../components/FeaturesZigzag";
 import merchantProduct from "../../images/projects/merchant-recycling/website-product.jpg";
 import adminProduct from "../../images/projects/merchant-recycling/admin-product.jpg";
 import conditionsadminarea from "../../images/projects/merchant-recycling/conditions-admin-area.jpg";
-import camoradahomepage from "../../images/projects/merchant-recycling/camorada-homepage.jpg";
+import camoradahomepage from "../../images/projects/merchant-recycling/camorada-home.jpg";
 
 function MerchantPlatform() {
   return (
