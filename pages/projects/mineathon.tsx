@@ -19,7 +19,7 @@ function Mineathon() {
           <PageIllustration />
         </div>
 
-        <HeroFeatures title="Mineathon" description="A successful charity event raising money for charities backed by an innovative donation platform" />
+        <HeroFeatures title="Mineathon" description="A successful charity event raising money for charities backed by an innovative donation platform." />
       </main>
       <Footer />
     </div>

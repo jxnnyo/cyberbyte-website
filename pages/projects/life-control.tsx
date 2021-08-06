@@ -22,7 +22,7 @@ function LifeControl() {
 
         <HeroFeatures
           title="Life Control"
-          description="The original database administration panel for Arma 3 Life Servers"
+          description="The original database administration panel for Arma 3 Life Servers."
           image={cyberworks}
         />
         <Cta

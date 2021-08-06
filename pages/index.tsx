@@ -4,6 +4,7 @@ import HeroHome from "../components/HeroHome";
 import Features from "../components/Features";
 import CaseStudies from "../components/CaseStudies";
 import {LogoJsonLd, NextSeo} from "next-seo";
+import Cta from "../components/Cta";
 import cyberworks from "../images/projects/cyberworks/original.jpg";
 import camoradaHomepage from "../images/projects/merchant-recycling/camorada-home.jpg";
 import enveriline from "../images/projects/landing-pages/enveriline.jpg";
@@ -130,7 +131,7 @@ export default function Home() {
             },
             {
               image: cyberworks,
-              title: "Cyberworks",
+              title: "Cyberworks 3",
               description:
                 "A popular open source tool which allows the management of Arma 3 Life servers with ease. It is used by hundreds of communities to manage players and aid community support.",
               link: "/projects/cyberworks3",
@@ -157,6 +158,13 @@ export default function Home() {
             //  link: "/projects/mineathon",
             // },
           ]}
+        />
+        <Cta
+          title="Check out our other projects!"
+          description=""
+          buttonText="See projects"
+          buttonLink="/projects"
+          buttonInternal={true}
         />
       </main>
       <Footer />

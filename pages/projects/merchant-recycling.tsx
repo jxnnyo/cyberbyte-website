@@ -8,7 +8,7 @@ import Cta from "../../components/Cta";
 import FeaturesZigzag from "../../components/FeaturesZigzag";
 import merchantProduct from "../../images/projects/merchant-recycling/website-product.jpg";
 import adminProduct from "../../images/projects/merchant-recycling/admin-product.jpg";
-import adminConditions from "../../images/projects/merchant-recycling/admin-conditions.jpg";
+import adminConditions from "../../images/projects/merchant-recycling/admin-conditions-slim.jpg";
 import camoradaHomepage from "../../images/projects/merchant-recycling/camorada-home.jpg";
 import adminManufacturers from "../../images/projects/merchant-recycling/admin-manufacturers.jpg";
 
@@ -53,7 +53,7 @@ function MerchantPlatform() {
               title: "Fully Customisable",
               description:
                 "Our unique system allows merchants to change their websites without needing to reach out to our team every time.",
-              images: [{url: adminConditions, alt: ""}, {url: adminManufacturers, alt: ""}],
+              images: [{url: adminConditions, alt: ""}],
               items: ["Dynamic Text Messages", "Dynamic Email Templates", "CMS System for editing content"],
             },
           ]}

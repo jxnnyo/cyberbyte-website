@@ -10,6 +10,8 @@ import pillar from "../../images/projects/pillar.jpg";
 import mineathon from "../../images/projects/mineathon.jpg";
 import launcher from "../../images/projects/launcher.png";
 import bth from "../../images/projects/bth.png";
+import camoradaHomepage from "../../images/projects/merchant-recycling/camorada-home.jpg";
+import enveriline from "../../images/projects/landing-pages/enveriline.jpg";
 
 function Projects() {
   return (
@@ -29,8 +31,22 @@ function Projects() {
           description="We have worked on a number of challenging projects. Below are just a few:"
           cases={[
             {
+              image: camoradaHomepage,
+              title: "Recycling Merchant Websites",
+              description:
+                "Are you a recycling merchant in need of a website? Let us know! We are using our industry experience to produce cutting edge websites for recycling merchants.",
+              link: "/projects/merchant-recycling",
+            },
+            {
+              image: enveriline,
+              title: "Static Websites and Landing Pages",
+              description:
+                "Need a static website or landing page for your company? We make websites of various designs to fit any specification.",
+              link: "/projects/landing-pages",
+            },            
+            {
               image: cyberworks,
-              title: "Cyberworks",
+              title: "Cyberworks 3",
               description:
                 "A popular open source tool which allows you to manage Arma 3 Life servers with ease. Used by hundreds of communities to manage players and aid community support.",
               link: "/projects/cyberworks3",
@@ -43,22 +59,22 @@ function Projects() {
             //   link: "/projects/compare-and-recycle",
             // },
             {
+              image: pillar,
+              title: "Living Pillars",
+              description: "We are helping to improve our urban environments with sensors that monitor and maintain plants in living pillars. We already have them around London and Liverpool.",
+              link: "/projects/living-pillars",
+            },
+            {
               image: mineathon,
               title: "Mineathon",
               description:
-                "A charity live streaming website to collect donations. Built in Laravel complete with an admin area to manage the event. We later published the source code on GitHub.",
+                "A charity live streaming website designed to collect donations. Built in Laravel, complete with an admin area to manage the event. We have published the source code on GitHub. Check it out!",
               link: "/projects/mineathon",
-            },
-            {
-              image: pillar,
-              title: "Living Pillars",
-              description: "",
-              link: "/projects/living-pillars",
             },
             {
               image: bth,
               title: "Bid That Home",
-              description: "",
+              description: "This website and iOS app allowed users to place bids on properties not yet on the market.",
               link: "/projects/bid-that-home",
             },
 /*            {
@@ -70,14 +86,14 @@ function Projects() {
             {
               image: cyberworksOriginal,
               title: "Life Control",
-              description: "",
+              description: "The original database administration panel for Arma 3 Life Servers.",
               link: "/projects/life-control"
             },
-            {
+/*            {
               image: launcher,
               title: "Arma Launcher",
               description: "",
-            },
+            },*/
           ]}
         />
       </main>

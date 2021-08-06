@@ -27,6 +27,42 @@ function Footer() {
             <div className="md:col-span-8 lg:col-span-7 grid sm:grid-cols-3 gap-8">
               <div className="text-sm">
                 <h6 className="text-gray-200 font-medium mb-1">
+                  We are working on
+                </h6>
+                <ul>
+                <li className="mb-1">
+                    <Link href="/projects/merchant-recycling">
+                      <a className="text-gray-400 hover:text-gray-100 transition duration-150 ease-in-out">
+                        Recycling Merchant Websites
+                      </a>
+                    </Link>
+                  </li>
+                  <li className="mb-1">
+                    <Link href="/projects/landing-pages">
+                      <a className="text-gray-400 hover:text-gray-100 transition duration-150 ease-in-out">
+                        Landing Pages
+                      </a>
+                    </Link>
+                  </li>
+                  <li className="mb-1">
+                    <Link href="/projects/living-pillars">
+                      <a className="text-gray-400 hover:text-gray-100 transition duration-150 ease-in-out">
+                        Living Pillars
+                      </a>
+                    </Link>
+                  </li>
+                  {/*<li className="mb-1">
+                    <Link href="/projects/handtec">
+                      <a className="text-gray-400 hover:text-gray-100 transition duration-150 ease-in-out">
+                        Handtec
+                      </a>
+                    </Link>
+                  </li>*/}
+                </ul>
+              </div>
+
+              <div className="text-sm">
+                <h6 className="text-gray-200 font-medium mb-1">
                   We have worked on
                 </h6>
                 <ul>
@@ -51,49 +87,13 @@ function Footer() {
                       </a>
                     </Link>
                   </li>
-                  <li className="mb-1">
-                    <Link href="/projects">
-                      <a className="text-gray-400 hover:text-gray-100 transition duration-150 ease-in-out">
-                        And more...
-                      </a>
-                    </Link>
-                  </li>
                 </ul>
               </div>
 
               <div className="text-sm">
-                <h6 className="text-gray-200 font-medium mb-1">
-                  We are working on
-                </h6>
+                <h6 className="text-gray-200 font-medium mb-1">Say hello</h6>
                 <ul>
-                <li className="mb-1">
-                    <Link href="/projects/merchant-recycling">
-                      <a className="text-gray-400 hover:text-gray-100 transition duration-150 ease-in-out">
-                        Recycling Merchant Websites
-                      </a>
-                    </Link>
-                  </li>
-                  <li className="mb-1">
-                    <Link href="/projects/living-pillars">
-                      <a className="text-gray-400 hover:text-gray-100 transition duration-150 ease-in-out">
-                        Living Pillars
-                      </a>
-                    </Link>
-                  </li>
-                  {/*<li className="mb-1">
-                    <Link href="/projects/handtec">
-                      <a className="text-gray-400 hover:text-gray-100 transition duration-150 ease-in-out">
-                        Handtec
-                      </a>
-                    </Link>
-                  </li>*/}
-                </ul>
-              </div>
-
-              <div className="text-sm">
-                <h6 className="text-gray-200 font-medium mb-1">Say Hello</h6>
-                <ul>
-                  <li className="mb-1">
+                  <li className="mb-1 text-gray-400 hover:text-gray-100 transition duration-150 ease-in-out">
                     <a
                       href="mailto:contact@cyberbyte.software"
                       target="_blank"
@@ -102,7 +102,7 @@ function Footer() {
                       contact@cyberbyte.software
                     </a>
                   </li>
-                  <li className="mb-1">
+                  <li className="mb-1 text-gray-400 hover:text-gray-100 transition duration-150 ease-in-out">
                     <Link href="/contact">
                       <a>
                         Contact Us
