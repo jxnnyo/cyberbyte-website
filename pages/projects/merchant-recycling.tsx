@@ -15,7 +15,7 @@ import adminManufacturers from "../../images/projects/merchant-recycling/admin-m
 function MerchantPlatform() {
   return (
     <div className="flex flex-col min-h-screen overflow-hidden">
-      <NextSeo title="Recycling Merchant Platform" />
+      <NextSeo title="Recycling Merchant Websites" />
       <Header />
       <main className="flex-grow">
         <div

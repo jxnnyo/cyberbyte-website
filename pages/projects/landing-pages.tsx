@@ -11,7 +11,7 @@ import enveriline from "../../images/projects/landing-pages/enveriline-full.jpg"
 function MerchantPlatform() {
   return (
     <div className="flex flex-col min-h-screen overflow-hidden">
-      <NextSeo title="Recycling Merchant Platform" />
+      <NextSeo title="Static Websites and Landing Pages" />
       <Header />
       <main className="flex-grow">
         <div
@@ -22,9 +22,9 @@ function MerchantPlatform() {
         </div>
 
         <HeroFeatures
-          title="Landing Pages"
+          title="Static Websites and Landing Pages"
           image={enveriline}
-          description="We create landing pages of various designs to fit any specification."
+          description="We create static websites and landing pages of various designs to fit any specification."
         />
         <Cta
           title="Looking for your own landing page?"
