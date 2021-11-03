@@ -5,7 +5,7 @@ import logo from "../images/logo.svg"
 import {useIntercom} from "react-use-intercom";
 
 export function HeroHome() {
-  const { show } = useIntercom();
+  const {show} = useIntercom();
 
   return (
     <section>
@@ -31,8 +31,8 @@ export function HeroHome() {
                 y2="577.921"
                 gradientUnits="userSpaceOnUse"
               >
-                <stop stopColor="#5D5DFF" stopOpacity=".01" />
-                <stop offset="1" stopColor="#ED1265" stopOpacity=".32" />
+                <stop stopColor="#5D5DFF" stopOpacity=".01"/>
+                <stop offset="1" stopColor="#ED1265" stopOpacity=".32"/>
               </linearGradient>
             </defs>
             <path
@@ -53,9 +53,12 @@ export function HeroHome() {
               alt="Cyberbyte Software"
             />
             <div className="max-w-xs mx-auto sm:max-w-none sm:flex sm:justify-center mt-12">
-                <button onClick={show} className="bg-primary text-white active:bg-pink-600 px-4 py-2 rounded shadow hover:shadow-md hover:bg-secondary outline-none focus:outline-none lg:mr-1 lg:mb-0 ml-3 mb-3 font-bold text-xl inline-flex items-center justify-center border border-transparent rounded-sm leading-snug transition duration-150 ease-in-out">
+              <Link href="/contact">
+                <a
+                  className="bg-primary text-white active:bg-pink-600 px-4 py-2 rounded shadow hover:shadow-md hover:bg-secondary outline-none focus:outline-none lg:mr-1 lg:mb-0 ml-3 mb-3 font-bold text-xl inline-flex items-center justify-center border border-transparent rounded-sm leading-snug transition duration-150 ease-in-out">
                   Get In Touch
-                </button>
+                </a>
+              </Link>
             </div>
           </div>
         </div>
