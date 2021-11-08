@@ -44,7 +44,7 @@ function Projects() {
               description:
                 "Need a static website or landing page for your company? We make websites of various designs to fit any specification.",
               link: "/projects/landing-pages",
-            },            
+            },
             {
               image: cyberworks,
               title: "Cyberworks 3",
@@ -62,7 +62,8 @@ function Projects() {
             {
               image: pillar,
               title: "Living Pillars",
-              description: "We are helping to improve our urban environments with sensors that monitor and maintain plants in living pillars. We already have them around London and Liverpool.",
+              description:
+                "We are helping to improve our urban environments with sensors that monitor and maintain plants in living pillars. We already have them around London and Liverpool.",
               link: "/projects/living-pillars",
             },
             {
@@ -75,10 +76,11 @@ function Projects() {
             {
               image: bth,
               title: "Bid That Home",
-              description: "This website and iOS app allowed users to place bids on properties not yet on the market.",
+              description:
+                "This website and iOS app allowed users to place bids on properties not yet on the market.",
               link: "/projects/bid-that-home",
             },
-/*            {
+            /*            {
               image: "/images/projects/handtec.png",
               title: "Handtec",
               description: "",
@@ -87,10 +89,11 @@ function Projects() {
             {
               image: cyberworksOriginal,
               title: "Life Control",
-              description: "The original database administration panel for Arma 3 Life Servers.",
-              link: "/projects/life-control"
+              description:
+                "The original database administration panel for Arma 3 Life Servers.",
+              link: "/projects/life-control",
             },
-/*            {
+            /*            {
               image: launcher,
               title: "Arma Launcher",
               description: "",

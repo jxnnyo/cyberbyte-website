@@ -1,6 +1,6 @@
 import React from "react";
 import Image from "next/image";
-import {Slider, SliderImage} from "./Slider";
+import { Slider, SliderImage } from "./Slider";
 
 type Feature = {
   title: string;
@@ -21,7 +21,7 @@ type FeatureZigzagProps = {
   features: Array<Feature>;
 };
 
-const FeatureBox: React.FC<FeatureProps> = ({feature}) => {
+const FeatureBox: React.FC<FeatureProps> = ({ feature }) => {
   return (
     <div className="md:grid md:grid-cols-12 md:gap-6 items-center">
       <div
@@ -31,13 +31,15 @@ const FeatureBox: React.FC<FeatureProps> = ({feature}) => {
         }
         data-aos="fade-up"
       >
-        {feature.images.length == 1 ?
-            <Image
-              src={feature.images[0].url}
-              alt={feature.images[0].alt}
-              placeholder="blur"
-            /> :
-            <Slider images={feature.images}/>}
+        {feature.images.length == 1 ? (
+          <Image
+            src={feature.images[0].url}
+            alt={feature.images[0].alt}
+            placeholder="blur"
+          />
+        ) : (
+          <Slider images={feature.images} />
+        )}
       </div>
       <div
         className="max-w-xl md:max-w-none md:w-full mx-auto md:col-span-7 lg:col-span-6"
@@ -54,8 +56,7 @@ const FeatureBox: React.FC<FeatureProps> = ({feature}) => {
                   viewBox="0 0 12 12"
                   xmlns="http://www.w3.org/2000/svg"
                 >
-                  <path
-                    d="M10.28 2.28L3.989 8.575 1.695 6.28A1 1 0 00.28 7.695l3 3a1 1 0 001.414 0l7-7A1 1 0 0010.28 2.28z"/>
+                  <path d="M10.28 2.28L3.989 8.575 1.695 6.28A1 1 0 00.28 7.695l3 3a1 1 0 001.414 0l7-7A1 1 0 0010.28 2.28z" />
                 </svg>
                 <span>{item}</span>
               </li>
@@ -68,10 +69,10 @@ const FeatureBox: React.FC<FeatureProps> = ({feature}) => {
 };
 
 const FeaturesZigzag: React.FC<FeatureZigzagProps> = ({
-                                                        title,
-                                                        description,
-                                                        features,
-                                                      }) => {
+  title,
+  description,
+  features,
+}) => {
   return (
     <section>
       <div className="max-w-6xl mx-auto px-4 sm:px-6">
@@ -83,7 +84,7 @@ const FeaturesZigzag: React.FC<FeatureZigzagProps> = ({
 
           <div className="grid gap-20">
             {features.map((feature, index) => (
-              <FeatureBox feature={feature} key={index}/>
+              <FeatureBox feature={feature} key={index} />
             ))}
           </div>
         </div>

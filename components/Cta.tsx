@@ -45,9 +45,7 @@ const Cta: React.FC<CTAProps> = ({
             >
               {buttonInternal ? (
                 <Link href={buttonLink}>
-                  <a className="btn btn-primary">
-                    {buttonText}
-                  </a>
+                  <a className="btn btn-primary">{buttonText}</a>
                 </Link>
               ) : (
                 <a
@@ -59,7 +57,6 @@ const Cta: React.FC<CTAProps> = ({
                   {buttonText}
                 </a>
               )}
-
             </div>
 
             {/* Check list

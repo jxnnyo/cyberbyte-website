@@ -25,7 +25,7 @@ const Feature: React.FC<FeatureProps> = ({ feature }) => (
   </div>
 );
 
-const Features: React.FC<FeaturesProps> = ({features}) => {
+const Features: React.FC<FeaturesProps> = ({ features }) => {
   return (
     <section>
       <div className="max-w-6xl mx-auto px-4 sm:px-6">
@@ -39,6 +39,6 @@ const Features: React.FC<FeaturesProps> = ({features}) => {
       </div>
     </section>
   );
-}
+};
 
 export default Features;

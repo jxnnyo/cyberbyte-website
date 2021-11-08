@@ -19,8 +19,7 @@ function WebsiteDevelopment() {
           <PageIllustration />
         </div>
 
-
-{/*        <HeroFeatures
+        {/*        <HeroFeatures
           title="Professional Software Consulting"
           description="Our team work closely with a number of clients to successfully deliver projects"
         />*/}

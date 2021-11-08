@@ -1,7 +1,5 @@
 module.exports = {
-  siteUrl: process.env.SITE_URL || 'https://cyberbyte.software',
+  siteUrl: process.env.SITE_URL || "https://cyberbyte.software",
   generateRobotsTxt: true,
-  exclude: [
-      "/500"
-  ]
-}
+  exclude: ["/500"],
+};

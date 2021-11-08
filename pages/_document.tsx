@@ -35,11 +35,11 @@ class MyDocument extends Document {
         <body className="font-inter antialiased bg-gray-900 text-gray-200 tracking-tight">
           <Main />
           <NextScript />
-        <script
-          dangerouslySetInnerHTML={{
-            __html: `window.dataLayer = window.dataLayer || [];function gtag(){dataLayer.push(arguments);}gtag('js', new Date());gtag('config', 'G-K8GX3SWWDX');`,
-          }}
-        />
+          <script
+            dangerouslySetInnerHTML={{
+              __html: `window.dataLayer = window.dataLayer || [];function gtag(){dataLayer.push(arguments);}gtag('js', new Date());gtag('config', 'G-K8GX3SWWDX');`,
+            }}
+          />
         </body>
       </Html>
     );

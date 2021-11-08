@@ -1,7 +1,7 @@
 import React from "react";
 import Link from "next/link";
 import Image from "next/image";
-import logo from "../images/logo.svg"
+import logo from "../images/logo.svg";
 
 function Footer() {
   return (
@@ -30,7 +30,7 @@ function Footer() {
                   We are working on
                 </h6>
                 <ul>
-                <li className="mb-1">
+                  <li className="mb-1">
                     <Link href="/projects/merchant-recycling">
                       <a className="text-gray-400 hover:text-gray-100 transition duration-150 ease-in-out">
                         Recycling Merchant Websites
@@ -104,9 +104,7 @@ function Footer() {
                   </li>
                   <li className="mb-1 text-gray-400 hover:text-gray-100 transition duration-150 ease-in-out">
                     <Link href="/contact">
-                      <a>
-                        Contact Us
-                      </a>
+                      <a>Contact Us</a>
                     </Link>
                   </li>
                 </ul>

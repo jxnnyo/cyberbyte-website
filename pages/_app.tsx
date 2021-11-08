@@ -1,10 +1,10 @@
 import "../styles/globals.scss";
-import 'swiper/css';
-import Script from 'next/script'
+import "swiper/css";
+import Script from "next/script";
 
 import type { AppProps } from "next/app";
 import { DefaultSeo } from "next-seo";
-import { IntercomProvider } from 'react-use-intercom';
+import { IntercomProvider } from "react-use-intercom";
 
 function MyApp({ Component, pageProps }: AppProps) {
   return (
@@ -21,7 +21,6 @@ function MyApp({ Component, pageProps }: AppProps) {
           locale: "en_GB",
           url: "https://cyberbyte.software/",
           site_name: "Cyberbyte Software",
-
         }}
         twitter={{
           handle: "@CyberbyteSoft",

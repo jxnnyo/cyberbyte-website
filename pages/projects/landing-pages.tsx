@@ -23,7 +23,7 @@ function MerchantPlatform() {
 
         <HeroFeatures
           title="Static Websites and Landing Pages"
-          images={[{url: enveriline, alt: "Enveriline"}]}
+          images={[{ url: enveriline, alt: "Enveriline" }]}
           description="We create static websites and landing pages of various designs to fit any specification."
         />
         <Cta

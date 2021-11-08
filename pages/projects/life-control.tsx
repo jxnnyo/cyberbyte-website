@@ -5,7 +5,7 @@ import HeroFeatures from "../../components/HeroFeatures";
 import Cta from "../../components/Cta";
 import { NextSeo } from "next-seo";
 import Header from "../../components/Header";
-import cyberworks from "../../images/projects/cyberworks/original.jpg"
+import cyberworks from "../../images/projects/cyberworks/original.jpg";
 import pillar from "../../images/projects/pillar.jpg";
 
 function LifeControl() {
@@ -24,7 +24,7 @@ function LifeControl() {
         <HeroFeatures
           title="Life Control"
           description="The original database administration panel for Arma 3 Life Servers."
-          images={[{url: cyberworks, alt: "Life Control"}]}
+          images={[{ url: cyberworks, alt: "Life Control" }]}
         />
         <Cta
           title="Take a look at our new version"

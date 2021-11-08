@@ -27,7 +27,10 @@ function MerchantPlatform() {
 
         <HeroFeatures
           title="Recycling Merchant Websites"
-          images={[{url: cloveHomepage, alt: "Clove Recycling"}, {url: camoradaHomepage, alt: "Camorada"}]}
+          images={[
+            { url: cloveHomepage, alt: "Clove Recycling" },
+            { url: camoradaHomepage, alt: "Camorada" },
+          ]}
           description="We are working with recycling merchants as well as using our industry experience to produce cutting edge websites for recycling merchants."
         />
         <FeaturesZigzag
@@ -38,23 +41,35 @@ function MerchantPlatform() {
               title: "Built for the customer",
               description:
                 "Using our industry experience we have built features designed to make it as easy as possible for the customers to place orders and keep track of the status.",
-              images: [{url: merchantProduct, alt: ""}],
-              items: ["Real time text and email updates", "Fast and responsive experience", "Streamlined checkout process"],
+              images: [{ url: merchantProduct, alt: "" }],
+              items: [
+                "Real time text and email updates",
+                "Fast and responsive experience",
+                "Streamlined checkout process",
+              ],
             },
             {
               title: "Built for the merchants",
               description:
                 "Not only do we want the customers to have the best possible experience, but the merchant as well, so we focused on making the admin area as easy to use as possible based on years of feedback.",
-              images: [{url: adminProduct, alt: ""}],
-              items: ["Full audit logs", "Order note system", "Live chat support"],
+              images: [{ url: adminProduct, alt: "" }],
+              items: [
+                "Full audit logs",
+                "Order note system",
+                "Live chat support",
+              ],
               right: true,
             },
             {
               title: "Fully Customisable",
               description:
                 "Our unique system allows merchants to change their websites without needing to reach out to our team every time.",
-              images: [{url: adminConditions, alt: ""}],
-              items: ["Dynamic Text Messages", "Dynamic Email Templates", "CMS System for editing content"],
+              images: [{ url: adminConditions, alt: "" }],
+              items: [
+                "Dynamic Text Messages",
+                "Dynamic Email Templates",
+                "CMS System for editing content",
+              ],
             },
           ]}
         />

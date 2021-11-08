@@ -27,8 +27,8 @@ function Contact() {
                   How can we help you?
                 </h1>
                 <p className="text-xl text-gray-400">
-                  Want to get a quote or learn more about what we do? Feel free to send us a
-                  message and we will get back to you shortly.
+                  Want to get a quote or learn more about what we do? Feel free
+                  to send us a message and we will get back to you shortly.
                 </p>
               </div>
 
