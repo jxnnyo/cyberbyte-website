@@ -55,11 +55,16 @@ const HeroFeatures: React.FC<HeroFeaturesProps> = ({
             <h1 className="h1 mb-4">{title}</h1>
             <p className="text-xl text-gray-400">{description}</p>
           </div>
-          {images && images.length == 1 ? (
-            <Image src={images[0].url} alt={images[0].alt} placeholder="blur" />
-          ) : (
-            <Slider images={images} />
-          )}
+          {images &&
+            (images.length == 1 ? (
+              <Image
+                src={images[0].url}
+                alt={images[0].alt}
+                placeholder="blur"
+              />
+            ) : (
+              <Slider images={images} />
+            ))}
         </div>
       </div>
     </section>
