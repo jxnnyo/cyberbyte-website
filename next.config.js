@@ -3,6 +3,10 @@ const withBundleAnalyzer = require('@next/bundle-analyzer')({
 })
 
 module.exports = withBundleAnalyzer({
+  swcMinify: true,
+  images: {
+    formats: ['image/avif', 'image/webp']
+  },
   async headers() {
     return [
       {

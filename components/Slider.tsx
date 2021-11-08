@@ -1,9 +1,7 @@
 import React from "react";
-import SwiperCore, { Autoplay } from 'swiper';
+import { Autoplay } from 'swiper';
 import { Swiper, SwiperSlide } from 'swiper/react';
 import Image from "next/image";
-
-SwiperCore.use([Autoplay]);
 
 export type SliderImage = {
   url: StaticImageData
@@ -16,6 +14,7 @@ type SliderProps = {
 
 export const Slider: React.FC<SliderProps> = ({images}) => (
   <Swiper
+      modules={[Autoplay]}
       loop={true}
       autoplay={{
         delay: 3000,
