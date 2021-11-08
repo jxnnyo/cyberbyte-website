@@ -10,7 +10,7 @@ import merchantProduct from "../../images/projects/merchant-recycling/website-pr
 import adminProduct from "../../images/projects/merchant-recycling/admin-product.jpg";
 import adminConditions from "../../images/projects/merchant-recycling/admin-conditions-slim.jpg";
 import camoradaHomepage from "../../images/projects/merchant-recycling/camorada-home.jpg";
-import adminManufacturers from "../../images/projects/merchant-recycling/admin-manufacturers.jpg";
+import cloveHomepage from "../../images/projects/merchant-recycling/clove-home.png";
 
 function MerchantPlatform() {
   return (
@@ -27,7 +27,7 @@ function MerchantPlatform() {
 
         <HeroFeatures
           title="Recycling Merchant Websites"
-          image={camoradaHomepage}
+          images={[{url: cloveHomepage, alt: "Clove Recycling"}, {url: camoradaHomepage, alt: "Camorada"}]}
           description="We are working with recycling merchants as well as using our industry experience to produce cutting edge websites for recycling merchants."
         />
         <FeaturesZigzag

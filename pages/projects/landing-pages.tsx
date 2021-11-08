@@ -5,8 +5,8 @@ import HeroFeatures from "../../components/HeroFeatures";
 import { NextSeo } from "next-seo";
 import Header from "../../components/Header";
 import Cta from "../../components/Cta";
-import FeaturesZigzag from "../../components/FeaturesZigzag";
 import enveriline from "../../images/projects/landing-pages/enveriline-full.jpg";
+import pillar from "../../images/projects/pillar.jpg";
 
 function MerchantPlatform() {
   return (
@@ -23,7 +23,7 @@ function MerchantPlatform() {
 
         <HeroFeatures
           title="Static Websites and Landing Pages"
-          image={enveriline}
+          images={[{url: enveriline, alt: "Enveriline"}]}
           description="We create static websites and landing pages of various designs to fit any specification."
         />
         <Cta

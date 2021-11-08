@@ -24,7 +24,7 @@ function LivingPillars() {
 
         <HeroFeatures
           title="Scotscape Living Pillars"
-          image={pillar}
+          images={[{url: pillar, alt: "Living Pillar"}]}
           description="We have worked with Scotscape to design and manufacturer sensors to help monitor plant growth. Our sensors help keep plants watered in all conditions and informs maintenance teams of any issues reducing the need for onsite visits."
         />
         <FeaturesZigzag

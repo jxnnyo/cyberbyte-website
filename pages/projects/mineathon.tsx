@@ -2,7 +2,6 @@ import React from "react";
 import Footer from "../../components/Footer";
 import PageIllustration from "../../components/PageIllustration";
 import HeroFeatures from "../../components/HeroFeatures";
-import Stats from "../../components/Stats";
 import { NextSeo } from "next-seo";
 import Header from "../../components/Header";
 

@@ -1,16 +1,17 @@
 import React from "react";
 import Image from "next/image";
+import {Slider, SliderImage} from "./Slider";
 
 type HeroFeaturesProps = {
   title: string;
   description: string;
-  image?: StaticImageData;
+  images?: Array<SliderImage>;
 };
 
 const HeroFeatures: React.FC<HeroFeaturesProps> = ({
   title,
   description,
-  image,
+  images,
 }) => {
   return (
     <section className="relative">
@@ -54,17 +55,13 @@ const HeroFeatures: React.FC<HeroFeaturesProps> = ({
             <h1 className="h1 mb-4">{title}</h1>
             <p className="text-xl text-gray-400">{description}</p>
           </div>
-          {image && (
-            <div className="mx-auto">
-              <Image
-                className="mx-auto"
-                src={image}
-                alt={title}
-                placeholder="blur"
-              />
-            </div>
-          )}
-          {/*<img className="mx-auto" src={require('../images/hero-image-02.png')} width="768" height="432" alt="Hero" data-aos="fade-up" data-aos-delay="400" />*/}
+          {images && images.length == 1 ?
+            <Image
+              src={images[0].url}
+              alt={images[0].alt}
+              placeholder="blur"
+            /> :
+            <Slider images={images}/>}
         </div>
       </div>
     </section>

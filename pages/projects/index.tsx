@@ -9,6 +9,7 @@ import cyberworksOriginal from "../../images/projects/cyberworks/original.jpg";
 import pillar from "../../images/projects/pillar.jpg";
 import mineathon from "../../images/projects/mineathon.jpg";
 import launcher from "../../images/projects/launcher.png";
+import car from "../../images/projects/car.png";
 import bth from "../../images/projects/bth.png";
 import camoradaHomepage from "../../images/projects/merchant-recycling/camorada-home.jpg";
 import enveriline from "../../images/projects/landing-pages/enveriline.jpg";
@@ -51,13 +52,13 @@ function Projects() {
                 "A popular open source tool which allows you to manage Arma 3 Life servers with ease. Used by hundreds of communities to manage players and aid community support.",
               link: "/projects/cyberworks3",
             },
-            // {
-            //   image: "/images/projects/car.png",
-            //   title: "Compare and Recycle",
-            //   description:
-            //     "The UK's number 1 recycling comparison site. We helped build a scalable platform to handle thousands of requests and improve customer satisfaction.",
-            //   link: "/projects/compare-and-recycle",
-            // },
+            {
+              image: car,
+              title: "Compare and Recycle",
+              description:
+                "The UK's number 1 recycling comparison site. We helped build a scalable platform to handle thousands of requests and improve customer satisfaction.",
+              link: "/projects/compare-and-recycle",
+            },
             {
               image: pillar,
               title: "Living Pillars",
