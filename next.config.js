@@ -37,10 +37,6 @@ module.exports = withBundleAnalyzer({
             value: '{"report_to":"default","max_age":2592000,"include_subdomains":true,"failure_fraction":1.0}',
           },
           {
-            key: "Content-Security-Policy-Report-Only",
-            value: "default-src 'self'; font-src 'self'; img-src 'self'; script-src 'self'; style-src 'self'; frame-ancestors 'self'; report-uri https://cb-software.uriports.com/reports/report; report-to default",
-          },
-          {
             key: "Permissions-Policy-Report-Only",
             value: 'accelerometer=(), ambient-light-sensor=(), autoplay=(), battery=(), camera=(), cross-origin-isolated=(), display-capture=(), document-domain=(), encrypted-media=(), execution-while-not-rendered=(), execution-while-out-of-viewport=(), fullscreen=(), geolocation=(), gyroscope=(), keyboard-map=(), magnetometer=(), microphone=(), midi=(), navigation-override=(), payment=(), picture-in-picture=(), publickey-credentials-get=(), screen-wake-lock=(), sync-xhr=(), usb=(), web-share=(), xr-spatial-tracking=()',
           },
