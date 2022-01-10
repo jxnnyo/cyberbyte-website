@@ -51,6 +51,10 @@ module.exports = withBundleAnalyzer({
           {
             key: "Cross-Origin-Opener-Policy-Report-Only",
             value: 'same-origin; report-to="default"',
+          },
+          {
+            key: "Expect-CT",
+            value: 'max-age=86400,report-uri="https://cb-software.uriports.com/reports/report"',
           }
         ],
       },
