@@ -2,7 +2,7 @@ import Footer from "../../components/Footer";
 import React from "react";
 import PageIllustration from "../../components/PageIllustration";
 import HeroFeatures from "../../components/HeroFeatures";
-import { NextSeo } from "next-seo";
+import {NextSeo} from "next-seo";
 import Header from "../../components/Header";
 import Cta from "../../components/Cta";
 import FeaturesZigzag from "../../components/FeaturesZigzag";
@@ -14,12 +14,12 @@ import cloveHomepage from "../../images/projects/merchant-recycling/clove-home.p
 
 function MerchantPlatform() {
   return (
-    <div className="flex flex-col min-h-screen overflow-hidden">
+    <div className="flex min-h-screen flex-col overflow-hidden">
       <NextSeo title="Recycling Merchant Websites" />
       <Header />
       <main className="flex-grow">
         <div
-          className="relative max-w-6xl mx-auto h-0 pointer-events-none"
+          className="pointer-events-none relative mx-auto h-0 max-w-6xl"
           aria-hidden="true"
         >
           <PageIllustration />
@@ -32,6 +32,10 @@ function MerchantPlatform() {
             { url: camoradaHomepage, alt: "Camorada" },
           ]}
           description="We are working with recycling merchants as well as using our industry experience to produce cutting edge websites for recycling merchants."
+          link={{
+            title: "View our demo",
+            href: "https://demo.recycling.dev/",
+          }}
         />
         <FeaturesZigzag
           title="What can it do?"

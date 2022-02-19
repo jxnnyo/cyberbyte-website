@@ -1,20 +1,20 @@
 import Footer from "../components/Footer";
 import PageIllustration from "../components/PageIllustration";
 import Header from "../components/Header";
-import { NextSeo } from "next-seo";
+import {NextSeo} from "next-seo";
 import React from "react";
 import HeroFeatures from "../components/HeroFeatures";
 import Features from "../components/Features";
 
 function BespokeHosting() {
   return (
-    <div className="flex flex-col min-h-screen overflow-hidden">
+    <div className="flex min-h-screen flex-col overflow-hidden">
       <NextSeo title="Bespoke Hosting" />
       <Header />
 
       <main className="flex-grow">
         <div
-          className="relative max-w-6xl mx-auto h-0 pointer-events-none"
+          className="pointer-events-none relative mx-auto h-0 max-w-6xl"
           aria-hidden="true"
         >
           <PageIllustration />

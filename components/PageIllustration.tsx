@@ -3,7 +3,7 @@ import React from "react";
 function PageIllustration() {
   return (
     <svg
-      className="absolute top-0 right-0 transform translate-x-1/2 -mr-16"
+      className="absolute top-0 right-0 -mr-16 translate-x-1/2 transform"
       width="722"
       height="320"
       fill="none"

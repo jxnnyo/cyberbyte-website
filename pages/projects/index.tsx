@@ -2,13 +2,12 @@ import Footer from "../../components/Footer";
 import React from "react";
 import CaseStudies from "../../components/CaseStudies";
 import PageIllustration from "../../components/PageIllustration";
-import { NextSeo } from "next-seo";
+import {NextSeo} from "next-seo";
 import Header from "../../components/Header";
 import cyberworks from "../../images/projects/cyberworks/dashboard.png";
 import cyberworksOriginal from "../../images/projects/cyberworks/original.jpg";
 import pillar from "../../images/projects/pillar.jpg";
 import mineathon from "../../images/projects/mineathon.jpg";
-import launcher from "../../images/projects/launcher.png";
 import car from "../../images/projects/car.png";
 import bth from "../../images/projects/bth.png";
 import camoradaHomepage from "../../images/projects/merchant-recycling/camorada-home.jpg";
@@ -16,12 +15,12 @@ import enveriline from "../../images/projects/landing-pages/enveriline.jpg";
 
 function Projects() {
   return (
-    <div className="flex flex-col min-h-screen overflow-hidden">
+    <div className="flex min-h-screen flex-col overflow-hidden">
       <NextSeo title="Our Projects" />
       <Header />
       <main className="flex-grow">
         <div
-          className="relative max-w-6xl mx-auto h-0 pointer-events-none"
+          className="pointer-events-none relative mx-auto h-0 max-w-6xl"
           aria-hidden="true"
         >
           <PageIllustration />

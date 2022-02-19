@@ -7,8 +7,8 @@ function Footer() {
   return (
     <footer>
       <div className="py-12 md:py-16">
-        <div className="max-w-6xl mx-auto px-4 sm:px-6">
-          <div className="grid md:grid-cols-12 gap-8 lg:gap-20 mb-8 md:mb-12">
+        <div className="mx-auto max-w-6xl px-4 sm:px-6">
+          <div className="mb-8 grid gap-8 md:mb-12 md:grid-cols-12 lg:gap-20">
             <div className="md:col-span-4 lg:col-span-5">
               <div className="mb-2">
                 <Link href="/">
@@ -24,29 +24,29 @@ function Footer() {
               </div>
             </div>
 
-            <div className="md:col-span-8 lg:col-span-7 grid sm:grid-cols-3 gap-8">
+            <div className="grid gap-8 sm:grid-cols-3 md:col-span-8 lg:col-span-7">
               <div className="text-sm">
-                <h6 className="text-gray-200 font-medium mb-1">
+                <h6 className="mb-1 font-medium text-gray-200">
                   We are working on
                 </h6>
                 <ul>
                   <li className="mb-1">
                     <Link href="/projects/merchant-recycling">
-                      <a className="text-gray-400 hover:text-gray-100 transition duration-150 ease-in-out">
+                      <a className="text-gray-400 transition duration-150 ease-in-out hover:text-gray-100">
                         Recycling Merchant Websites
                       </a>
                     </Link>
                   </li>
                   <li className="mb-1">
                     <Link href="/projects/landing-pages">
-                      <a className="text-gray-400 hover:text-gray-100 transition duration-150 ease-in-out">
+                      <a className="text-gray-400 transition duration-150 ease-in-out hover:text-gray-100">
                         Landing Pages
                       </a>
                     </Link>
                   </li>
                   <li className="mb-1">
                     <Link href="/projects/living-pillars">
-                      <a className="text-gray-400 hover:text-gray-100 transition duration-150 ease-in-out">
+                      <a className="text-gray-400 transition duration-150 ease-in-out hover:text-gray-100">
                         Living Pillars
                       </a>
                     </Link>
@@ -62,28 +62,28 @@ function Footer() {
               </div>
 
               <div className="text-sm">
-                <h6 className="text-gray-200 font-medium mb-1">
+                <h6 className="mb-1 font-medium text-gray-200">
                   We have worked on
                 </h6>
                 <ul>
                   <li className="mb-1">
                     <Link href="/projects/cyberworks3">
-                      <a className="text-gray-400 hover:text-gray-100 transition duration-150 ease-in-out">
+                      <a className="text-gray-400 transition duration-150 ease-in-out hover:text-gray-100">
                         Cyberworks 3
                       </a>
                     </Link>
                   </li>
-                  {/*<li className="mb-1">
-                    <Link href="/projects/compare-and-recycle">
-                      <a className="text-gray-400 hover:text-gray-100 transition duration-150 ease-in-out">
-                        Compare and Recycle
-                      </a>
-                    </Link>
-                  </li>*/}
                   <li className="mb-1">
                     <Link href="/projects/bid-that-home">
-                      <a className="text-gray-400 hover:text-gray-100 transition duration-150 ease-in-out">
+                      <a className="text-gray-400 transition duration-150 ease-in-out hover:text-gray-100">
                         Bid That Home
+                      </a>
+                    </Link>
+                  </li>
+                  <li className="mb-1">
+                    <Link href="/projects">
+                      <a className="text-gray-400 transition duration-150 ease-in-out hover:text-gray-100">
+                        See More Projects
                       </a>
                     </Link>
                   </li>
@@ -91,9 +91,9 @@ function Footer() {
               </div>
 
               <div className="text-sm">
-                <h6 className="text-gray-200 font-medium mb-1">Say hello</h6>
+                <h6 className="mb-1 font-medium text-gray-200">Say hello</h6>
                 <ul>
-                  <li className="mb-1 text-gray-400 hover:text-gray-100 transition duration-150 ease-in-out">
+                  <li className="mb-1 text-gray-400 transition duration-150 ease-in-out hover:text-gray-100">
                     <a
                       href="mailto:contact@cyberbyte.software"
                       target="_blank"
@@ -102,7 +102,7 @@ function Footer() {
                       contact@cyberbyte.software
                     </a>
                   </li>
-                  <li className="mb-1 text-gray-400 hover:text-gray-100 transition duration-150 ease-in-out">
+                  <li className="mb-1 text-gray-400 transition duration-150 ease-in-out hover:text-gray-100">
                     <Link href="/contact">
                       <a>Contact Us</a>
                     </Link>
@@ -113,17 +113,17 @@ function Footer() {
           </div>
 
           <div className="md:flex md:items-center md:justify-between">
-            <ul className="flex mb-4 md:order-1 md:ml-4 md:mb-0">
+            <ul className="mb-4 flex md:order-1 md:ml-4 md:mb-0">
               <li>
                 <a
                   href="https://twitter.com/CyberbyteStudio"
                   target="_blank"
                   rel="noopener noreferrer nofollow"
-                  className="flex justify-center items-center text-primary bg-gray-800 hover:text-gray-100 hover:bg-primary rounded-full transition duration-150 ease-in-out"
+                  className="flex items-center justify-center rounded-full bg-gray-800 text-primary transition duration-150 ease-in-out hover:bg-primary hover:text-gray-100"
                   aria-label="Twitter"
                 >
                   <svg
-                    className="w-8 h-8 fill-current"
+                    className="h-8 w-8 fill-current"
                     viewBox="0 0 32 32"
                     xmlns="http://www.w3.org/2000/svg"
                   >
@@ -136,11 +136,11 @@ function Footer() {
                   href="https://github.com/Cyberbyte-Studios"
                   target="_blank"
                   rel="noopener noreferrer nofollow"
-                  className="flex justify-center items-center text-primary bg-gray-800 hover:text-gray-100 hover:bg-primary rounded-full transition duration-150 ease-in-out"
+                  className="flex items-center justify-center rounded-full bg-gray-800 text-primary transition duration-150 ease-in-out hover:bg-primary hover:text-gray-100"
                   aria-label="Github"
                 >
                   <svg
-                    className="w-8 h-8 fill-current"
+                    className="h-8 w-8 fill-current"
                     viewBox="0 0 32 32"
                     xmlns="http://www.w3.org/2000/svg"
                   >
@@ -153,11 +153,11 @@ function Footer() {
                   href="#"
                   target="_blank"
                   rel="noopener noreferrer nofollow"
-                  className="flex justify-center items-center text-primary bg-gray-800 hover:text-gray-100 hover:bg-primary rounded-full transition duration-150 ease-in-out"
+                  className="flex items-center justify-center rounded-full bg-gray-800 text-primary transition duration-150 ease-in-out hover:bg-primary hover:text-gray-100"
                   aria-label="Linkedin"
                 >
                   <svg
-                    className="w-8 h-8 fill-current"
+                    className="h-8 w-8 fill-current"
                     viewBox="0 0 32 32"
                     xmlns="http://www.w3.org/2000/svg"
                   >
@@ -167,8 +167,8 @@ function Footer() {
               </li>
             </ul>
 
-            <div className="text-gray-400 text-sm mr-4">
-              &copy; 2021 Cyberbyte Software Ltd. All rights reserved. Company
+            <div className="mr-4 text-sm text-gray-400">
+              &copy; 2022 Cyberbyte Software Ltd. All rights reserved. Company
               Number: 12691680. VAT Number: 364633977
             </div>
           </div>

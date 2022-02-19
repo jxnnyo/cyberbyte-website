@@ -4,7 +4,7 @@ import PageIllustration from "../../components/PageIllustration";
 import HeroFeatures from "../../components/HeroFeatures";
 import Stats from "../../components/Stats";
 import Cta from "../../components/Cta";
-import { NextSeo } from "next-seo";
+import {NextSeo} from "next-seo";
 import Header from "../../components/Header";
 import FeaturesZigzag from "../../components/FeaturesZigzag";
 import player from "../../images/projects/cyberworks/player.png";
@@ -13,7 +13,7 @@ import permissions from "../../images/projects/cyberworks/permissions.png";
 
 function CyberworksThree() {
   return (
-    <div className="flex flex-col min-h-screen overflow-hidden">
+    <div className="flex min-h-screen flex-col overflow-hidden">
       <NextSeo
         title="Cyberworks 3"
         description="Cyberworks 3 is the best way to manage your Arma 3 Life Server"
@@ -21,7 +21,7 @@ function CyberworksThree() {
       <Header />
       <main className="flex-grow">
         <div
-          className="relative max-w-6xl mx-auto h-0 pointer-events-none"
+          className="pointer-events-none relative mx-auto h-0 max-w-6xl"
           aria-hidden="true"
         >
           <PageIllustration />

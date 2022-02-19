@@ -1,6 +1,6 @@
 import React from "react";
 import Image from "next/image";
-import { Slider, SliderImage } from "./Slider";
+import {Slider, SliderImage} from "./Slider";
 
 type Feature = {
   title: string;
@@ -23,13 +23,12 @@ type FeatureZigzagProps = {
 
 const FeatureBox: React.FC<FeatureProps> = ({ feature }) => {
   return (
-    <div className="md:grid md:grid-cols-12 md:gap-6 items-center">
+    <div className="items-center md:grid md:grid-cols-12 md:gap-6">
       <div
         className={
-          "max-w-xl md:max-w-none md:w-full mx-auto md:col-span-5 lg:col-span-6 mb-8 md:mb-0 " +
+          "mx-auto mb-8 max-w-xl md:col-span-5 md:mb-0 md:w-full md:max-w-none lg:col-span-6 " +
           (feature.right ? "md:rtl" : "md:order-1")
         }
-        data-aos="fade-up"
       >
         {feature.images.length == 1 ? (
           <Image
@@ -41,18 +40,15 @@ const FeatureBox: React.FC<FeatureProps> = ({ feature }) => {
           <Slider images={feature.images} />
         )}
       </div>
-      <div
-        className="max-w-xl md:max-w-none md:w-full mx-auto md:col-span-7 lg:col-span-6"
-        data-aos="fade-right"
-      >
+      <div className="mx-auto max-w-xl md:col-span-7 md:w-full md:max-w-none lg:col-span-6">
         <div className="md:pr-4 lg:pr-12 xl:pr-16">
           <h3 className="h3 mb-3">{feature.title}</h3>
-          <p className="text-xl text-gray-400 mb-4">{feature.description}</p>
-          <ul className="text-lg text-gray-400 -mb-2">
+          <p className="mb-4 text-xl text-gray-400">{feature.description}</p>
+          <ul className="-mb-2 text-lg text-gray-400">
             {feature.items.map((item, index) => (
-              <li className="flex items-center mb-2" key={index}>
+              <li className="mb-2 flex items-center" key={index}>
                 <svg
-                  className="w-3 h-3 fill-current text-green-500 mr-2 flex-shrink-0"
+                  className="text-green-500 mr-2 h-3 w-3 flex-shrink-0 fill-current"
                   viewBox="0 0 12 12"
                   xmlns="http://www.w3.org/2000/svg"
                 >
@@ -75,9 +71,9 @@ const FeaturesZigzag: React.FC<FeatureZigzagProps> = ({
 }) => {
   return (
     <section>
-      <div className="max-w-6xl mx-auto px-4 sm:px-6">
-        <div className="py-12 md:py-20 border-t border-gray-800">
-          <div className="max-w-3xl mx-auto text-center pb-12 md:pb-16">
+      <div className="mx-auto max-w-6xl px-4 sm:px-6">
+        <div className="border-t border-gray-800 py-12 md:py-20">
+          <div className="mx-auto max-w-3xl pb-12 text-center md:pb-16">
             <h1 className="h2 mb-4">{title}</h1>
             <p className="text-xl text-gray-400">{description}</p>
           </div>

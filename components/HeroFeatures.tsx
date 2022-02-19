@@ -1,23 +1,30 @@
 import React from "react";
 import Image from "next/image";
-import { Slider, SliderImage } from "./Slider";
+import {Slider, SliderImage} from "./Slider";
+
+type LinkProps = {
+  href: string;
+  title: string;
+};
 
 type HeroFeaturesProps = {
   title: string;
   description: string;
   images?: Array<SliderImage>;
+  link?: LinkProps;
 };
 
 const HeroFeatures: React.FC<HeroFeaturesProps> = ({
   title,
   description,
   images,
+  link,
 }) => {
   return (
     <section className="relative">
-      <div className="max-w-6xl mx-auto px-4 sm:px-6 relative">
+      <div className="relative mx-auto max-w-6xl px-4 sm:px-6">
         <div
-          className="absolute left-0 bottom-0 -ml-64 hidden lg:block pointer-events-none"
+          className="pointer-events-none absolute left-0 bottom-0 -ml-64 hidden lg:block"
           aria-hidden="true"
         >
           <svg
@@ -51,10 +58,22 @@ const HeroFeatures: React.FC<HeroFeaturesProps> = ({
         </div>
 
         <div className="relative pt-32 pb-12 md:pt-40 md:pb-20">
-          <div className="max-w-3xl mx-auto text-center pb-12 md:pb-16">
+          <div className="mx-auto max-w-3xl pb-12 text-center md:pb-16">
             <h1 className="h1 mb-4">{title}</h1>
             <p className="text-xl text-gray-400">{description}</p>
           </div>
+          {link && (
+            <div className="mb-8 flex justify-center">
+              <a
+                className="btn btn-primary"
+                href={link.href}
+                target="_blank"
+                rel="noopener noreferrer nofollow"
+              >
+                {link.title}
+              </a>
+            </div>
+          )}
           {images &&
             (images.length == 1 ? (
               <Image

@@ -1,6 +1,6 @@
 import React from "react";
-import { Autoplay } from "swiper";
-import { Swiper, SwiperSlide } from "swiper/react";
+import {Autoplay} from "swiper";
+import {Swiper, SwiperSlide} from "swiper/react";
 import Image from "next/image";
 
 export type SliderImage = {

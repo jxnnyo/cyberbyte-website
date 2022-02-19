@@ -2,20 +2,19 @@ import Footer from "../../components/Footer";
 import React from "react";
 import PageIllustration from "../../components/PageIllustration";
 import HeroFeatures from "../../components/HeroFeatures";
-import { NextSeo } from "next-seo";
+import {NextSeo} from "next-seo";
 import Header from "../../components/Header";
 import FeaturesZigzag from "../../components/FeaturesZigzag";
 import bth from "../../images/projects/bth.png";
-import permissions from "../../images/projects/cyberworks/permissions.png";
 
 function BidThatHome() {
   return (
-    <div className="flex flex-col min-h-screen overflow-hidden">
+    <div className="flex min-h-screen flex-col overflow-hidden">
       <NextSeo title="Bid That Home" />
       <Header />
       <main className="flex-grow">
         <div
-          className="relative max-w-6xl mx-auto h-0 pointer-events-none"
+          className="pointer-events-none relative mx-auto h-0 max-w-6xl"
           aria-hidden="true"
         >
           <PageIllustration />

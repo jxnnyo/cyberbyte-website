@@ -20,17 +20,17 @@ type FeaturesProps = {
 const Feature: React.FC<FeatureProps> = ({ feature }) => (
   <div className="relative flex flex-col items-center">
     {feature.icon}
-    <h4 className="mb-2 h4">{feature.title}</h4>
-    <p className="text-lg text-gray-400 text-center">{feature.description}</p>
+    <h4 className="h4 mb-2">{feature.title}</h4>
+    <p className="text-center text-lg text-gray-400">{feature.description}</p>
   </div>
 );
 
 const Features: React.FC<FeaturesProps> = ({ features }) => {
   return (
     <section>
-      <div className="max-w-6xl mx-auto px-4 sm:px-6">
+      <div className="mx-auto max-w-6xl px-4 sm:px-6">
         <div className="pt-10 pb-12 md:pt-16 md:pb-20">
-          <div className="max-w-sm mx-auto grid gap-8 md:grid-cols-3 lg:gap-16 items-start md:max-w-none">
+          <div className="mx-auto grid max-w-sm items-start gap-8 md:max-w-none md:grid-cols-3 lg:gap-16">
             {features.map((feature, index) => (
               <Feature feature={feature} key={index} />
             ))}

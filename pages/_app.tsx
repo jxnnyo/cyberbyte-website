@@ -2,8 +2,8 @@ import "../styles/globals.scss";
 import "swiper/css";
 import Script from "next/script";
 
-import type { AppProps } from "next/app";
-import { DefaultSeo } from "next-seo";
+import type {AppProps} from "next/app";
+import {DefaultSeo} from "next-seo";
 
 function MyApp({ Component, pageProps }: AppProps) {
   return (

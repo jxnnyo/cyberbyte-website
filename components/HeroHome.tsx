@@ -6,9 +6,9 @@ import logo from "../images/logo.svg";
 export function HeroHome() {
   return (
     <section>
-      <div className="max-w-6xl mx-auto px-4 sm:px-6 relative">
+      <div className="relative mx-auto max-w-6xl px-4 sm:px-6">
         <div
-          className="absolute left-0 bottom-0 -ml-20 hidden lg:block pointer-events-none"
+          className="pointer-events-none absolute left-0 bottom-0 -ml-20 hidden lg:block"
           aria-hidden="true"
         >
           <svg
@@ -42,16 +42,16 @@ export function HeroHome() {
         </div>
 
         <div className="relative pt-32 pb-10 md:pt-40 md:pb-32">
-          <div className="max-w-3xl mx-auto text-center">
+          <div className="mx-auto max-w-3xl text-center">
             <Image
               src={logo}
               height="447"
               width="1440"
               alt="Cyberbyte Software"
             />
-            <div className="max-w-xs mx-auto sm:max-w-none sm:flex sm:justify-center mt-12">
+            <div className="mx-auto mt-12 max-w-xs sm:flex sm:max-w-none sm:justify-center">
               <Link href="/contact">
-                <a className="bg-primary text-white active:bg-pink-600 px-4 py-2 rounded shadow hover:shadow-md hover:bg-secondary outline-none focus:outline-none lg:mr-1 lg:mb-0 ml-3 mb-3 font-bold text-xl inline-flex items-center justify-center border border-transparent rounded-sm leading-snug transition duration-150 ease-in-out">
+                <a className="active:bg-pink-600 ml-3 mb-3 inline-flex items-center justify-center rounded rounded-sm border border-transparent bg-primary px-4 py-2 text-xl font-bold leading-snug text-white shadow outline-none transition duration-150 ease-in-out hover:bg-secondary hover:shadow-md focus:outline-none lg:mr-1 lg:mb-0">
                   Get In Touch
                 </a>
               </Link>

@@ -1,4 +1,4 @@
-import Document, { Head, Html, Main, NextScript } from "next/document";
+import Document, {Head, Html, Main, NextScript} from "next/document";
 
 class MyDocument extends Document {
   render() {
@@ -32,7 +32,7 @@ class MyDocument extends Document {
             rel="stylesheet"
           />
         </Head>
-        <body className="font-inter antialiased bg-gray-900 text-gray-200 tracking-tight">
+        <body className="font-inter bg-gray-900 tracking-tight text-gray-200 antialiased">
           <Main />
           <NextScript />
         </body>
