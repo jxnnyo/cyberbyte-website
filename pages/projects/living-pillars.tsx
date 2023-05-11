@@ -23,9 +23,9 @@ function LivingPillars() {
         </div>
 
         <HeroFeatures
-          title="Scotscape Living Pillars"
+          title="Living Pillars"
           images={[{ url: pillar, alt: "Living Pillar" }]}
-          description="We have worked with Scotscape to design and manufacturer sensors to help monitor plant growth. Our sensors help keep plants watered in all conditions and informs maintenance teams of any issues reducing the need for onsite visits."
+          description="We have worked to design and manufacturer sensors to help monitor plant growth. Our sensors help keep plants watered in all conditions and informs maintenance teams of any issues reducing the need for onsite visits."
         />
         <FeaturesZigzag
           title="Transforming Urban Greening"
@@ -46,9 +46,9 @@ function LivingPillars() {
         />
         <Cta
           title="Interested in Living Pillars?"
-          description="Reach out to Scotscape for more details on urban greening and why it's so important"
-          buttonText="Find out more"
-          buttonLink="https://www.scotscape.co.uk/services/living-pillar"
+          description="Reach out to us for more details on urban greening and why it's so important"
+          buttonText="Contact Us"
+          buttonLink="/contact"
         />
       </main>
       <Footer />
