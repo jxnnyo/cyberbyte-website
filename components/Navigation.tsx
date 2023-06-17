@@ -58,28 +58,29 @@ export default function Navigation() {
                 </div>
                 <div className="hidden md:ml-6 md:flex md:items-center md:space-x-4">
                   {navigation.map((item) => (
-                    <Link key={item.name}
-                    href={item.href}>
-                    <a
+                    (<Link
+                      key={item.name}
+                      href={item.href}
                       className={classNames(
                         item.current ? 'bg-gray-900 text-secondary' : 'text-white hover:bg-gray-700 hover:text-white',
                         'rounded-lg px-3 py-2 text-sm font-medium'
                       )}
-                      aria-current={item.current ? 'page' : undefined}
-                    >
+                      aria-current={item.current ? 'page' : undefined}>
+
                       {item.name}
-                    </a>
-                    </Link>
+
+                    </Link>)
                   ))}
                 </div>
               </div>
               <div className="flex items-center">
                 <div className="flex-shrink-0">
-                  <Link href="/contact"
-                  >
-                    <a className="active:bg-pink-600 ml-3 mb-3 inline-flex items-center justify-center rounded rounded-sm border border-transparent bg-primary px-4 py-2 text-sm font-medium leading-snug text-white shadow outline-none transition duration-150 ease-in-out hover:bg-secondary hover:shadow-md focus:outline-none lg:mr-1 lg:mb-0 rounded-lg">
+                  <Link
+                    href="/contact"
+                    className="active:bg-pink-600 ml-3 mb-3 inline-flex items-center justify-center rounded rounded-sm border border-transparent bg-primary px-4 py-2 text-sm font-medium leading-snug text-white shadow outline-none transition duration-150 ease-in-out hover:bg-secondary hover:shadow-md focus:outline-none lg:mr-1 lg:mb-0 rounded-lg">
+                    
                         Get In Touch
-                    </a>
+                    
                   </Link>
                 </div>
               </div>
@@ -137,5 +138,5 @@ export default function Navigation() {
         </>
       )}
     </Disclosure>
-  )
+  );
 }

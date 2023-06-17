@@ -9,8 +9,8 @@ function Header() {
           <nav className="flex flex-grow">
             <ul className="flex flex-grow flex-wrap items-center justify-end">
               <li>
-                <Link href="/">
-                  <a className="btn-sm btn-primary ml-3">Return Home</a>
+                <Link href="/" className="btn-sm btn-primary ml-3">
+                  Return Home
                 </Link>
               </li>
             </ul>

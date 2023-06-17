@@ -31,18 +31,18 @@ export const CaseStudyItem: React.FC<CaseStudyProps> = ({ study }) => (
       <h3 className="h3 mb-2">{study.title}</h3>
       <p className="flex-grow text-lg text-gray-400">{study.description}</p>
       {study.link && (
-        <Link href={study.link}>
-          <a className="btn btn-primary mt-6 rounded-lg">
-            <span className="text-sm">Learn more</span>
-            <svg
-              className="ml-2 h-3 w-3 flex-shrink-0 fill-current"
-              viewBox="0 0 12 12"
-              xmlns="http://www.w3.org/2000/svg"
-            >
-              <path d="M6 5H0v2h6v4l6-5-6-5z" />
-            </svg>
-          </a>
-        </Link>
+        (<Link href={study.link} className="btn btn-primary mt-6 rounded-lg">
+
+          <span className="text-sm">Learn more</span>
+          <svg
+            className="ml-2 h-3 w-3 flex-shrink-0 fill-current"
+            viewBox="0 0 12 12"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path d="M6 5H0v2h6v4l6-5-6-5z" />
+          </svg>
+
+        </Link>)
       )}
     </div>
   </article>

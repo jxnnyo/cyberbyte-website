@@ -11,15 +11,15 @@ function Footer() {
           <div className="pt-12 md:pt-16 border-gray-800 border-t mb-8 grid gap-8 md:mb-12 md:grid-cols-12 lg:gap-20">
             <div className="md:col-span-4 lg:col-span-5">
               <div className="mb-2">
-                <Link href="/">
-                  <a className="inline-block" aria-label="Cruip">
-                    <Image
-                      src={logo}
-                      height="80"
-                      width="258"
-                      alt="Cyberbyte Software"
-                    />
-                  </a>
+                <Link href="/" className="inline-block" aria-label="Cruip">
+
+                  <Image
+                    src={logo}
+                    height="80"
+                    width="258"
+                    alt="Cyberbyte Software"
+                  />
+
                 </Link>
               </div>
             </div>
@@ -31,24 +31,30 @@ function Footer() {
                 </h6>
                 <ul>
                   <li className="mb-1">
-                    <Link href="/projects/merchant-recycling">
-                      <a className="text-gray-400 transition duration-150 ease-in-out hover:text-gray-100">
+                    <Link
+                      href="/projects/merchant-recycling"
+                      className="text-gray-400 transition duration-150 ease-in-out hover:text-gray-100">
+                      
                         Recycling Merchant Websites
-                      </a>
+                      
                     </Link>
                   </li>
                   <li className="mb-1">
-                    <Link href="/projects/landing-pages">
-                      <a className="text-gray-400 transition duration-150 ease-in-out hover:text-gray-100">
+                    <Link
+                      href="/projects/landing-pages"
+                      className="text-gray-400 transition duration-150 ease-in-out hover:text-gray-100">
+                      
                         Landing Pages
-                      </a>
+                      
                     </Link>
                   </li>
                   <li className="mb-1">
-                    <Link href="/projects/living-pillars">
-                      <a className="text-gray-400 transition duration-150 ease-in-out hover:text-gray-100">
+                    <Link
+                      href="/projects/living-pillars"
+                      className="text-gray-400 transition duration-150 ease-in-out hover:text-gray-100">
+                      
                         Living Pillars
-                      </a>
+                      
                     </Link>
                   </li>
                   {/*<li className="mb-1">
@@ -67,24 +73,30 @@ function Footer() {
                 </h6>
                 <ul>
                   <li className="mb-1">
-                    <Link href="/projects/cyberworks3">
-                      <a className="text-gray-400 transition duration-150 ease-in-out hover:text-gray-100">
+                    <Link
+                      href="/projects/cyberworks3"
+                      className="text-gray-400 transition duration-150 ease-in-out hover:text-gray-100">
+                      
                         Cyberworks 3
-                      </a>
+                      
                     </Link>
                   </li>
                   <li className="mb-1">
-                    <Link href="/projects/bid-that-home">
-                      <a className="text-gray-400 transition duration-150 ease-in-out hover:text-gray-100">
+                    <Link
+                      href="/projects/bid-that-home"
+                      className="text-gray-400 transition duration-150 ease-in-out hover:text-gray-100">
+                      
                         Bid That Home
-                      </a>
+                      
                     </Link>
                   </li>
                   <li className="mb-1">
-                    <Link href="/projects">
-                      <a className="text-gray-400 transition duration-150 ease-in-out hover:text-gray-100">
+                    <Link
+                      href="/projects"
+                      className="text-gray-400 transition duration-150 ease-in-out hover:text-gray-100">
+                      
                         See More Projects
-                      </a>
+                      
                     </Link>
                   </li>
                 </ul>
@@ -104,7 +116,7 @@ function Footer() {
                   </li>
                   <li className="mb-1 text-gray-400 transition duration-150 ease-in-out hover:text-gray-100">
                     <Link href="/contact">
-                      <a>Contact Us</a>
+                      Contact Us
                     </Link>
                   </li>
                 </ul>

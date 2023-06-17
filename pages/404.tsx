@@ -25,10 +25,12 @@ export default function NotFound() {
                 <h1 className="h1 mb-4">Uh oh. That page does not exist.</h1>
                 <p className="text-lg text-gray-400">
                   Head to our{" "}
-                  <Link href="/">
-                    <a className="text-primary transition duration-150 ease-in-out hover:text-gray-200">
+                  <Link
+                    href="/"
+                    className="text-primary transition duration-150 ease-in-out hover:text-gray-200">
+                    
                       homepage
-                    </a>
+                    
                   </Link>{" "}
                   that does exist, or try double-checking the URL.
                 </p>

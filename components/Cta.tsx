@@ -28,8 +28,8 @@ const Cta: React.FC<CTAProps> = ({
 
             <div className="mb-8 flex justify-center">
               {buttonInternal ? (
-                <Link href={buttonLink}>
-                  <a className="btn btn-primary rounded-lg">{buttonText}</a>
+                <Link href={buttonLink} className="btn btn-primary rounded-lg">
+                  {buttonText}
                 </Link>
               ) : (
                 <a

@@ -21,8 +21,8 @@ function ContactForm() {
               </div>
 
               <div className="flex w-full justify-center lg:w-1/4 lg:justify-end">
-                <Link href="/">
-                  <a className="btn btn-primary">Return Home</a>
+                <Link href="/" className="btn btn-primary">
+                  Return Home
                 </Link>
               </div>
             </div>
