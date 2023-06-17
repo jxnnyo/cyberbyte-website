@@ -3,7 +3,7 @@
 import React from "react";
 import {Autoplay} from "swiper";
 import {Swiper, SwiperSlide} from "swiper/react";
-import Image from "next/image";
+import Image from "next/legacy/image";
 
 export type SliderImage = {
   url: any; //todo: change image type
