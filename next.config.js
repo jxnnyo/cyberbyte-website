@@ -1,8 +1,6 @@
-const withBundleAnalyzer = require("@next/bundle-analyzer")({
-  enabled: false,
-});
 
-module.exports = withBundleAnalyzer({
+
+module.exports = {
   swcMinify: true,
   images: {
     formats: ["image/avif", "image/webp"],
@@ -56,4 +54,4 @@ module.exports = withBundleAnalyzer({
       },
     ];
   },
-});
+};

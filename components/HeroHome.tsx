@@ -49,13 +49,6 @@ export function HeroHome() {
               width="1440"
               alt="Cyberbyte Software"
             />
-            <div className="mx-auto mt-12 max-w-xs sm:flex sm:max-w-none sm:justify-center">
-              <Link href="/contact">
-                <a className="active:bg-pink-600 ml-3 mb-3 inline-flex items-center justify-center rounded rounded-sm border border-transparent bg-primary px-4 py-2 text-xl font-bold leading-snug text-white shadow outline-none transition duration-150 ease-in-out hover:bg-secondary hover:shadow-md focus:outline-none lg:mr-1 lg:mb-0">
-                  Get In Touch
-                </a>
-              </Link>
-            </div>
           </div>
         </div>
       </div>

@@ -1,9 +1,11 @@
+"use client";
+
 import React from "react";
 import Link from "next/link";
 import {useForm} from "@formspree/react";
 
 function ContactForm() {
-  const [state, handleSubmit] = useForm(process.env.NEXT_PUBLIC_FORM_ID);
+  const [state, handleSubmit] = useForm(process.env.NEXT_PUBLIC_FORM_ID!);
 
   if (state.succeeded) {
     return (

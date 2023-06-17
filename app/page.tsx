@@ -1,9 +1,10 @@
 import Footer from "../components/Footer";
 import React from "react";
+import Navigation from "../components/Navigation";
 import HeroHome from "../components/HeroHome";
 import Features from "../components/Features";
 import CaseStudies from "../components/CaseStudies";
-import {LogoJsonLd, NextSeo} from "next-seo";
+// import {LogoJsonLd, NextSeo} from "next-seo";
 import Cta from "../components/Cta";
 import cyberworks from "../images/projects/cyberworks/dashboard.png";
 import recycling from "../images/projects/merchant-recycling/clove-home.png";
@@ -12,17 +13,72 @@ import car from "../images/projects/car.png";
 export default function Home() {
   return (
     <div className="flex min-h-screen flex-col overflow-hidden">
-      <NextSeo description="Cyberbyte Software is a bespoke web hosting and development company able to deliver your most ambitious projects" />
-      <LogoJsonLd
+      {/* <NextSeo description="Cyberbyte Software is a bespoke web hosting and development company able to deliver your most ambitious projects" /> */}
+      {/* <LogoJsonLd
         logo="https://cyberbyte.software/images/logo-square.png"
         url="https://cyberbyte.software"
-      />
+      /> */}
 
       {/*<Header />*/}
 
       <main className="flex-grow">
+        <Navigation />
         <HeroHome />
-        <Features
+        <CaseStudies
+          cases={[
+            {
+              image: recycling,
+              title: "Recycling Merchant Websites",
+              description:
+                "Are you a recycling merchant in need of a website? Let us know! We are using our industry experience to produce cutting edge websites for recycling merchants.",
+              link: "/projects/merchant-recycling",
+            },
+            // {
+            //   image: enveriline,
+            //   title: "Static Websites and Landing Pages",
+            //   description:
+            //     "Need a static website or landing page for your company? We make websites of various designs to fit any specification.",
+            //   link: "/projects/landing-pages",
+            // },
+            {
+              image: cyberworks,
+              title: "Cyberworks 3",
+              description:
+                "A popular open source tool which allows the management of Arma 3 Life servers with ease. It is used by hundreds of communities to manage players and aid community support.",
+              link: "/projects/cyberworks3",
+            },
+            // {
+            //  image: pillar,
+            //  title: "Living Pillars",
+            //  description:
+            //    "We are helping to improve our urban environments with sensors that monitor and maintain plants in living pillars. We already have them around London and Liverpool.",
+            //  link: "/projects/living-pillars",
+            // },
+            {
+              image: car,
+              title: "Compare and Recycle",
+              description:
+                "The UK's number 1 recycling comparison site. We helped build a scalable platform to help merchants and improve customer satisfaction.",
+              link: "/projects/compare-and-recycle",
+            },
+            // {
+            //  image: mineathon,
+            //  title: "Mineathon",
+            //  description:
+            //    "A charity live streaming website designed to collect donations. Built in Laravel, complete with an admin area to manage the event. We have published the source code on GitHub. Check it out!",
+            //  link: "/projects/mineathon",
+            // },
+          ]}
+        />
+        <Cta
+          title="Check out our other projects!"
+          description=""
+          buttonText="See projects"
+          buttonLink="/projects"
+          buttonInternal={true}
+          showBorder={false}
+        />
+        {/*<Features
           features={[
             {
               title: "Software Consulting",
@@ -124,62 +180,7 @@ export default function Home() {
               ),
             },
           ]}
-        />
-        <CaseStudies
-          title="What we have worked on"
-          description="We have worked with a wide range of clients, on a number of different project types. Below is a small sample of our projects:"
-          cases={[
-            {
-              image: recycling,
-              title: "Recycling Merchant Websites",
-              description:
-                "Are you a recycling merchant in need of a website? Let us know! We are using our industry experience to produce cutting edge websites for recycling merchants.",
-              link: "/projects/merchant-recycling",
-            },
-            // {
-            //   image: enveriline,
-            //   title: "Static Websites and Landing Pages",
-            //   description:
-            //     "Need a static website or landing page for your company? We make websites of various designs to fit any specification.",
-            //   link: "/projects/landing-pages",
-            // },
-            {
-              image: cyberworks,
-              title: "Cyberworks 3",
-              description:
-                "A popular open source tool which allows the management of Arma 3 Life servers with ease. It is used by hundreds of communities to manage players and aid community support.",
-              link: "/projects/cyberworks3",
-            },
-            // {
-            //  image: pillar,
-            //  title: "Living Pillars",
-            //  description:
-            //    "We are helping to improve our urban environments with sensors that monitor and maintain plants in living pillars. We already have them around London and Liverpool.",
-            //  link: "/projects/living-pillars",
-            // },
-            {
-              image: car,
-              title: "Compare and Recycle",
-              description:
-                "The UK's number 1 recycling comparison site. We helped build a scalable platform to help merchants and improve customer satisfaction.",
-              link: "/projects/compare-and-recycle",
-            },
-            // {
-            //  image: mineathon,
-            //  title: "Mineathon",
-            //  description:
-            //    "A charity live streaming website designed to collect donations. Built in Laravel, complete with an admin area to manage the event. We have published the source code on GitHub. Check it out!",
-            //  link: "/projects/mineathon",
-            // },
-          ]}
-        />
-        <Cta
-          title="Check out our other projects!"
-          description=""
-          buttonText="See projects"
-          buttonLink="/projects"
-          buttonInternal={true}
-        />
+        />*/}
       </main>
       <Footer />
     </div>

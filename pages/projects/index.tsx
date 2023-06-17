@@ -12,13 +12,14 @@ import car from "../../images/projects/car.png";
 import bth from "../../images/projects/bth.png";
 import camoradaHomepage from "../../images/projects/merchant-recycling/camorada-home.jpg";
 import enveriline from "../../images/projects/landing-pages/enveriline.jpg";
+import Navigation from "../../components/Navigation";
 
 function Projects() {
   return (
     <div className="flex min-h-screen flex-col overflow-hidden">
       <NextSeo title="Our Projects" />
-      <Header />
       <main className="flex-grow">
+      <Navigation />
         <div
           className="pointer-events-none relative mx-auto h-0 max-w-6xl"
           aria-hidden="true"
