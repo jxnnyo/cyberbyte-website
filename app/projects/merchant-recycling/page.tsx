@@ -1,21 +1,26 @@
-import Footer from "../../components/Footer";
+import Footer from "../../../components/Footer";
 import React from "react";
-import PageIllustration from "../../components/PageIllustration";
-import HeroFeatures from "../../components/HeroFeatures";
+import PageIllustration from "../../../components/PageIllustration";
+import HeroFeatures from "../../../components/HeroFeatures";
 import {NextSeo} from "next-seo";
-import Header from "../../components/Header";
-import Cta from "../../components/Cta";
-import FeaturesZigzag from "../../components/FeaturesZigzag";
+import Header from "../../../components/Header";
+import Cta from "../../../components/Cta";
+import FeaturesZigzag from "../../../components/FeaturesZigzag";
 import merchantProduct from "../../images/projects/merchant-recycling/website-product.jpg";
 import adminProduct from "../../images/projects/merchant-recycling/admin-product.jpg";
 import adminConditions from "../../images/projects/merchant-recycling/admin-conditions-slim.jpg";
 import camoradaHomepage from "../../images/projects/merchant-recycling/camorada-home.jpg";
 import cloveHomepage from "../../images/projects/merchant-recycling/clove-home.png";
+import type {Metadata} from "next";
+
+export const metadata: Metadata = {
+  title: "Recycling Merchant Websites"
+}
 
 function MerchantPlatform() {
   return (
     <div className="flex min-h-screen flex-col overflow-hidden">
-      <NextSeo title="Recycling Merchant Websites" />
+      <NextSeo title="" />
       <Header />
       <main className="flex-grow">
         <div

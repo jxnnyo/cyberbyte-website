@@ -1,9 +1,6 @@
-import Footer from "../../components/Footer";
 import React from "react";
 import CaseStudies from "../../components/CaseStudies";
 import PageIllustration from "../../components/PageIllustration";
-import {NextSeo} from "next-seo";
-import Header from "../../components/Header";
 import cyberworks from "../../images/projects/cyberworks/dashboard.png";
 import cyberworksOriginal from "../../images/projects/cyberworks/original.jpg";
 import pillar from "../../images/projects/pillar.jpg";
@@ -12,14 +9,15 @@ import car from "../../images/projects/car.png";
 import bth from "../../images/projects/bth.png";
 import camoradaHomepage from "../../images/projects/merchant-recycling/camorada-home.jpg";
 import enveriline from "../../images/projects/landing-pages/enveriline.jpg";
-import Navigation from "../../components/Navigation";
+import type {Metadata} from "next";
 
-function Projects() {
+export const metadata: Metadata = {
+  title: "Our Projects"
+}
+
+export default function Projects() {
   return (
-    <div className="flex min-h-screen flex-col overflow-hidden">
-      <NextSeo title="Our Projects" />
-      <main className="flex-grow">
-      <Navigation />
+    <>
         <div
           className="pointer-events-none relative mx-auto h-0 max-w-6xl"
           aria-hidden="true"
@@ -100,10 +98,6 @@ function Projects() {
             },*/
           ]}
         />
-      </main>
-      <Footer />
-    </div>
+    </>
   );
 }
-
-export default Projects;

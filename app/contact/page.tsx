@@ -1,17 +1,15 @@
-import Footer from "../components/Footer";
-import PageIllustration from "../components/PageIllustration";
-import ContactForm from "../components/Contact";
-import Header from "../components/Header";
-import {NextSeo} from "next-seo";
+import PageIllustration from "../../components/PageIllustration";
+import ContactForm from "../../components/Contact";
 import React from "react";
+import type { Metadata } from "next";
+
+export const metadata: Metadata = {
+  title: "Contact Us"
+}
 
 function Contact() {
   return (
-    <div className="flex min-h-screen flex-col overflow-hidden">
-      <NextSeo title="Contact Us" />
-      <Header />
-
-      <main className="flex-grow">
+    <>
         <div
           className="pointer-events-none relative mx-auto h-0 max-w-6xl"
           aria-hidden="true"
@@ -34,14 +32,7 @@ function Contact() {
             </div>
           </div>
         </section>
-
-        {/*  Bottom CTA */}
-        {/*<CtaContact />*/}
-      </main>
-
-      {/*  Site footer */}
-      <Footer />
-    </div>
+    </>
   );
 }
 

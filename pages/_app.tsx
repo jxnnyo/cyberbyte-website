@@ -1,4 +1,4 @@
-import "../styles/globals.scss";
+import "../styles/globals.css";
 import "swiper/css";
 import Script from "next/script";
 

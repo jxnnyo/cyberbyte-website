@@ -9,20 +9,16 @@ import Cta from "../components/Cta";
 import cyberworks from "../images/projects/cyberworks/dashboard.png";
 import recycling from "../images/projects/merchant-recycling/clove-home.png";
 import car from "../images/projects/car.png";
+import type {Metadata} from "next";
+
+export const metadata: Metadata = {
+    title: "Cyberbyte Software",
+    description: "Cyberbyte Software is a bespoke web hosting and development company able to deliver your most ambitious projects"
+}
 
 export default function Home() {
   return (
-    <div className="flex min-h-screen flex-col overflow-hidden">
-      {/* <NextSeo description="Cyberbyte Software is a bespoke web hosting and development company able to deliver your most ambitious projects" /> */}
-      {/* <LogoJsonLd
-        logo="https://cyberbyte.software/images/logo-square.png"
-        url="https://cyberbyte.software"
-      /> */}
-
-      {/*<Header />*/}
-
-      <main className="flex-grow">
-        <Navigation />
+    <>
         <HeroHome />
         <CaseStudies
           cases={[
@@ -181,8 +177,6 @@ export default function Home() {
             },
           ]}
         />*/}
-      </main>
-      <Footer />
-    </div>
+    </>
   );
 }

@@ -6,6 +6,7 @@ import { Bars3Icon, BellIcon, XMarkIcon } from '@heroicons/react/24/outline'
 import logosquare from "../images/logo-square.png"
 import Image from "next/legacy/image"
 import Link from 'next/link'
+import { useSelectedLayoutSegments } from 'next/navigation'
 
 const user = {
   name: 'Tom Cook',
@@ -29,6 +30,10 @@ function classNames(...classes) {
 }
 
 export default function Navigation() {
+  const segments = useSelectedLayoutSegments()
+
+  console.log(segments);
+
   return (
     <Disclosure as="nav" className="border-b border-gray-800 mx-auto max-w-6xl mb-12">
       {({ open }) => (
@@ -57,20 +62,21 @@ export default function Navigation() {
                   />
                 </div>
                 <div className="hidden md:ml-6 md:flex md:items-center md:space-x-4">
-                  {navigation.map((item) => (
-                    (<Link
+                  {navigation.map((item) => {
+                    const current = item.href.startsWith(`/${segments[0]}`)
+                    return <Link
                       key={item.name}
                       href={item.href}
                       className={classNames(
-                        item.current ? 'bg-gray-900 text-secondary' : 'text-white hover:bg-gray-700 hover:text-white',
+                        current ? 'bg-gray-900 text-secondary' : 'text-white hover:bg-gray-700 hover:text-white',
                         'rounded-lg px-3 py-2 text-sm font-medium'
                       )}
-                      aria-current={item.current ? 'page' : undefined}>
+                      aria-current={current ? 'page' : undefined}>
 
                       {item.name}
 
-                    </Link>)
-                  ))}
+                    </Link>
+                  })}
                 </div>
               </div>
               <div className="flex items-center">
@@ -78,7 +84,6 @@ export default function Navigation() {
                   <Link
                     href="/contact"
                     className="active:bg-pink-600 ml-3 mb-3 inline-flex items-center justify-center rounded rounded-sm border border-transparent bg-primary px-4 py-2 text-sm font-medium leading-snug text-white shadow outline-none transition duration-150 ease-in-out hover:bg-secondary hover:shadow-md focus:outline-none lg:mr-1 lg:mb-0 rounded-lg">
-                    
                         Get In Touch
                     
                   </Link>
