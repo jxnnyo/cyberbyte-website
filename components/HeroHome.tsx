@@ -45,6 +45,7 @@ export function HeroHome() {
           <div className="mx-auto max-w-3xl text-center">
             <Image
               src={logo}
+              priority={true}
               height="447"
               width="1440"
               alt="Cyberbyte Software"

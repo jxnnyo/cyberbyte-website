@@ -1,6 +1,8 @@
 
 const ContentSecurityPolicy = `
-  default-src 'self' 'unsafe-inline';
+  default-src 'self';
+  img-src 'self' data:;
+  script-src 'self';
 `
 
 module.exports = {
