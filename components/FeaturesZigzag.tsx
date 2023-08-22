@@ -1,6 +1,6 @@
 import React from "react";
 import Image from "next/legacy/image";
-import {Slider, SliderImage} from "./Slider";
+import { Slider, SliderImage } from "./Slider";
 
 type Feature = {
   title: string;

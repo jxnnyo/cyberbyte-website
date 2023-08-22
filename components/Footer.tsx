@@ -10,9 +10,9 @@ type FooterLink = {
 
 const footerNavigation = {
   navigation: [
-    { name: 'Home', href: '/' },
-    { name: 'Projects', href: '/projects' },
-    { name: 'About', href: '/about' },
+    { name: "Home", href: "/" },
+    { name: "Projects", href: "/projects" },
+    { name: "About", href: "/about" },
   ],
 };
 
@@ -45,33 +45,29 @@ function Footer() {
             <div className="md:col-span-5">
               <div className="mt-0 md:mt-2">
                 <Link href="/" className="inline-block" aria-label="Cruip">
-
                   <Image
                     src={logo}
                     height="80"
                     width="258"
                     alt="Cyberbyte Software"
                   />
-
                 </Link>
               </div>
             </div>
 
             <div className="grid gap-8 grid-cols-3 md:col-span-7">
               <div className="text-sm">
-                <h6 className="mb-1 font-medium text-gray-200">
-                  Navigation
-                </h6>
+                <h6 className="mb-1 font-medium text-gray-200">Navigation</h6>
                 <FooterLinks links={footerNavigation.navigation} />
               </div>
 
               <div className="text-sm">
-                <h6 className="mb-1 text-md font-medium text-gray-200">Get in touch</h6>
-                <ul className="mt-2 space-y-1"> 
+                <h6 className="mb-1 text-md font-medium text-gray-200">
+                  Get in touch
+                </h6>
+                <ul className="mt-2 space-y-1">
                   <li className="text-gray-400 transition duration-150 ease-in-out hover:text-gray-100">
-                    <Link href="/contact">
-                      Contact us
-                    </Link>
+                    <Link href="/contact">Contact us</Link>
                   </li>
                   <li className="text-gray-400 transition duration-150 ease-in-out hover:text-gray-100">
                     <a

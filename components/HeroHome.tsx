@@ -51,9 +51,9 @@ export function HeroHome() {
             />
           </div>
           <div className="mt-12 flex justify-center">
-                <Link href="/contact" className="btn btn-primary rounded-md">
-                  Get in touch
-                </Link>
+            <Link href="/contact" className="btn btn-primary rounded-md">
+              Get in touch
+            </Link>
           </div>
         </div>
       </div>

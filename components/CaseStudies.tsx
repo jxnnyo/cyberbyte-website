@@ -29,17 +29,19 @@ export const CaseStudyItem: React.FC<CaseStudyProps> = ({ study }) => (
     </div>
     <div className="flex h-full flex-grow flex-col bg-gray-800 p-6 rounded-b-xl">
       <h3 className="text-center h3 mb-2">{study.title}</h3>
-      <p className="text-center flex-grow text-lg text-gray-400">{study.description}</p>
-        <button className="btn btn-primary mt-6 rounded-md">
-          <span>Learn more</span>
-          <svg
-            className="ml-2 h-3 w-3 flex-shrink-0 fill-current"
-            viewBox="0 0 12 12"
-            xmlns="http://www.w3.org/2000/svg"
-          >
-            <path d="M6 5H0v2h6v4l6-5-6-5z" />
-          </svg>
-        </button>
+      <p className="text-center flex-grow text-lg text-gray-400">
+        {study.description}
+      </p>
+      <button className="btn btn-primary mt-6 rounded-md">
+        <span>Learn more</span>
+        <svg
+          className="ml-2 h-3 w-3 flex-shrink-0 fill-current"
+          viewBox="0 0 12 12"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <path d="M6 5H0v2h6v4l6-5-6-5z" />
+        </svg>
+      </button>
     </div>
   </Link>
 );
@@ -59,10 +61,14 @@ const CaseStudies: React.FC<CaseStudiesProps> = ({
     <section>
       <div className="mx-auto max-w-6xl px-4 sm:px-6">
         <div className="my-12 md:my-20">
-          {title && <div className="mx-auto max-w-3xl mb-10 text-center">
-            <h2 className="h2 mb-4">{title}</h2>
-            {description && <p className="text-xl text-gray-400">{description}</p>}
-          </div>}
+          {title && (
+            <div className="mx-auto max-w-3xl mb-10 text-center">
+              <h2 className="h2 mb-4">{title}</h2>
+              {description && (
+                <p className="text-xl text-gray-400">{description}</p>
+              )}
+            </div>
+          )}
 
           <div className="mx-auto grid max-w-sm items-start gap-8 md:max-w-none md:grid-cols-2 lg:grid-cols-3 md:gap-6 lg:gap-6">
             {cases.map((item, index) => (

@@ -1,9 +1,9 @@
 "use client";
 
-import React, {useState} from "react";
+import React, { useState } from "react";
 import Image from "next/legacy/image";
 import Link from "next/link";
-import { SwitchTransition, CSSTransition } from 'react-transition-group';
+import { SwitchTransition, CSSTransition } from "react-transition-group";
 
 type CaseStudy = {
   image: any; //todo: change to correct image type
@@ -34,8 +34,7 @@ export const CaseStudyItem: React.FC<CaseStudyProps> = ({ study }) => (
       <h3 className="h3 mb-2">{study.title}</h3>
       <p className="flex-grow text-lg text-gray-400">{study.description}</p>
       {study.link && (
-        (<Link href={study.link} className="btn btn-primary mt-6 rounded-lg">
-
+        <Link href={study.link} className="btn btn-primary mt-6 rounded-lg">
           <span className="text-sm">Learn more</span>
           <svg
             className="ml-2 h-3 w-3 flex-shrink-0 fill-current"
@@ -44,8 +43,7 @@ export const CaseStudyItem: React.FC<CaseStudyProps> = ({ study }) => (
           >
             <path d="M6 5H0v2h6v4l6-5-6-5z" />
           </svg>
-
-        </Link>)
+        </Link>
       )}
     </div>
   </article>
@@ -68,10 +66,14 @@ const CaseStudiesSlider: React.FC<CaseStudiesProps> = ({
     <section>
       <div className="mx-auto max-w-6xl px-4 sm:px-6">
         <div className="py-12 md:py-20">
-          {title && <div className="mx-auto max-w-3xl pb-12 text-center md:pb-20">
-            <h2 className="h2 mb-4">{title}</h2>
-            {description && <p className="text-xl text-gray-400">{description}</p>}
-          </div>}
+          {title && (
+            <div className="mx-auto max-w-3xl pb-12 text-center md:pb-20">
+              <h2 className="h2 mb-4">{title}</h2>
+              {description && (
+                <p className="text-xl text-gray-400">{description}</p>
+              )}
+            </div>
+          )}
 
           <div className="mx-auto grid max-w-sm items-start gap-8 md:max-w-none md:grid-cols-3 md:gap-6 lg:gap-6">
             {cases.map((item, index) => (

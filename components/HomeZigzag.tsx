@@ -1,6 +1,6 @@
 import React from "react";
 import Image from "next/legacy/image";
-import {Slider, SliderImage} from "./Slider";
+import { Slider, SliderImage } from "./Slider";
 
 type Feature = {
   title: string;
@@ -31,13 +31,13 @@ const FeatureBox: React.FC<FeatureProps> = ({ feature }) => {
         }
       >
         {feature.images.length == 1 ? (
-        <figure className="pb-9/16 relative overflow-hidden rounded-l-xl">
-          <Image
-            src={feature.images[0].url}
-            alt={feature.images[0].alt}
-            placeholder="blur"
-          />
-        </figure>
+          <figure className="pb-9/16 relative overflow-hidden rounded-l-xl">
+            <Image
+              src={feature.images[0].url}
+              alt={feature.images[0].alt}
+              placeholder="blur"
+            />
+          </figure>
         ) : (
           <Slider images={feature.images} />
         )}
@@ -75,14 +75,14 @@ const HomeZigzag: React.FC<FeatureZigzagProps> = ({
     <section>
       <div className="mx-auto max-w-6xl px-4 sm:px-6">
         <div className="mx-auto max-w-3xl pb-12 text-center md:pb-16">
-            <h1 className="h2 mb-4">{title}</h1>
-            <p className="text-xl text-gray-400">{description}</p>
+          <h1 className="h2 mb-4">{title}</h1>
+          <p className="text-xl text-gray-400">{description}</p>
         </div>
 
         <div className="grid gap-20">
-            {features.map((feature, index) => (
-              <FeatureBox feature={feature} key={index} />
-            ))}
+          {features.map((feature, index) => (
+            <FeatureBox feature={feature} key={index} />
+          ))}
         </div>
       </div>
     </section>

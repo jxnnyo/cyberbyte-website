@@ -2,7 +2,7 @@
 
 import React from "react";
 import Link from "next/link";
-import {useForm} from "@formspree/react";
+import { useForm } from "@formspree/react";
 
 function ContactForm() {
   const [state, handleSubmit] = useForm(process.env.NEXT_PUBLIC_FORM_ID!);
@@ -107,7 +107,10 @@ function ContactForm() {
       </div>
       <div className="mt-6 flex flex-row-reverse">
         <div className="w-full sm:w-auto">
-          <button type="submit" className="btn btn-primary w-full rounded-lg px-16">
+          <button
+            type="submit"
+            className="btn btn-primary w-full rounded-lg px-16"
+          >
             Send
           </button>
         </div>
