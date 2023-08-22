@@ -1,9 +1,8 @@
 "use client";
 
 import React, { useState } from "react";
-import Image from "next/legacy/image";
+import Image from "next/image";
 import Link from "next/link";
-import { SwitchTransition, CSSTransition } from "react-transition-group";
 
 type CaseStudy = {
   image: any; //todo: change to correct image type

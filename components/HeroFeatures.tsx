@@ -1,6 +1,7 @@
 import React from "react";
-import Image from "next/legacy/image";
-import { Slider, SliderImage } from "./Slider";
+import Image from "next/image";
+import LazySlider from "./LazySlider";
+import type {SliderImage} from "./Slider";
 
 type LinkProps = {
   href: string;
@@ -82,7 +83,7 @@ const HeroFeatures: React.FC<HeroFeaturesProps> = ({
                 placeholder="blur"
               />
             ) : (
-              <Slider images={images} />
+              <LazySlider images={images} />
             ))}
         </div>
       </div>

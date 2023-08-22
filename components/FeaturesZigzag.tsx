@@ -1,6 +1,7 @@
 import React from "react";
-import Image from "next/legacy/image";
-import { Slider, SliderImage } from "./Slider";
+import Image from "next/image";
+import LazySlider from "./LazySlider";
+import type {SliderImage} from "./Slider";
 
 type Feature = {
   title: string;
@@ -37,7 +38,7 @@ const FeatureBox: React.FC<FeatureProps> = ({ feature }) => {
             placeholder="blur"
           />
         ) : (
-          <Slider images={feature.images} />
+          <LazySlider images={feature.images} />
         )}
       </div>
       <div className="mx-auto max-w-xl md:col-span-7 md:w-full md:max-w-none lg:col-span-6">

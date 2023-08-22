@@ -1,5 +1,5 @@
 import React from "react";
-import Image from "next/legacy/image";
+import Image from "next/image";
 import Link from "next/link";
 
 type CaseStudy = {
@@ -16,7 +16,7 @@ type CaseStudyProps = {
 export const CaseStudyItem: React.FC<CaseStudyProps> = ({ study }) => (
   <Link href={study.link} className="flex h-full flex-col">
     <div className="block">
-      <figure className="pb-9/16 relative overflow-hidden rounded-t-xl">
+      <figure className="pb-9/16 h-64 relative overflow-hidden rounded-t-xl">
         <Image
           src={study.image}
           width="460"

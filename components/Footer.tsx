@@ -1,6 +1,6 @@
 import React from "react";
 import Link from "next/link";
-import Image from "next/legacy/image";
+import Image from "next/image";
 import logo from "../images/logo.svg";
 
 type FooterLink = {
@@ -122,7 +122,7 @@ function Footer() {
             </ul>
 
             <div className="mr-4 text-sm text-gray-400">
-              &copy; 2022 Cyberbyte Software Ltd. All rights reserved. Company
+              &copy; 2023 Cyberbyte Software Ltd. All rights reserved. Company
               Number: 12691680. VAT Number: 364633977
             </div>
           </div>

@@ -3,7 +3,7 @@
 import { Disclosure } from "@headlessui/react";
 import { Bars3Icon, XMarkIcon } from "@heroicons/react/24/outline";
 import logosquare from "../images/logo-square.png";
-import Image from "next/legacy/image";
+import Image from "next/image";
 import Link from "next/link";
 import { useSelectedLayoutSegments } from "next/navigation";
 

@@ -29,7 +29,7 @@ type SliderProps = {
   images: Array<SliderImage>;
 };
 
-export const Slider: React.FC<SliderProps> = ({ images }) => {
+const Slider: React.FC<SliderProps> = ({ images }) => {
   const swiperElRef = useRef(null);
 
   register();
@@ -53,3 +53,5 @@ export const Slider: React.FC<SliderProps> = ({ images }) => {
     </swiper-container>
   );
 };
+
+export default Slider
