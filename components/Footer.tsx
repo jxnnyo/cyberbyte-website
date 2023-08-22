@@ -3,14 +3,47 @@ import Link from "next/link";
 import Image from "next/legacy/image";
 import logo from "../images/logo.svg";
 
+type FooterLink = {
+  name: string;
+  href: string;
+};
+
+const footerNavigation = {
+  navigation: [
+    { name: 'Home', href: '/' },
+    { name: 'Projects', href: '/projects' },
+    { name: 'About', href: '/about' },
+  ],
+};
+
+type FooterLinksProps = {
+  links: FooterLink[];
+};
+
+const FooterLinks: React.FC<FooterLinksProps> = ({ links }) => (
+  <ul className="mt-2 space-y-1">
+    {links.map((item) => (
+      <li key={item.name}>
+        <Link
+          href={item.href}
+          prefetch={false}
+          className="text-gray-400 transition duration-150 ease-in-out hover:text-gray-100"
+        >
+          {item.name}
+        </Link>
+      </li>
+    ))}
+  </ul>
+);
+
 function Footer() {
   return (
     <footer>
       <div className="pb-4">
-        <div className="mx-auto max-w-6xl px-4 sm:px-6">
-          <div className="pt-12 md:pt-16 border-gray-800 border-t mb-8 grid gap-8 md:mb-12 md:grid-cols-12 lg:gap-20">
-            <div className="md:col-span-4 lg:col-span-5">
-              <div className="mb-2">
+        <div className="mx-auto max-w-6xl">
+          <div className="pt-12 md:pt-16 border-gray-800 border-t mb-8 grid gap-8 md:mb-12 md:grid-cols-12 lg:gap-20 px-8">
+            <div className="md:col-span-5">
+              <div className="mt-0 md:mt-2">
                 <Link href="/" className="inline-block" aria-label="Cruip">
 
                   <Image
@@ -24,88 +57,23 @@ function Footer() {
               </div>
             </div>
 
-            <div className="grid gap-8 sm:grid-cols-3 md:col-span-8 lg:col-span-7">
+            <div className="grid gap-8 grid-cols-3 md:col-span-7">
               <div className="text-sm">
                 <h6 className="mb-1 font-medium text-gray-200">
-                  We are working on
+                  Navigation
                 </h6>
-                <ul>
-                  <li className="mb-1">
-                    <Link
-                      href="/projects/merchant-recycling"
-                      className="text-gray-400 transition duration-150 ease-in-out hover:text-gray-100">
-                      
-                        Recycling Merchant Websites
-                      
-                    </Link>
-                  </li>
-                  <li className="mb-1">
-                    <Link
-                      href="/projects/landing-pages"
-                      className="text-gray-400 transition duration-150 ease-in-out hover:text-gray-100">
-                      
-                        Landing Pages
-                      
-                    </Link>
-                  </li>
-                  <li className="mb-1">
-                    <Link
-                      href="/projects/living-pillars"
-                      className="text-gray-400 transition duration-150 ease-in-out hover:text-gray-100">
-                      
-                        Living Pillars
-                      
-                    </Link>
-                  </li>
-                  {/*<li className="mb-1">
-                    <Link href="/projects/handtec">
-                      <a className="text-gray-400 hover:text-gray-100 transition duration-150 ease-in-out">
-                        Handtec
-                      </a>
-                    </Link>
-                  </li>*/}
-                </ul>
+                <FooterLinks links={footerNavigation.navigation} />
               </div>
 
               <div className="text-sm">
-                <h6 className="mb-1 font-medium text-gray-200">
-                  We have worked on
-                </h6>
-                <ul>
-                  <li className="mb-1">
-                    <Link
-                      href="/projects/cyberworks3"
-                      className="text-gray-400 transition duration-150 ease-in-out hover:text-gray-100">
-                      
-                        Cyberworks 3
-                      
+                <h6 className="mb-1 text-md font-medium text-gray-200">Get in touch</h6>
+                <ul className="mt-2 space-y-1"> 
+                  <li className="text-gray-400 transition duration-150 ease-in-out hover:text-gray-100">
+                    <Link href="/contact">
+                      Contact us
                     </Link>
                   </li>
-                  <li className="mb-1">
-                    <Link
-                      href="/projects/bid-that-home"
-                      className="text-gray-400 transition duration-150 ease-in-out hover:text-gray-100">
-                      
-                        Bid That Home
-                      
-                    </Link>
-                  </li>
-                  <li className="mb-1">
-                    <Link
-                      href="/projects"
-                      className="text-gray-400 transition duration-150 ease-in-out hover:text-gray-100">
-                      
-                        See More Projects
-                      
-                    </Link>
-                  </li>
-                </ul>
-              </div>
-
-              <div className="text-sm">
-                <h6 className="mb-1 font-medium text-gray-200">Say hello</h6>
-                <ul>
-                  <li className="mb-1 text-gray-400 transition duration-150 ease-in-out hover:text-gray-100">
+                  <li className="text-gray-400 transition duration-150 ease-in-out hover:text-gray-100">
                     <a
                       href="mailto:contact@cyberbyte.software"
                       target="_blank"
@@ -114,19 +82,14 @@ function Footer() {
                       contact@cyberbyte.software
                     </a>
                   </li>
-                  <li className="mb-1 text-gray-400 transition duration-150 ease-in-out hover:text-gray-100">
-                    <Link href="/contact">
-                      Contact Us
-                    </Link>
-                  </li>
                 </ul>
               </div>
             </div>
           </div>
 
-          <div className="md:flex md:items-center md:justify-between">
+          <div className="px-8 md:flex md:items-center md:justify-between">
             <ul className="mb-4 flex md:order-1 md:ml-4 md:mb-0">
-              <li className="ml-4">
+              <li className="ml-0 md:ml-4">
                 <a
                   href="https://github.com/Cyberbyte-Studios"
                   target="_blank"

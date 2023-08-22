@@ -1,24 +1,15 @@
-import Footer from "../../components/Footer";
 import React from "react";
-import PageIllustration from "../../components/PageIllustration";
-import HeroFeatures from "../../components/HeroFeatures";
-import Stats from "../../components/Stats";
-import Cta from "../../components/Cta";
-import {NextSeo} from "next-seo";
-import Header from "../../components/Header";
-import FeaturesZigzag from "../../components/FeaturesZigzag";
-import player from "../../images/projects/cyberworks/player.png";
-import dashboard from "../../images/projects/cyberworks/dashboard.png";
-import permissions from "../../images/projects/cyberworks/permissions.png";
+import PageIllustration from "../../../components/PageIllustration";
+import HeroFeatures from "../../../components/HeroFeatures";
+import Stats from "../../../components/Stats";
+import Cta from "../../../components/Cta";
+import FeaturesZigzag from "../../../components/FeaturesZigzag";
+import player from "../../../images/projects/cyberworks/player.png";
+import dashboard from "../../../images/projects/cyberworks/dashboard.png";
+import permissions from "../../../images/projects/cyberworks/permissions.png";
 
 function CyberworksThree() {
   return (
-    <div className="flex min-h-screen flex-col overflow-hidden">
-      <NextSeo
-        title="Cyberworks 3"
-        description="Cyberworks 3 is the best way to manage your Arma 3 Life Server"
-      />
-      <Header />
       <main className="flex-grow">
         <div
           className="pointer-events-none relative mx-auto h-0 max-w-6xl"
@@ -29,7 +20,7 @@ function CyberworksThree() {
 
         <HeroFeatures
           title="Cyberworks 3"
-          description="Our most popular project which allowed server admins to view and edit players on the Arma 3 Life server."
+          description="We built a system allowing server admins to view and edit players on the Arma 3 Life server."
         />
         <Stats
           title="Used by hundreds of communities"
@@ -81,17 +72,16 @@ function CyberworksThree() {
             },
           ]}
         />
-        {/*<FeaturesBlocks />*/}
-        {/*<CaseStudies />*/}
+        <div className="pb-12 md:pb-20">
         <Cta
           title="Want to use it yourself?"
           description="You can head to our GitHub and download the latest version right now."
           buttonText="Try it now"
           buttonLink="https://github.com/Cyberbyte-Studios/CyberWorks-3"
+          showBorderBottom={false}
         />
+        </div>
       </main>
-      <Footer />
-    </div>
   );
 }
 

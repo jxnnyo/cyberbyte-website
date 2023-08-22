@@ -33,7 +33,7 @@ function ContactForm() {
   }
 
   return (
-    <form className="mx-auto max-w-xl" onSubmit={handleSubmit}>
+    <form className="mx-auto max-w-3xl" onSubmit={handleSubmit}>
       <div className="-mx-3 mb-4 flex flex-wrap">
         <div className="w-full px-3">
           <label
@@ -46,7 +46,7 @@ function ContactForm() {
             id="name"
             name="name"
             type="text"
-            className="form-input w-full text-gray-800"
+            className="form-input w-full text-gray-800 rounded-lg"
             placeholder="Enter your name"
             required
           />
@@ -64,7 +64,7 @@ function ContactForm() {
             id="email"
             name="email"
             type="email"
-            className="form-input w-full text-gray-800"
+            className="form-input w-full text-gray-800 rounded-lg"
             placeholder="Enter your email address"
             required
           />
@@ -82,7 +82,7 @@ function ContactForm() {
             id="subject"
             name="subject"
             type="text"
-            className="form-input w-full text-gray-800"
+            className="form-input w-full text-gray-800 rounded-lg"
             placeholder="How can we help you?"
             required
           />
@@ -100,14 +100,14 @@ function ContactForm() {
             id="message"
             name="message"
             rows={4}
-            className="form-textarea w-full text-gray-800"
+            className="form-textarea w-full text-gray-800 rounded-lg"
             placeholder="Write your message"
           />
         </div>
       </div>
-      <div className="-mx-3 mt-6 flex flex-wrap">
-        <div className="w-full px-3">
-          <button type="submit" className="btn btn-primary w-full">
+      <div className="mt-6 flex flex-row-reverse">
+        <div className="w-full sm:w-auto">
+          <button type="submit" className="btn btn-primary w-full rounded-lg px-16">
             Send
           </button>
         </div>

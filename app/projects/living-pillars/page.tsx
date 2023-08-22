@@ -1,19 +1,21 @@
-import Footer from "../../components/Footer";
 import React from "react";
-import PageIllustration from "../../components/PageIllustration";
-import HeroFeatures from "../../components/HeroFeatures";
-import {NextSeo} from "next-seo";
-import Header from "../../components/Header";
-import Cta from "../../components/Cta";
-import FeaturesZigzag from "../../components/FeaturesZigzag";
-import pillar from "../../images/projects/pillar.jpg";
-import dashboard from "../../images/projects/scotscape/dashboard.png";
+import PageIllustration from "../../../components/PageIllustration";
+import HeroFeatures from "../../../components/HeroFeatures";
+import Cta from "../../../components/Cta";
+import FeaturesZigzag from "../../../components/FeaturesZigzag";
+import pillar from "../../../images/projects/pillar.jpg";
+import dashboard from "../../../images/projects/scotscape/dashboard.png";
+import type {Metadata} from "next";
+
+export const metadata: Metadata = {
+    title: "Living Pillars",
+    description: ""
+}
 
 function LivingPillars() {
   return (
     <div className="flex min-h-screen flex-col overflow-hidden">
-      <NextSeo title="Living Pillars" />
-      <Header />
+      {/* <NextSeo title="Living Pillars" /> */}
       <main className="flex-grow">
         <div
           className="pointer-events-none relative mx-auto h-0 max-w-6xl"
@@ -44,14 +46,16 @@ function LivingPillars() {
             },
           ]}
         />
+        <div className="pb-12 md:pb-20">
         <Cta
           title="Interested in Living Pillars?"
           description="Reach out to us for more details on urban greening and why it's so important"
           buttonText="Contact Us"
           buttonLink="/contact"
+          showBorderBottom={false}
         />
+        </div>
       </main>
-      <Footer />
     </div>
   );
 }

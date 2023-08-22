@@ -1,15 +1,12 @@
 import React from "react";
 import CaseStudies from "../../components/CaseStudies";
-import PageIllustration from "../../components/PageIllustration";
 import cyberworks from "../../images/projects/cyberworks/dashboard.png";
-import cyberworksOriginal from "../../images/projects/cyberworks/original.jpg";
 import pillar from "../../images/projects/pillar.jpg";
-import mineathon from "../../images/projects/mineathon.jpg";
 import car from "../../images/projects/car.png";
-import bth from "../../images/projects/bth.png";
+import handtec from "../../images/projects/handtec.png";
 import camoradaHomepage from "../../images/projects/merchant-recycling/camorada-home.jpg";
-import enveriline from "../../images/projects/landing-pages/enveriline.jpg";
 import type {Metadata} from "next";
+
 
 export const metadata: Metadata = {
   title: "Our Projects"
@@ -18,38 +15,12 @@ export const metadata: Metadata = {
 export default function Projects() {
   return (
     <>
-        <div
-          className="pointer-events-none relative mx-auto h-0 max-w-6xl"
-          aria-hidden="true"
-        >
-          <PageIllustration />
-        </div>
+        
 
         <CaseStudies
           title="Our Projects"
-          description="We have worked on a number of challenging projects. Below are just a few:"
-          cases={[
-            {
-              image: camoradaHomepage,
-              title: "Recycling Merchant Websites",
-              description:
-                "Are you a recycling merchant in need of a website? Let us know! We are using our industry experience to produce cutting edge websites for recycling merchants.",
-              link: "/projects/merchant-recycling",
-            },
-            {
-              image: enveriline,
-              title: "Static Websites and Landing Pages",
-              description:
-                "Need a static website or landing page for your company? We make websites of various designs to fit any specification.",
-              link: "/projects/landing-pages",
-            },
-            {
-              image: cyberworks,
-              title: "Cyberworks 3",
-              description:
-                "A popular open source tool which allows you to manage Arma 3 Life servers with ease. Used by hundreds of communities to manage players and aid community support.",
-              link: "/projects/cyberworks3",
-            },
+          description="Our team has worked on a wide variety of projects. Below is just a handful."
+          cases={[ 
             {
               image: car,
               title: "Compare and Recycle",
@@ -65,37 +36,53 @@ export default function Projects() {
               link: "/projects/living-pillars",
             },
             {
-              image: mineathon,
-              title: "Mineathon",
+              image: camoradaHomepage,
+              title: "Recycling Merchant Websites",
               description:
-                "A charity live streaming website designed to collect donations. Built in Laravel, complete with an admin area to manage the event. We have published the source code on GitHub. Check it out!",
-              link: "/projects/mineathon",
+                "Are you a recycling merchant in need of a website? Let us know! We are using our industry experience to produce cutting edge websites for recycling merchants.",
+              link: "/projects/merchant-recycling",
             },
             {
-              image: bth,
-              title: "Bid That Home",
+              image: pillar,
+              title: "Clean Room Sensors",
               description:
-                "This website and iOS app allowed users to place bids on properties not yet on the market.",
-              link: "/projects/bid-that-home",
+                "We have developed and produced sensors that record particulate matter levels in the air.",
+              link: "/pages/404",
             },
-            /*            {
-              image: "/images/projects/handtec.png",
-              title: "Handtec",
+            {
+              image: handtec,
+              title: "Handtec Recycling System",
               description: "",
               link: "/projects/handtec",
-            },*/
-            {
-              image: cyberworksOriginal,
-              title: "Life Control",
-              description:
-                "The original database administration panel for Arma 3 Life Servers.",
-              link: "/projects/life-control",
             },
-            /*            {
-              image: launcher,
-              title: "Arma Launcher",
-              description: "",
-            },*/
+            {
+              image: cyberworks,
+              title: "Cyberworks 3",
+              description:
+                "A popular open source tool which allows you to manage Arma 3 Life servers with ease. Used by hundreds of communities to manage players and aid community support.",
+              link: "/projects/cyberworks",
+            },
+            // {
+            //   image: cyberworks,
+            //   title: "Competitive Price Tracking",
+            //   description:
+            //     "PBSL",
+            //   link: "/",
+            // },
+            // {
+            //   image: cyberworks,
+            //   title: "Copia Digital Work",
+            //   description:
+            //     "We did some stuff",
+            //   link: "/",
+            // },
+            // {
+            //   image: cyberworks,
+            //   title: "Copia Digital Work",
+            //   description:
+            //     "We did some stuff",
+            //   link: "/",
+            // },
           ]}
         />
     </>

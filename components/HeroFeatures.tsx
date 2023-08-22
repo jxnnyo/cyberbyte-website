@@ -65,7 +65,7 @@ const HeroFeatures: React.FC<HeroFeaturesProps> = ({
           {link && (
             <div className="mb-8 flex justify-center">
               <a
-                className="btn btn-primary"
+                className="btn btn-primary rounded-lg"
                 href={link.href}
                 target="_blank"
                 rel="noopener noreferrer nofollow"

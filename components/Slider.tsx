@@ -1,9 +1,24 @@
 "use client";
 
-import React from "react";
-import {Autoplay} from "swiper";
-import {Swiper, SwiperSlide} from "swiper/react";
-import Image from "next/legacy/image";
+import { useRef } from 'react';
+import { register } from 'swiper/element/bundle';
+
+import Image from "next/image";
+
+declare global {
+  namespace JSX {
+    interface IntrinsicElements {
+      'swiper-container': React.DetailedHTMLProps<
+        React.HTMLAttributes<HTMLElement>,
+        HTMLElement
+      >;
+      'swiper-slide': React.DetailedHTMLProps<
+        React.HTMLAttributes<HTMLElement>,
+        HTMLElement
+      >;
+    }
+  }
+}
 
 export type SliderImage = {
   url: any; //todo: change image type
@@ -14,17 +29,16 @@ type SliderProps = {
   images: Array<SliderImage>;
 };
 
-export const Slider: React.FC<SliderProps> = ({ images }) => (
-  <Swiper
-    modules={[Autoplay]}
-    loop={true}
-    autoplay={{
-      delay: 3000,
-    }}
-  >
+export const Slider: React.FC<SliderProps> = ({ images }) => {
+  const swiperElRef = useRef(null);
+
+  register();
+  
+  return (
+  <swiper-container ref={swiperElRef}>
     {images.map((image) => {
       return (
-        <SwiperSlide key={image.alt}>
+        <swiper-slide key={image.alt}>
           <div className="flex justify-center">
             <Image
               className="object-contain"
@@ -33,8 +47,8 @@ export const Slider: React.FC<SliderProps> = ({ images }) => (
               placeholder="blur"
             />
           </div>
-        </SwiperSlide>
+        </swiper-slide>
       );
     })}
-  </Swiper>
-);
+  </swiper-container>
+)};

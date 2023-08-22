@@ -1,26 +1,15 @@
-import React from "react";
-import HeroHome from "../components/HeroHome";
-import Features from "../components/Features";
-import CaseStudies from "../components/CaseStudies";
-// import {LogoJsonLd, NextSeo} from "next-seo";
-import Cta from "../components/Cta";
-import pillar from "../images/projects/pillar.jpg";
-import recycling from "../images/projects/merchant-recycling/clove-home.png";
-import car from "../images/projects/car.png";
-import type {Metadata} from "next";
+import Features from "../../components/Features";
+import Cta from "../../components/Cta";
 
-export const metadata: Metadata = {
-    title: "Cyberbyte Software",
-    description: "Cyberbyte Software is a bespoke web hosting and development company able to deliver your most ambitious projects"
-}
-
-export default function Home() {
-  return (
-    <>
-        <HeroHome />
+export default function About() {
+    return (
+      <>
+        <div className="pb-12 md:pb-20">
         <Features
-          title="What We Do"
+          title="About Us"
           description="Here at Cyberbyte Software, our main goal is ensuring that we deliver our clients an exceptional finished product. Below are our three specialties."
+          showBorderTop={false}
+          showBorderBottom={false}
           features={[
             {
               title: "Software Development",
@@ -48,37 +37,16 @@ export default function Home() {
             },
           ]}
         />
-        <CaseStudies
-          title="Our Projects"
-          description="Our team has worked on a wide variety of projects. Below is just a handful."
-          cases={[
-           
-            {
-              image: car,
-              title: "Compare and Recycle",
-              description:
-                "The UK's number 1 recycling comparison site. We helped build a scalable platform to help merchants and improve customer satisfaction.",
-              link: "/projects/compare-and-recycle",
-            },
-            {
-              image: pillar,
-              title: "Living Pillars",
-              description:
-                "We are helping to improve our urban environments with sensors that monitor and maintain plants in living pillars. We already have them around London and Liverpool.",
-              link: "/projects/living-pillars",
-            }, 
-            {
-              image: recycling,
-              title: "Recycling Merchant Websites",
-              description:
-                "Are you a recycling merchant in need of a website? Let us know! We are using our industry experience to produce cutting edge websites for recycling merchants.",
-              link: "/projects/merchant-recycling",
-            },
-          ]}
-        />
-        <div className="pb-12 md:pb-20">
-        <Cta title="Check out our other projects!" buttonText="See Projects" buttonLink="/projects" buttonInternal={true} showBorderBottom={false} />
         </div>
-    </>
+        <div className="pb-12 md:pb-20">
+        <Cta
+          title="Get in touch"
+          description="Whether you're starting a new project, or need help in the middle of an existing one? We would love to share our experience. Or if you just want to get a quote or learn more about what we do? Feel free to send us a message and we will get back to you shortly."
+          buttonText="Contact Us"
+          buttonLink="/contact"
+          showBorderBottom={false}
+        />
+        </div>
+        </>
   );
 }

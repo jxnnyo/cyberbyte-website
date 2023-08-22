@@ -8,7 +8,7 @@ export function HeroHome() {
     <section>
       <div className="relative mx-auto max-w-6xl px-4 sm:px-6">
         <div
-          className="pointer-events-none absolute left-0 bottom-0 -ml-20 hidden lg:block"
+          className="pointer-events-none absolute left-0 bottom-0 -ml-20 hidden xl:block"
           aria-hidden="true"
         >
           <svg
@@ -41,7 +41,7 @@ export function HeroHome() {
           </svg>
         </div>
 
-        <div className="relative pt-32 pb-10 md:pt-40 md:pb-32">
+        <div className="relative pt-0 pb-6 xl:pt-20 xl:pb-32">
           <div className="mx-auto max-w-3xl text-center">
             <Image
               src={logo}
@@ -49,6 +49,11 @@ export function HeroHome() {
               width="1440"
               alt="Cyberbyte Software"
             />
+          </div>
+          <div className="mt-12 flex justify-center">
+                <Link href="/contact" className="btn btn-primary rounded-md">
+                  Get in touch
+                </Link>
           </div>
         </div>
       </div>
