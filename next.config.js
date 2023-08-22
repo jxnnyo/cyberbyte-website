@@ -1,6 +1,6 @@
 
 const ContentSecurityPolicy = `
-  default-src 'self';
+  default-src 'self' 'unsafe-inline';
 `
 
 module.exports = {
