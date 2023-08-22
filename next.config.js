@@ -5,6 +5,9 @@ const ContentSecurityPolicy = `
 
 module.exports = {
   swcMinify: true,
+  experimental: {
+    serverActions: true,
+  },
   images: {
     formats: ["image/avif", "image/webp"],
   },

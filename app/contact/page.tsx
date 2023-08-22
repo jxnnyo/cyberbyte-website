@@ -1,31 +1,111 @@
-import ContactForm from "../../components/Contact";
 import React from "react";
 import type { Metadata } from "next";
+import {redirect} from "next/navigation";
 
 export const metadata: Metadata = {
   title: "Contact Us",
 };
 
 function Contact() {
-  return (
-    <section className="relative">
-      <div className="relative mx-auto max-w-6xl px-4 sm:px-6">
-        <div className="my-12 md:my-20">
-          <div className="mx-auto max-w-3xl pb-10 text-center">
-            <h2 className="h2 mb-4">How can we help you?</h2>
-            <p className="text-xl text-gray-400">
-              Starting a new project, or need help in the middle of an existing
-              one? We would love to share our experience. Or if you just want to
-              get a quote or learn more about what we do? Feel free to send us a
-              message and we will get back to you shortly.
-            </p>
-          </div>
+  async function contactForm(data: FormData) {
+    'use server'
 
-          <ContactForm />
+    const res = await fetch('https://formspree.io/f/mqkwewrv', {
+      method: "POST",
+      body: data
+    })
+
+    redirect('/contact/thanks')
+  }
+
+
+  return (
+    <form className="mx-auto max-w-3xl" action={contactForm}>
+      <div className="-mx-3 mb-4 flex flex-wrap">
+        <div className="w-full px-3">
+          <label
+            className="mb-1 block text-sm font-medium text-gray-300"
+            htmlFor="email"
+          >
+            Name <span className="text-red-600">*</span>
+          </label>
+          <input
+            id="name"
+            name="name"
+            type="text"
+            className="form-input w-full text-gray-800 rounded-lg"
+            placeholder="Enter your name"
+            required
+          />
         </div>
       </div>
-    </section>
+      <div className="-mx-3 mb-4 flex flex-wrap">
+        <div className="w-full px-3">
+          <label
+            className="mb-1 block text-sm font-medium text-gray-300"
+            htmlFor="email"
+          >
+            Email <span className="text-red-600">*</span>
+          </label>
+          <input
+            id="email"
+            name="email"
+            type="email"
+            className="form-input w-full text-gray-800 rounded-lg"
+            placeholder="Enter your email address"
+            required
+          />
+        </div>
+      </div>
+      <div className="-mx-3 mb-4 flex flex-wrap">
+        <div className="w-full px-3">
+          <label
+            className="mb-1 block text-sm font-medium text-gray-300"
+            htmlFor="subject"
+          >
+            Subject <span className="text-red-600">*</span>
+          </label>
+          <input
+            id="subject"
+            name="subject"
+            type="text"
+            className="form-input w-full text-gray-800 rounded-lg"
+            placeholder="How can we help you?"
+            required
+          />
+        </div>
+      </div>
+      <div className="-mx-3 mb-4 flex flex-wrap">
+        <div className="w-full px-3">
+          <label
+            className="mb-1 block text-sm font-medium text-gray-300"
+            htmlFor="message"
+          >
+            Message
+          </label>
+          <textarea
+            id="message"
+            name="message"
+            rows={4}
+            className="form-textarea w-full text-gray-800 rounded-lg"
+            placeholder="Write your message"
+          />
+        </div>
+      </div>
+      <div className="mt-6 flex flex-row-reverse">
+        <div className="w-full sm:w-auto">
+          <button
+            type="submit"
+            className="btn btn-primary w-full rounded-lg px-16"
+          >
+            Send
+          </button>
+        </div>
+      </div>
+    </form>
   );
 }
+
+export const runtime = 'edge';
 
 export default Contact;
