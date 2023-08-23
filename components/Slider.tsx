@@ -54,4 +54,4 @@ const Slider: React.FC<SliderProps> = ({ images }) => {
   );
 };
 
-export default Slider
+export default Slider;

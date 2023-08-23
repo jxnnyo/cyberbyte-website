@@ -11,13 +11,6 @@ import permissions from "../../../images/projects/cyberworks/permissions.png";
 function CyberworksThree() {
   return (
     <main className="flex-grow">
-      <div
-        className="pointer-events-none relative mx-auto h-0 max-w-6xl"
-        aria-hidden="true"
-      >
-        <PageIllustration />
-      </div>
-
       <HeroFeatures
         title="Cyberworks 3"
         description="We built a system allowing server admins to view and edit players on the Arma 3 Life server."

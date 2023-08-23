@@ -1,7 +1,7 @@
 import React from "react";
 import Image from "next/image";
 import LazySlider from "./LazySlider";
-import type {SliderImage} from "./Slider";
+import type { SliderImage } from "./Slider";
 
 type Feature = {
   title: string;

@@ -13,15 +13,8 @@ function Handtec() {
   return (
     <div className="flex flex-col overflow-hidden">
       <main className="flex-grow">
-        <div
-          className="pointer-events-none relative mx-auto h-0 max-w-6xl"
-          aria-hidden="true"
-        >
-          <PageIllustration />
-        </div>
-
         <HeroFeatures
-          title="Handtec Recycling System"
+          title="Handtec Part Managment"
           description="Transforming a legacy application into a fully featured platform"
         />
         <div className="pb-12 md:pb-20">

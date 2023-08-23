@@ -1,7 +1,7 @@
 import React from "react";
 import Image from "next/image";
 import LazySlider from "./LazySlider";
-import type {SliderImage} from "./Slider";
+import type { SliderImage } from "./Slider";
 
 type LinkProps = {
   href: string;
@@ -24,7 +24,7 @@ const HeroFeatures: React.FC<HeroFeaturesProps> = ({
   return (
     <section className="relative">
       <div className="relative mx-auto max-w-6xl px-4 sm:px-6">
-        <div
+        {/* <div
           className="pointer-events-none absolute left-0 bottom-0 -ml-64 hidden lg:block"
           aria-hidden="true"
         >
@@ -56,7 +56,7 @@ const HeroFeatures: React.FC<HeroFeaturesProps> = ({
               fill="url(#paint0_linear)"
             />
           </svg>
-        </div>
+        </div> */}
 
         <div className="relative pt-32 pb-12 md:pt-40 md:pb-20">
           <div className="mx-auto max-w-3xl pb-12 text-center md:pb-16">

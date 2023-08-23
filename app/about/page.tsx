@@ -1,6 +1,6 @@
 import Features from "../../components/Features";
 import Cta from "../../components/Cta";
-import {Metadata} from "next";
+import { Metadata } from "next";
 
 export const metadata: Metadata = {
   title: "About Us",
@@ -70,7 +70,7 @@ export default function About() {
           description="Whether you're starting a new project, or need help in the middle of an existing one? We would love to share our experience. Or if you just want to get a quote or learn more about what we do? Feel free to send us a message and we will get back to you shortly."
           buttonText="Contact Us"
           buttonLink="/contact"
-          showBorderBottom={true}
+          showBorderBottom={false}
         />
       </div>
     </>

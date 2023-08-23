@@ -16,13 +16,6 @@ function LivingPillars() {
   return (
     <div className="flex min-h-screen flex-col overflow-hidden">
       <main className="flex-grow">
-        <div
-          className="pointer-events-none relative mx-auto h-0 max-w-6xl"
-          aria-hidden="true"
-        >
-          <PageIllustration />
-        </div>
-
         <HeroFeatures
           title="Living Pillars"
           images={[{ url: pillar, alt: "Living Pillar" }]}

@@ -4,6 +4,7 @@ import cyberworks from "../../images/projects/cyberworks/dashboard.png";
 import pillar from "../../images/projects/pillar.jpg";
 import car from "../../images/projects/car.png";
 import handtec from "../../images/projects/handtec.png";
+import cleanRoom from "../../images/projects/clean-room.jpg";
 import camoradaHomepage from "../../images/projects/merchant-recycling/camorada-home.jpg";
 import type { Metadata } from "next";
 
@@ -40,16 +41,17 @@ export default function Projects() {
             link: "/projects/merchant-recycling",
           },
           {
-            image: pillar,
+            image: cleanRoom,
             title: "Clean Room Sensors",
             description:
-              "We have developed and produced sensors that record particulate matter levels in the air.",
-            link: "/pages/404",
+              "We have developed and produced sensors that measure particulate matter within HVAC systems in order to dectect faults and alert engineers.",
+            link: "/coming-soon",
           },
           {
             image: handtec,
-            title: "Handtec Recycling System",
-            description: "",
+            title: "Handtec Part Managment",
+            description:
+              "We built a part managment system that tracks devices individually, organising what replacement parts are required for each of them to be refurbished.",
             link: "/projects/handtec",
           },
           {

@@ -11,13 +11,6 @@ export const metadata: Metadata = {
 function CompareAndRecycle() {
   return (
     <>
-      <div
-        className="pointer-events-none relative mx-auto h-0 max-w-6xl"
-        aria-hidden="true"
-      >
-        <PageIllustration />
-      </div>
-
       <HeroFeatures
         title="Compare and Recycle"
         description="Our team has worked on the popular comparison site Compare and Recycle"

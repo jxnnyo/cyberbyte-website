@@ -1,10 +1,6 @@
 import React from "react";
 
-export default function Layout({
-                                     children,
-                                   }: {
-  children: React.ReactNode;
-}) {
+export default function Layout({ children }: { children: React.ReactNode }) {
   return (
     <section className="relative">
       <div className="relative mx-auto max-w-6xl px-4 sm:px-6">

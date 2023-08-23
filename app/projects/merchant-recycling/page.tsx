@@ -17,13 +17,6 @@ export const metadata: Metadata = {
 function MerchantPlatform() {
   return (
     <main className="flex-grow">
-      <div
-        className="pointer-events-none relative mx-auto h-0 max-w-6xl"
-        aria-hidden="true"
-      >
-        <PageIllustration />
-      </div>
-
       <HeroFeatures
         title="Recycling Merchant Websites"
         images={[

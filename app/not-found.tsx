@@ -15,14 +15,14 @@ export default function NotFound() {
           <div className="mx-auto max-w-3xl text-center">
             <h1 className="h1 mb-4">Uh oh. That page does not exist.</h1>
             <p className="text-lg text-gray-400">
-              Head to our{" "}
+              Head back to our{" "}
               <Link
                 href="/"
-                className="text-primary transition duration-150 ease-in-out hover:text-gray-200"
+                className="text-primary transition duration-150 ease-in-out hover:text-white"
               >
                 homepage
-              </Link>{" "}
-              that does exist, or try double-checking the URL.
+              </Link>
+              , or try double-checking the URL.
             </p>
           </div>
         </div>

@@ -1,6 +1,6 @@
 import React from "react";
 import type { Metadata } from "next";
-import {redirect} from "next/navigation";
+import { redirect } from "next/navigation";
 
 export const metadata: Metadata = {
   title: "Contact Us",
@@ -8,16 +8,15 @@ export const metadata: Metadata = {
 
 function Contact() {
   async function contactForm(data: FormData) {
-    'use server'
+    "use server";
 
-    const res = await fetch('https://formspree.io/f/mqkwewrv', {
+    const res = await fetch("https://formspree.io/f/mqkwewrv", {
       method: "POST",
-      body: data
-    })
+      body: data,
+    });
 
-    redirect('/contact/thanks')
+    redirect("/contact/thanks");
   }
-
 
   return (
     <form className="mx-auto max-w-3xl" action={contactForm}>
@@ -106,6 +105,6 @@ function Contact() {
   );
 }
 
-export const runtime = 'edge';
+export const runtime = "edge";
 
 export default Contact;

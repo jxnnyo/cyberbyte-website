@@ -1,6 +1,6 @@
 import Link from "next/link";
 import React from "react";
-import {Metadata} from "next";
+import { Metadata } from "next";
 
 export const metadata: Metadata = {
   title: "Thank You",
@@ -28,5 +28,5 @@ export default function Thanks() {
         </div>
       </div>
     </section>
-  )
+  );
 }

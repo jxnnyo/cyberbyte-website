@@ -3,7 +3,7 @@ import Footer from "../components/Footer";
 import Breadcrumb from "../components/Breadcrumb";
 import Navigation from "../components/Navigation";
 import PageIllustration from "../components/PageIllustration";
-import { Analytics } from '@vercel/analytics/react';
+import { Analytics } from "@vercel/analytics/react";
 import type { Metadata } from "next";
 
 import { Inter } from "next/font/google";
@@ -38,12 +38,12 @@ export default function RootLayout({
         <div className="flex min-h-screen flex-col overflow-hidden">
           <main className="flex-grow">
             <Navigation />
-            <div
+            {/* <div
               className="pointer-events-none relative mx-auto h-0 max-w-6xl"
               aria-hidden="true"
             >
               <PageIllustration />
-            </div>
+            </div> */}
 
             <Breadcrumb />
             {children}

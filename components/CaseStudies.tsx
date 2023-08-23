@@ -16,7 +16,7 @@ type CaseStudyProps = {
 export const CaseStudyItem: React.FC<CaseStudyProps> = ({ study }) => (
   <Link href={study.link} className="flex h-full flex-col">
     <div className="block">
-      <figure className="pb-9/16 h-64 relative overflow-hidden rounded-t-xl">
+      <figure className="pb-9/16 h-52 relative overflow-hidden rounded-t-xl">
         <Image
           src={study.image}
           width="460"

@@ -21,7 +21,7 @@ const unslugify = (slug: string) =>
 export default function Breadcrumb() {
   const segments = useSelectedLayoutSegments();
 
-  if (segments.length < 1) {
+  if (segments.length < 1 || segments[0] === "__DEFAULT__") {
     return null;
   }
 
@@ -33,7 +33,7 @@ export default function Breadcrumb() {
       <ol role="list" className="flex items-center space-x-4">
         <li>
           <div>
-            <Link href="/" className="text-gray-400 hover:text-gray-500">
+            <Link href="/" className="text-gray-400 hover:text-white">
               <HomeIcon className="h-5 w-5 flex-shrink-0" aria-hidden="true" />
               <span className="sr-only">Home</span>
             </Link>
@@ -48,7 +48,7 @@ export default function Breadcrumb() {
               />
               <Link
                 href={`/${[...segments].slice(0, index + 1).join("/")}`}
-                className="ml-4 text-sm font-medium text-gray-500 hover:text-gray-700"
+                className="ml-4 text-sm font-medium text-gray-400 hover:text-white"
               >
                 {unslugify(page)}
               </Link>
