@@ -91,7 +91,7 @@ function Contact() {
           />
         </div>
       </div>
-      <div className="mt-6 flex flex-row-reverse">
+      <div className="mt-8 flex flex-row-reverse">
         <div className="w-full sm:w-auto">
           <button
             type="submit"

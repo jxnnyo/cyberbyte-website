@@ -44,7 +44,7 @@ function LivingPillars() {
             description="Reach out to us for more details on urban greening and why it's so important"
             buttonText="Contact Us"
             buttonLink="/contact"
-            showBorderBottom={true}
+            showBorderBottom={false}
           />
         </div>
       </main>
