@@ -1,10 +1,4 @@
 
-const ContentSecurityPolicy = `
-  default-src 'self';
-  img-src 'self' data:;
-  script-src 'self';
-`
-
 module.exports = {
   swcMinify: true,
   experimental: {
@@ -29,10 +23,6 @@ module.exports = {
           {
             key: "X-Frame-Options",
             value: "SAMEORIGIN",
-          },
-          {
-            key: 'Content-Security-Policy',
-            value: ContentSecurityPolicy.replace(/\s{2,}/g, ' ').trim()
           }
         ],
       },
