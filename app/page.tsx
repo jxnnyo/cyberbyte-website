@@ -4,7 +4,7 @@ import Features from "../components/Features";
 import CaseStudies from "../components/CaseStudies";
 import Cta from "../components/Cta";
 import pillar from "../images/projects/pillar.jpg";
-import recycling from "../images/projects/merchant-recycling/clove-home.png";
+import recycling from "../images/projects/merchant-recycling/home/handtec.png";
 import car from "../images/projects/car.png";
 import type { Metadata } from "next";
 

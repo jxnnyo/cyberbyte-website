@@ -1,13 +1,15 @@
 import React from "react";
-import PageIllustration from "../../../components/PageIllustration";
 import HeroFeatures from "../../../components/HeroFeatures";
 import Cta from "../../../components/Cta";
 import FeaturesZigzag from "../../../components/FeaturesZigzag";
-import merchantProduct from "../../../images/projects/merchant-recycling/website-product.jpg";
-import adminProduct from "../../../images/projects/merchant-recycling/admin-product.jpg";
-import adminConditions from "../../../images/projects/merchant-recycling/admin-conditions-slim.jpg";
-import camoradaHomepage from "../../../images/projects/merchant-recycling/camorada-home.jpg";
-import cloveHomepage from "../../../images/projects/merchant-recycling/clove-home.png";
+import merchantProduct from "../../../images/projects/merchant-recycling/website-product.png";
+import adminProduct from "../../../images/projects/merchant-recycling/admin-product.png";
+import adminSettings from "../../../images/projects/merchant-recycling/admin-settings.png";
+import camoradaHomepage from "../../../images/projects/merchant-recycling/home/camorada.png";
+import cloveHomepage from "../../../images/projects/merchant-recycling/home/clove.png";
+import techoutHomepage from "../../../images/projects/merchant-recycling/home/techout.png";
+import macysHomepage from "../../../images/projects/merchant-recycling/home/macys.png";
+import handtecHomepage from "../../../images/projects/merchant-recycling/home/handtec.png";
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
@@ -20,7 +22,10 @@ function MerchantPlatform() {
       <HeroFeatures
         title="Recycling Merchant Websites"
         images={[
+          { url: handtecHomepage, alt: "Handtec" },
+          { url: techoutHomepage, alt: "The Techout" },
           { url: cloveHomepage, alt: "Clove Recycling" },
+          { url: macysHomepage, alt: "Macys Tech" },
           { url: camoradaHomepage, alt: "Camorada" },
         ]}
         description="We are working with recycling merchants as well as using our industry experience to produce cutting edge websites for recycling merchants."
@@ -60,7 +65,7 @@ function MerchantPlatform() {
             title: "Fully Customisable",
             description:
               "Our unique system allows merchants to change their websites without needing to reach out to our team every time.",
-            images: [{ url: adminConditions, alt: "" }],
+            images: [{ url: adminSettings, alt: "" }],
             items: [
               "Dynamic Text Messages",
               "Dynamic Email Templates",

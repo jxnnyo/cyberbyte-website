@@ -5,7 +5,7 @@ import pillar from "../../images/projects/pillar.jpg";
 import car from "../../images/projects/car.png";
 import handtec from "../../images/projects/handtec.png";
 import cleanRoom from "../../images/projects/clean-room.jpg";
-import camoradaHomepage from "../../images/projects/merchant-recycling/camorada-home.jpg";
+import handtecHomepage from "../../images/projects/merchant-recycling/home/handtec.png";
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
@@ -34,7 +34,7 @@ export default function Projects() {
             link: "/projects/living-pillars",
           },
           {
-            image: camoradaHomepage,
+            image: handtecHomepage,
             title: "Recycling Merchant Websites",
             description:
               "Are you a recycling merchant in need of a website? Let us know! We are using our industry experience to produce cutting edge websites for recycling merchants.",
