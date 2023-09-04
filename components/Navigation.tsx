@@ -24,7 +24,7 @@ export default function Navigation() {
   return (
     <Disclosure
       as="nav"
-      className="border-b border-gray-800 mx-auto max-w-6xl mb-12"
+      className="border-b border-gray-800 mx-auto max-w-6xl mb-8"
     >
       {({ open }) => (
         <>

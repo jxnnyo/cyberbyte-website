@@ -6,6 +6,7 @@ import car from "../../images/projects/car.png";
 import handtec from "../../images/projects/handtec.png";
 import cleanRoom from "../../images/projects/clean-room.jpg";
 import handtecHomepage from "../../images/projects/merchant-recycling/home/handtec.png";
+import priceTracking from "../../images/projects/price-tracking/grid.png";
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
@@ -45,7 +46,7 @@ export default function Projects() {
             title: "Clean Room Sensors",
             description:
               "We have developed and produced sensors that measure particulate matter within HVAC systems in order to dectect faults and alert engineers.",
-            link: "/coming-soon",
+            link: "/projects/clean-room-sensors",
           },
           {
             image: handtec,
@@ -61,13 +62,13 @@ export default function Projects() {
               "A popular open source tool which allows you to manage Arma 3 Life servers with ease. Used by hundreds of communities to manage players and aid community support.",
             link: "/projects/cyberworks",
           },
-          // {
-          //   image: cyberworks,
-          //   title: "Competitive Price Tracking",
-          //   description:
-          //     "PBSL",
-          //   link: "/",
-          // },
+          {
+            image: priceTracking,
+            title: "Competitive Price Tracking",
+            description:
+              "A custom price tracking solution allowing our client to see the entire market and develop an optimised pricing strategy",
+            link: "/projects/price-tracking",
+          },
           // {
           //   image: cyberworks,
           //   title: "Copia Digital Work",

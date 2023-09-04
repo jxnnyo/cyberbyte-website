@@ -7,7 +7,7 @@ type Feature = {
   title: string;
   description: string;
   images: Array<SliderImage>;
-  items: Array<string>;
+  items?: Array<string>;
   right?: boolean;
 };
 
@@ -45,7 +45,7 @@ const FeatureBox: React.FC<FeatureProps> = ({ feature }) => {
         <div className="md:pr-4 lg:pr-12 xl:pr-16">
           <h3 className="h3 mb-3">{feature.title}</h3>
           <p className="mb-4 text-xl text-gray-400">{feature.description}</p>
-          <ul className="-mb-2 text-lg text-gray-400">
+          {feature.items && <ul className="-mb-2 text-lg text-gray-400">
             {feature.items.map((item, index) => (
               <li className="mb-2 flex items-center" key={index}>
                 <svg
@@ -58,7 +58,7 @@ const FeatureBox: React.FC<FeatureProps> = ({ feature }) => {
                 <span>{item}</span>
               </li>
             ))}
-          </ul>
+          </ul>}
         </div>
       </div>
     </div>

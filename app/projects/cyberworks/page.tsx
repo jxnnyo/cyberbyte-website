@@ -1,5 +1,4 @@
 import React from "react";
-import PageIllustration from "../../../components/PageIllustration";
 import HeroFeatures from "../../../components/HeroFeatures";
 import Stats from "../../../components/Stats";
 import Cta from "../../../components/Cta";
@@ -7,6 +6,11 @@ import FeaturesZigzag from "../../../components/FeaturesZigzag";
 import player from "../../../images/projects/cyberworks/player.png";
 import dashboard from "../../../images/projects/cyberworks/dashboard.png";
 import permissions from "../../../images/projects/cyberworks/permissions.png";
+import {Metadata} from "next";
+
+export const metadata: Metadata = {
+  title: "Cyberworks",
+};
 
 function CyberworksThree() {
   return (

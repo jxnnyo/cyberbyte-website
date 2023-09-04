@@ -1,6 +1,4 @@
 import Link from "next/link";
-import Footer from "../components/Footer";
-import PageIllustration from "../components/PageIllustration";
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {

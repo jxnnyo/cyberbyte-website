@@ -10,6 +10,7 @@ import cloveHomepage from "../../../images/projects/merchant-recycling/home/clov
 import techoutHomepage from "../../../images/projects/merchant-recycling/home/techout.png";
 import macysHomepage from "../../../images/projects/merchant-recycling/home/macys.png";
 import handtecHomepage from "../../../images/projects/merchant-recycling/home/handtec.png";
+import stats from "../../../images/projects/merchant-recycling/stats.png";
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
@@ -53,7 +54,7 @@ function MerchantPlatform() {
             title: "Built for the merchants",
             description:
               "Not only do we want the customers to have the best possible experience, but the merchant as well, so we focused on making the admin area as easy to use as possible based on years of feedback.",
-            images: [{ url: adminProduct, alt: "" }],
+            images: [{ url: adminProduct, alt: "" }, { url: stats, alt: "" }],
             items: [
               "Full audit logs",
               "Order note system",

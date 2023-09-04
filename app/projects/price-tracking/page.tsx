@@ -1,20 +1,22 @@
 import HeroFeatures from "../../../components/HeroFeatures";
 import Cta from "../../../components/Cta";
+import price from "../../../images/projects/price-tracking/grid.png"
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "Clean Room Sensors",
+  title: "Competitor Price Tracking",
 };
 
-function CleanRoomSensors() {
+function PriceTracking() {
   return (
     <>
       <HeroFeatures
-        title="Clean Room Sensors"
-        description="Improving the safety of clean rooms, we worked with our client to design a monitoring platform."
+        title="Competitor Price Tracking"
+        description="We have built a specilist price tracking tool for the construction industry"
+        images={[{url: price, alt: "Price Grid"}]}
       />
       <Cta
-        title="Got a specilist hardware project?"
+        title="Would you like to learn more about optimizing your pricing?"
         description="Reach out to our team and find out more about what we can do"
         buttonText="Contact us"
         buttonLink="/contact"
@@ -25,4 +27,4 @@ function CleanRoomSensors() {
   );
 }
 
-export default CleanRoomSensors;
+export default PriceTracking;

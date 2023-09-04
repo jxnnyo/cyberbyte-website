@@ -2,6 +2,7 @@ import { MetadataRoute } from "next";
 
 export default function sitemap(): MetadataRoute.Sitemap {
   const date = new Date();
+  const baseUrl = "https://cyberbyte.software"
   const pages = [
     "/",
     "/about",
@@ -13,9 +14,10 @@ export default function sitemap(): MetadataRoute.Sitemap {
     "/projects/handtec",
     "/projects/living-pillars",
     "/projects/merchant-recycling",
+    "/projects/price-tracking",
   ];
   return pages.map((url) => ({
-    url,
+    url: `${baseUrl}${url}`,
     lastModified: date,
   }));
 }

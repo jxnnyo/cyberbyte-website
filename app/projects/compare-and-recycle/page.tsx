@@ -1,11 +1,13 @@
-import PageIllustration from "../../../components/PageIllustration";
 import HeroFeatures from "../../../components/HeroFeatures";
 import Stats from "../../../components/Stats";
 import Cta from "../../../components/Cta";
 import type { Metadata } from "next";
+import orderForm from "../../../images/projects/compareandrecycle/orderform.png";
+import FeaturesZigzag from "../../../components/FeaturesZigzag";
+import React from "react";
 
 export const metadata: Metadata = {
-  title: "Our Projects",
+  title: "Compare and Recycle",
 };
 
 function CompareAndRecycle() {
@@ -30,6 +32,18 @@ function CompareAndRecycle() {
           {
             stat: "99.999%",
             description: "Uptime",
+          },
+        ]}
+      />
+      <FeaturesZigzag
+        title="World Class Performance"
+        description="We used cutting edge technology to provide the client with a fast and responsive website"
+        features={[
+          {
+            title: "Specialist Solutions",
+            description:
+              "Working on a dynamic order form used by thousands of customers every day to trade in phones across the UK.",
+            images: [{ url: orderForm, alt: "Order Form" }],
           },
         ]}
       />
