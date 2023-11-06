@@ -1,23 +1,12 @@
 import React from "react";
 import type { Metadata } from "next";
-import { redirect } from "next/navigation";
+import {contactForm} from "../../services/contactForm";
 
 export const metadata: Metadata = {
   title: "Contact Us",
 };
 
 function Contact() {
-  async function contactForm(data: FormData) {
-    "use server";
-
-    const res = await fetch("https://formspree.io/f/mqkwewrv", {
-      method: "POST",
-      body: data,
-    });
-
-    redirect("/contact/thanks");
-  }
-
   return (
     <form className="mx-auto max-w-3xl" action={contactForm}>
       <div className="-mx-3 mb-4 flex flex-wrap">
