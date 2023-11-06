@@ -1,10 +1,10 @@
 import React from "react";
 import CaseStudies from "../../components/CaseStudies";
 import cyberworks from "../../images/projects/cyberworks/dashboard.png";
-import pillar from "../../images/projects/pillar.jpg";
-import car from "../../images/projects/car.png";
-import handtec from "../../images/projects/handtec.png";
-import cleanRoom from "../../images/projects/clean-room.jpg";
+import pillar from "../../images/projects/living-pillars/pillar.jpg";
+import car from "../../images/projects/compareandrecycle/car.png";
+import handtec from "../../images/projects/handtec/handtec.png";
+import cleanRoom from "../../images/projects/clean-room/clean-room.jpg";
 import handtecHomepage from "../../images/projects/merchant-recycling/home/handtec.png";
 import priceTracking from "../../images/projects/price-tracking/grid.png";
 import type { Metadata } from "next";
@@ -21,11 +21,11 @@ export default function Projects() {
         description="Our team has worked on a wide variety of projects. Below is just a handful."
         cases={[
           {
-            image: car,
-            title: "Compare and Recycle",
+            image: handtecHomepage,
+            title: "Recycling Merchant Websites",
             description:
-              "The UK's number 1 recycling comparison site. We helped build a scalable platform to handle thousands of requests and improve customer satisfaction.",
-            link: "/projects/compare-and-recycle",
+              "Are you a recycling merchant in need of a website? Let us know! We are using our industry experience to produce cutting edge websites for recycling merchants.",
+            link: "/projects/recycling-merchant-websites",
           },
           {
             image: pillar,
@@ -35,54 +35,40 @@ export default function Projects() {
             link: "/projects/living-pillars",
           },
           {
-            image: handtecHomepage,
-            title: "Recycling Merchant Websites",
+            image: car,
+            title: "Compare and Recycle",
             description:
-              "Are you a recycling merchant in need of a website? Let us know! We are using our industry experience to produce cutting edge websites for recycling merchants.",
-            link: "/projects/merchant-recycling",
+              "The UK's number 1 recycling comparison site. We helped build a scalable platform to handle thousands of requests and improve customer satisfaction.",
+            link: "/projects/compare-and-recycle",
           },
           {
             image: cleanRoom,
             title: "Clean Room Sensors",
             description:
-              "We have developed and produced sensors that measure particulate matter within HVAC systems in order to dectect faults and alert engineers.",
+              "We have developed and produced sensors that measure particulate matter within HVAC systems in order to monitor its level and dectect faults which alert engineers.",
             link: "/projects/clean-room-sensors",
           },
           {
             image: handtec,
-            title: "Handtec Part Managment",
+            title: "Handtec Part Management",
             description:
-              "We built a part managment system that tracks devices individually, organising what replacement parts are required for each of them to be refurbished.",
-            link: "/projects/handtec",
+              "We built a part management system for a recycling merchant that tracks devices individually, organising what replacement parts are required for each of them to be refurbished.",
+            link: "/projects/handtec-part-management",
+          },
+          {
+            image: priceTracking,
+            title: "Competitive Price Tracking",
+            description:
+              "We developed a custom price tracking solution allowing our client to view prices across the entire market and develop an optimised pricing strategy.",
+            link: "/projects/competitive-price-tracking",
           },
           {
             image: cyberworks,
             title: "Cyberworks 3",
             description:
               "A popular open source tool which allows you to manage Arma 3 Life servers with ease. Used by hundreds of communities to manage players and aid community support.",
-            link: "/projects/cyberworks",
+            link: "/projects/cyberworks-3",
           },
-          {
-            image: priceTracking,
-            title: "Competitive Price Tracking",
-            description:
-              "A custom price tracking solution allowing our client to see the entire market and develop an optimised pricing strategy",
-            link: "/projects/price-tracking",
-          },
-          // {
-          //   image: cyberworks,
-          //   title: "Copia Digital Work",
-          //   description:
-          //     "We did some stuff",
-          //   link: "/",
-          // },
-          // {
-          //   image: cyberworks,
-          //   title: "Copia Digital Work",
-          //   description:
-          //     "We did some stuff",
-          //   link: "/",
-          // },
         ]}
       />
     </>

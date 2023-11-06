@@ -28,7 +28,7 @@ const Stats: React.FC<StatsProps> = ({ title, description, stats }) => {
   return (
     <section>
       <div className="mx-auto max-w-6xl px-4 sm:px-6">
-        <div className="pb-12 md:pb-20">
+          <div className="border-t border-gray-800 py-12 md:py-20">
           <div className="mx-auto max-w-3xl pb-12 text-center md:pb-16">
             <h1 className="h2 mb-4">{title}</h1>
             <p className="text-xl text-gray-400">{description}</p>

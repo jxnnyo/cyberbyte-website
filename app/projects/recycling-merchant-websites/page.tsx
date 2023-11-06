@@ -29,7 +29,7 @@ function MerchantPlatform() {
           { url: macysHomepage, alt: "Macys Tech" },
           { url: camoradaHomepage, alt: "Camorada" },
         ]}
-        description="We are working with recycling merchants as well as using our industry experience to produce cutting edge websites for recycling merchants."
+        description="Using our industry experience, we are delivering bespoke, cutting edge websites to our recycling merchant clients. Check out our demo below."
         link={{
           title: "View our demo",
           href: "https://demo.recycling.dev/",
@@ -37,12 +37,12 @@ function MerchantPlatform() {
       />
       <FeaturesZigzag
         title="What can it do?"
-        description="Our merchant websites are built with both the users and admin staff in mind. Maximizing conversions and making sure your customer have a smooth experience."
+        description="Our merchant websites are built with both the users and admin staff in mind. Focusing on maximizing conversions and ensuring customers have a smooth experience and allows admin staff to manage orders with ease."
         features={[
           {
             title: "Built for the customer",
             description:
-              "Using our industry experience we have built features designed to make it as easy as possible for the customers to place orders and keep track of the status.",
+              "Using our industry experience, we build our websites full of features designed to make it as easy as possible for customers to place orders and keep track of the status.",
             images: [{ url: merchantProduct, alt: "" }],
             items: [
               "Real time text and email updates",
@@ -75,13 +75,16 @@ function MerchantPlatform() {
           },
         ]}
       />
+      <div className="pb-12 md:pb-20">
       <Cta
         title=" Find out why we are the recommended integration partner for Compare and Recycle."
         description="Feel free to contact us if you are interested or want to know more!"
-        buttonText="Contact Us"
+        buttonText="Contact us"
         buttonLink="/contact"
         buttonInternal={true}
+        showBorderBottom={false}
       />
+      </div>
     </main>
   );
 }
