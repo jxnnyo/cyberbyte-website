@@ -15,6 +15,7 @@ const inter = Inter({
 });
 
 export const metadata: Metadata = {
+  metadataBase: new URL('https://cyberbyte.software'),
   title: {
     template: "%s | Cyberbyte Software",
     default: "Cyberbyte Software",

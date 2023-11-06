@@ -105,6 +105,4 @@ function Contact() {
   );
 }
 
-export const runtime = "edge";
-
 export default Contact;
