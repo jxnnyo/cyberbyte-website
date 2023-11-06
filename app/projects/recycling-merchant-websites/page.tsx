@@ -37,7 +37,7 @@ function MerchantPlatform() {
       />
       <FeaturesZigzag
         title="What can it do?"
-        description="Our merchant websites are built with both the users and admin staff in mind. Focusing on maximizing conversions and ensuring customers have a smooth experience and allows admin staff to manage orders with ease."
+        description="Our merchant websites are built with both the users and admin staff in mind. Focusing on maximizing conversions by ensuring customers have a smooth experience and allowing admin staff to manage orders with ease."
         features={[
           {
             title: "Built for the customer",

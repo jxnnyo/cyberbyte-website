@@ -45,7 +45,7 @@ export default function Projects() {
             image: cleanRoom,
             title: "Clean Room Sensors",
             description:
-              "We have developed and produced sensors that measure particulate matter within HVAC systems in order to monitor its level and dectect faults which alert engineers.",
+              "We have developed and produced sensors that measure particulate matter within HVAC systems in order to monitor its level and detect faults which alert engineers.",
             link: "/projects/clean-room-sensors",
           },
           {
