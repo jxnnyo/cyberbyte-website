@@ -3,9 +3,9 @@ import HeroHome from "../components/HeroHome";
 import Features from "../components/Features";
 import CaseStudies from "../components/CaseStudies";
 import Cta from "../components/Cta";
-import pillar from "../images/projects/pillar.jpg";
+import pillar from "../images/projects/living-pillars/pillar.jpg";
 import recycling from "../images/projects/merchant-recycling/home/handtec.png";
-import car from "../images/projects/car.png";
+import car from "../images/projects/compareandrecycle/car.png";
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
@@ -92,14 +92,14 @@ export default function Home() {
             title: "Recycling Merchant Websites",
             description:
               "Are you a recycling merchant in need of a website? Let us know! We are using our industry experience to produce cutting edge websites for recycling merchants.",
-            link: "/projects/merchant-recycling",
+            link: "/projects/recycling-merchant-websites",
           },
         ]}
       />
       <div className="pb-12 md:pb-20">
         <Cta
           title="Check out our other projects!"
-          buttonText="See Projects"
+          buttonText="See projects"
           buttonLink="/projects"
           buttonInternal={true}
           showBorderBottom={false}

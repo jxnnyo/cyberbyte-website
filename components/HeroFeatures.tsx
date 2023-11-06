@@ -60,11 +60,11 @@ const HeroFeatures: React.FC<HeroFeaturesProps> = ({
 
         <div className="relative pt-32 pb-12 md:pt-40 md:pb-20">
           <div className="mx-auto max-w-3xl pb-12 text-center md:pb-16">
-            <h1 className="h1 mb-4">{title}</h1>
+            <h1 className="h1 mb-12">{title}</h1>
             <p className="text-xl text-gray-400">{description}</p>
           </div>
           {link && (
-            <div className="mb-8 flex justify-center">
+            <div className="pb-12 md:pb-16 flex justify-center">
               <a
                 className="btn btn-primary rounded-lg"
                 href={link.href}

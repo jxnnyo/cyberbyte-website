@@ -17,11 +17,12 @@ function CyberworksThree() {
     <main className="flex-grow">
       <HeroFeatures
         title="Cyberworks 3"
-        description="We built a system allowing server admins to view and edit players on the Arma 3 Life server."
+        images={[{ url: dashboard, alt: "Cyberworks 3" }]}
+        description="We built a system allowing server admins to view and edit players on their Arma 3 Life servers."
       />
       <Stats
         title="Used by hundreds of communities"
-        description=""
+        description="Our system is the choice made by hundreds of admins to manage their Arma 3 community."
         stats={[
           {
             stat: "~100",
@@ -39,12 +40,12 @@ function CyberworksThree() {
       />
       <FeaturesZigzag
         title="What can it do?"
-        description="Our panel was built on our experience with life servers"
+        description="Our panel was built from our own experience running life servers."
         features={[
           {
             title: "Advanced Player Editing",
             description:
-              "Our player editing tool allows server admins to change quickly identify any problems as well as quickly help out players",
+              "Our player editing tool allows server admins to change players stats quickly and identify any problems, allowing players to recieve admin support with ease.",
             images: [{ url: player, alt: "Player Editing" }],
             items: [
               "White Listing",
@@ -55,7 +56,7 @@ function CyberworksThree() {
           {
             title: "Useful Dashboard",
             description:
-              "We developer a summary dashboard which allows you to quickly see everything a server admin needs",
+              "We developed a summary dashboard which allows admins to quickly see server stats in one place.",
             images: [{ url: dashboard, alt: "Dashboard" }],
             items: ["Top Players", "Total Players", "Latest Player"],
             right: true,
@@ -63,7 +64,7 @@ function CyberworksThree() {
           {
             title: "Powerful Permissions",
             description:
-              "Every community is different so we build our permissions system to be completely customisable",
+              "Every community is different, so we build our permissions system to be completely customisable.",
             images: [{ url: permissions, alt: "Permission Editor" }],
             items: ["Unlimited Groups", "Dynamic Permissions"],
           },
