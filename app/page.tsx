@@ -74,11 +74,11 @@ export default function Home() {
         description="Our team has worked on a wide variety of projects. Below is just a handful."
         cases={[
           {
-            image: car,
-            title: "Compare and Recycle",
+            image: recycling,
+            title: "Recycling Merchant Websites",
             description:
-              "The UK's number 1 recycling comparison site. We helped build a scalable platform to help merchants and improve customer satisfaction.",
-            link: "/projects/compare-and-recycle",
+              "Are you a recycling merchant in need of a website? Let us know! We are using our industry experience to produce cutting edge websites for recycling merchants.",
+            link: "/projects/recycling-merchant-websites",
           },
           {
             image: pillar,
@@ -88,11 +88,11 @@ export default function Home() {
             link: "/projects/living-pillars",
           },
           {
-            image: recycling,
-            title: "Recycling Merchant Websites",
+            image: car,
+            title: "Compare and Recycle",
             description:
-              "Are you a recycling merchant in need of a website? Let us know! We are using our industry experience to produce cutting edge websites for recycling merchants.",
-            link: "/projects/recycling-merchant-websites",
+              "The UK's number 1 recycling comparison site. We helped build a scalable platform to help merchants and improve customer satisfaction.",
+            link: "/projects/compare-and-recycle",
           },
         ]}
       />
