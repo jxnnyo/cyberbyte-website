@@ -1,6 +1,6 @@
 import React from "react";
 import HeroFeatures from "../../components/HeroFeatures";
-import foxes from "../../images/foxes.jpeg";
+import foxes from "../../images/foxes.jpg";
 import type { Metadata } from "next";
 import Link from "next/link";
 
