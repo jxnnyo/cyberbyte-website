@@ -10,7 +10,7 @@ type LinkProps = {
 
 type HeroFeaturesProps = {
   title: string;
-  description: string;
+  description: React.ReactNode;
   images?: Array<SliderImage>;
   link?: LinkProps;
 };
