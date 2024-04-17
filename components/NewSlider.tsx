@@ -17,14 +17,14 @@ const Slider: React.FC<SliderProps> = ({ images }) => {
     <div className="h-56 sm:h-64 xl:h-80 2xl:h-96">
       <Carousel slideInterval={3000}>
         {images.map((image) => (
-          <Image
-            // className="object-contain"
-            key={image.alt}
-            src={image.url}
-            alt={image.alt}
-            placeholder="blur"
-          />
-        ))}
+            <Image
+              // className="object-contain"
+              key={image.alt}
+              src={image.url}
+              alt={image.alt}
+              placeholder="blur"
+            />
+          ))}
       </Carousel>
     </div>
   );

@@ -51,7 +51,10 @@ export function HeroHome() {
               alt="Cyberbyte Software"
             />
           </div>
-          <div className="mt-12 flex justify-center">
+          <div className="mt-10 mx-auto max-w-3xl text-center">
+            <h1 className="h3 mb-4">Specialist software and hardware development</h1>
+          </div>
+          <div className="mt-3 flex justify-center">
             <Link href="/contact" className="btn btn-primary rounded-md">
               Get in touch
             </Link>

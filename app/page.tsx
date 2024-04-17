@@ -9,9 +9,9 @@ import car from "../images/projects/compareandrecycle/car.png";
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "Cyberbyte Software",
+  title: "Cyberbyte Software Development",
   description:
-    "Cyberbyte Software is a bespoke web hosting and development company able to deliver your most ambitious projects",
+    "Cyberbyte Software is a specialist software and hardware development company able to deliver your most ambitious projects. We have a wide range of experience in software development, custom hardware solutions, and mobile phone recycling websites.",
 };
 
 export default function Home() {
@@ -20,12 +20,12 @@ export default function Home() {
       <HeroHome />
       <Features
         title="What We Do"
-        description="Here at Cyberbyte Software, our main goal is ensuring that we deliver our clients an exceptional finished product. Below are our three specialties."
+        description="Here at Cyberbyte Software, our main goal is ensuring that we deliver our clients an exceptional finished product. Below are some of our specialties."
         features={[
           {
             title: "Software Development",
             description:
-              "With an experienced team of developers, we can offer a wide range of software solutions to fit your requirements. If youre just looking for advice, we also offer consulatancy.",
+              "With an experienced team of developers, we can offer a wide range of software solutions to fit your requirements. If your just looking for advice, we also offer consultancy.",
             icon: (
               <svg
                 xmlns="http://www.w3.org/2000/svg"
@@ -38,7 +38,7 @@ export default function Home() {
             ),
           },
           {
-            title: "Hardware Solutions",
+            title: "Custom Hardware Solutions",
             description:
               "Our experienced team of engineers deliver bespoke hardware solutions, including PCB design and manufacturing consultancy for our clients.",
             icon: (
@@ -53,9 +53,9 @@ export default function Home() {
             ),
           },
           {
-            title: "Merchant Recycling",
+            title: "Mobile Phone Recycling Websites",
             description:
-              "We work closesly with the industry leading mobile comparison site 'Compare and Recycle' and many merchants to deliver bespoke websites to our clients.",
+              "We work closely with the industry leading mobile comparison site 'Compare and Recycle' and many merchants to deliver bespoke websites to our clients.",
             icon: (
               <svg
                 xmlns="http://www.w3.org/2000/svg"

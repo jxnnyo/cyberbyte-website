@@ -12,7 +12,7 @@ export default function About() {
       <div className="pb-12 md:pb-20">
         <Features
           title="About Us"
-          description="Here at Cyberbyte Software, our main goal is ensuring that we deliver our clients an exceptional finished product. Below are our three specialties."
+          description="Based in Kent, our main goal is ensuring that we deliver our clients an exceptional finished product. Below are some of our specialties."
           showBorderTop={false}
           showBorderBottom={false}
           features={[

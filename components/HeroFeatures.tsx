@@ -1,7 +1,9 @@
 import React from "react";
 import Image from "next/image";
-import LazySlider from "./LazySlider";
 import type { SliderImage } from "./Slider";
+import dynamic from "next/dynamic";
+
+const Slider = dynamic(() => import('./Slider'))
 
 type LinkProps = {
   href: string;
@@ -83,7 +85,7 @@ const HeroFeatures: React.FC<HeroFeaturesProps> = ({
                 placeholder="blur"
               />
             ) : (
-              <LazySlider images={images} />
+              <Slider images={images} />
             ))}
         </div>
       </div>

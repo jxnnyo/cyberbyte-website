@@ -34,7 +34,7 @@ const Cta: React.FC<CTAProps> = ({
             }
           >
             <div className="mx-auto max-w-3xl text-center">
-              <h1 className="h2 mb-4">{title}</h1>
+              <h2 className="h2 mb-4">{title}</h2>
               {description && (
                 <p className="mb-8 text-xl text-gray-400">{description}</p>
               )}

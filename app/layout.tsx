@@ -7,6 +7,7 @@ import { Analytics } from "@vercel/analytics/react";
 import type { Metadata } from "next";
 
 import { Inter } from "next/font/google";
+import OrganizationSchema from "../components/schema/OrganizationSchema";
 
 const inter = Inter({
   subsets: ["latin"],
@@ -36,6 +37,7 @@ export default function RootLayout({
   return (
     <html lang="en" className={inter.variable}>
       <body className="bg-gray-900 tracking-tight text-gray-200 antialiased">
+        <OrganizationSchema />
         <div className="flex min-h-screen flex-col overflow-hidden">
           <main className="flex-grow">
             <Navigation />

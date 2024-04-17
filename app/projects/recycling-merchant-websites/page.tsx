@@ -21,7 +21,7 @@ function MerchantPlatform() {
   return (
     <main className="flex-grow">
       <HeroFeatures
-        title="Recycling Merchant Websites"
+        title="Mobile Phone Recycling Merchant Websites"
         images={[
           { url: handtecHomepage, alt: "Handtec" },
           { url: techoutHomepage, alt: "The Techout" },

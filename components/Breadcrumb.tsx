@@ -18,10 +18,12 @@ const unslugify = (slug: string) =>
       (text) => text.charAt(0).toUpperCase() + text.slice(1).toLowerCase(),
     );
 
+const hidden_pages = ["__DEFAULT__", "/_not-found", "/_error"];
+
 export default function Breadcrumb() {
   const segments = useSelectedLayoutSegments();
 
-  if (segments.length < 1 || segments[0] === "__DEFAULT__") {
+  if (segments.length < 1 || hidden_pages.includes(segments[0])) {
     return null;
   }
 

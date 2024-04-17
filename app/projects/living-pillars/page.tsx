@@ -1,5 +1,4 @@
 import React from "react";
-import PageIllustration from "../../../components/PageIllustration";
 import HeroFeatures from "../../../components/HeroFeatures";
 import Cta from "../../../components/Cta";
 import FeaturesZigzag from "../../../components/FeaturesZigzag";
