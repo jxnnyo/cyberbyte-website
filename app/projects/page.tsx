@@ -66,10 +66,10 @@ export default function Projects() {
           },
           {
             image: priceTracking,
-            title: "Competitive Price Tracking",
+            title: "Competitor Price Tracking",
             description:
               "We developed a custom price tracking solution allowing our client to view prices across the entire market and develop an optimised pricing strategy.",
-            link: "/projects/competitive-price-tracking",
+            link: "/projects/competitor-price-tracking",
           },
           {
             image: cyberworks,

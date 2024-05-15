@@ -12,7 +12,7 @@ function PriceTracking() {
   return (
     <>
       <HeroFeatures
-        title="Competitive Price Tracking"
+        title="Competitor Price Tracking"
         description="We have built a specilist price tracking tool for our client in the construction industry that tracks competitors prices on materials, allowing our client to develop an optimised pricing strategy."
         images={[{url: price, alt: "Price Grid"}]}
       />
@@ -27,7 +27,7 @@ function PriceTracking() {
             images: [{ url: price, alt: "" }],
             items: [
               "Individual item scraping",
-              "Competitive price analysis",
+              "Competitor price analysis",
             ],
           },
         ]}

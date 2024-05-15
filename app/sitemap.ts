@@ -14,7 +14,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     "/projects/handtec",
     "/projects/living-pillars",
     "/projects/merchant-recycling",
-    "/projects/price-tracking",
+    "/projects/competitor-price-tracking",
     "/projects/plant-monitoring",
   ];
   return pages.map((url) => ({

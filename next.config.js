@@ -3,6 +3,28 @@ module.exports = {
   images: {
     formats: ["image/avif", "image/webp"],
   },
+  experimental: {
+    optimizePackageImports: ["flowbite-react"],
+  },
+  redirects: async () => {
+    return [
+      {
+        source: "/projects/price-tracking",
+        destination: "/projects/competitor-price-tracking",
+        permanent: true,
+      },
+      {
+        source: "/projects/competitive-price-tracking",
+        destination: "/projects/competitor-price-tracking",
+        permanent: true,
+      },
+      {
+        source: "/projects/life-control",
+        destination: "/projects/cyberworks-3",
+        permanent: true,
+      },
+    ];
+  },
   async headers() {
     return [
       {
