@@ -6,6 +6,7 @@ import Cta from "../components/Cta";
 import pillar from "../images/projects/living-pillars/pillar.jpg";
 import recycling from "../images/projects/merchant-recycling/home/handtec.png";
 import car from "../images/projects/compareandrecycle/car.png";
+import greenwall from "../images/projects/plant-monitoring/greenwall.jpeg";
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
@@ -81,11 +82,10 @@ export default function Home() {
             link: "/projects/recycling-merchant-websites",
           },
           {
-            image: pillar,
-            title: "Living Pillars",
-            description:
-              "We are helping to improve our urban environments with sensors that monitor and maintain plants in living pillars. We already have them around London and Liverpool.",
-            link: "/projects/living-pillars",
+            image: greenwall,
+            title: "Next Generation Plant Monitoring",
+            description: "Building atop our previous units deployed across the UK, we are now working on a next generation monitoring system.",
+            link: "/projects/plant-monitoring",
           },
           {
             image: car,

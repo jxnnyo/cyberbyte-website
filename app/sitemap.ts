@@ -15,6 +15,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     "/projects/living-pillars",
     "/projects/merchant-recycling",
     "/projects/price-tracking",
+    "/projects/plant-monitoring",
   ];
   return pages.map((url) => ({
     url: `${baseUrl}${url}`,
