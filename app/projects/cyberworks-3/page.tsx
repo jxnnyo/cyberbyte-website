@@ -75,7 +75,7 @@ function CyberworksThree() {
           title="Want to use it yourself?"
           description="You can head to our GitHub and download the latest version right now."
           buttonText="Try it now"
-          buttonLink="https://github.com/Cyberbyte-Studios/CyberWorks-3"
+          buttonLink="https://github.com/Cyberbyte-Software/CyberWorks-3"
           showBorderBottom={false}
         />
       </div>
