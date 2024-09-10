@@ -87,7 +87,7 @@ function Footer() {
             <ul className="mb-4 flex md:order-1 md:ml-4 md:mb-0">
               <li className="ml-0 md:ml-4">
                 <a
-                  href="https://github.com/Cyberbyte-Studios"
+                  href="https://github.com/Cyberbyte-Software"
                   target="_blank"
                   rel="noopener noreferrer nofollow"
                   className="flex items-center justify-center rounded-full bg-gray-800 text-primary transition duration-150 ease-in-out hover:bg-primary hover:text-gray-100"
