@@ -15,7 +15,7 @@ export const organization: Corporation = {
   iso6523Code: '9932:GB364633977',
   sameAs: [
     'https://www.linkedin.com/company/cyberbyte-software',
-    'https://github.com/Cyberbyte-Studios',
+    'https://github.com/Cyberbyte-Software',
   ],
 };
 
